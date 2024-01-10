@@ -1,0 +1,37 @@
+| Service                   | Application composition                 | Density                                                                                                                   | Minimum number of nodes                                                                                                   | State management                                                                                                                     | Web hosting    |
+| ------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------- |
+| Azure Virtual Machines    | Agnostic                                | Agnostic                                                                                                                  | 1 [2](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#note2)          | Stateless or stateful                                                                                                                | Agnostic       |
+| Azure App Service         | Applications, containers                | Multiple apps per instance by using App Service plan                                                                      | 1                                                                                                                         | Stateless                                                                                                                            | Built in       |
+| Azure Functions           | Functions, containers                   | Serverless [1](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#note1) | Serverless [1](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#note1) | Stateless or stateful [6](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#note6) | Not applicable |
+| Azure Kubernetes Service  | Containers                              | Multiple containers per node                                                                                              | 3 [3](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#note3)          | Stateless or stateful                                                                                                                | Agnostic       |
+| Azure Container Apps      | Containers                              | Serverless                                                                                                                | Serverless                                                                                                                | Stateless or stateful                                                                                                                | Agnostic       |
+| Azure Container Instances | Containers                              | No dedicated instances                                                                                                    | No dedicated nodes                                                                                                        | Stateless                                                                                                                            | Agnostic       |
+| Azure Red Hat OpenShift   | Containers                              | Multiple containers per node                                                                                              | 6 [5](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#note5)          | Stateless or stateful                                                                                                                | Agnostic       |
+| Azure Spring Apps         | Applications, microservices             | Multiple apps per service instance                                                                                        | 2                                                                                                                         | Stateless                                                                                                                            | Built in       |
+| Azure Service Fabric      | Services, guest executables, containers | Multiple services per VM                                                                                                  | 5 [3](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#note3)          | Stateless or stateful                                                                                                                | Agnostic       |
+| Azure Batch               | Scheduled jobs                          | Multiple apps per VM                                                                                                      | 1 [4](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#note4)          | Stateless                                                                                                                            | No             |
+
+---
+
+Virtual Machines (VMs) can be configured to be either stateless or stateful based on how they handle and store data. Here's an explanation of both:
+
+1. Stateless VMs:
+    
+    - Stateless VMs are designed in such a way that they do not retain any critical data or state information on the local VM itself.
+    - They rely on external data sources or services for all the information they need.
+    - Stateless VMs are often used in scenarios where high availability and scalability are essential.
+    - When a stateless VM fails or needs to be replaced, it can be easily replaced with a new instance since there is no critical local state to preserve.
+    - Stateless VMs are typically used for web servers, load balancers, and other applications that can distribute workloads evenly across multiple instances.
+2. Stateful VMs:
+    
+    - Stateful VMs, on the other hand, retain critical data or state information locally on the VM.
+    - They may store information such as session data, databases, and cached data directly on the VM's local storage.
+    - Stateful VMs are used in scenarios where data consistency and persistence are important. This is often the case with databases and applications that require access to locally stored data.
+    - When a stateful VM fails, recovering the state and data can be more complex, and typically, additional measures like replication or backups are used to ensure data resilience.
+
+The choice between stateless and stateful VMs depends on the specific requirements of the application or workload:
+
+- Stateless VMs are well-suited for applications where data can be easily replicated and distributed, and the focus is on load balancing and redundancy.
+    
+- Stateful VMs are used when the application relies on locally stored data, and maintaining data consistency and resilience is a priority.
+
