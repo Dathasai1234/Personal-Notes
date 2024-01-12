@@ -25,6 +25,10 @@ tags:
 | ---- | ---- |
 | ![[Pasted image 20240108134056.png]] | ![[Pasted image 20240108134118.png]] |
 
+- #Static_NAT — permanent one-to-one mapping usually between a public and private IP address. Used for servers which must accept incoming connections.
+- #Dynamic_NAT — uses a pool of public addresses which are given out on an as needed first come first served basis. Usually used for internal hosts which need to connect to the Internet but do not accept incoming connections.
+- #PAT (Port Address Translation) — allows the same public IP address to be reused.
+
 Network Address Translation is a method of remapping one IP space into another during transit across a routing device, incidentally this is what saved the
 world from running out of IP addresses.
 
@@ -234,9 +238,6 @@ By understanding the role and causes of TCP resets in NAT gateways, you can gain
 - Can process 1M packets per second and up to 5M packets per second.
 
 ---
-
-
-
 
 
 
