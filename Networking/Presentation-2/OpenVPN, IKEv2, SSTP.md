@@ -2,6 +2,7 @@
 title: Presentation-2
 date: 2023-12-31
 resources: https://learn.microsoft.com/en-us/azure/vpn-gateway/ikev2-openvpn-from-sstp
+resource_2: https://rublon.com/blog/sstp-openvpn-difference/#:~:text=The%20main%20difference,SSTP%20vs.%20OpenVPN.
 tags:
 ---
 **4:05:12**

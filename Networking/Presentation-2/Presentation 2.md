@@ -11,8 +11,10 @@ tags:
 # Agenda
 
 - [[Introduction to VPN gateways]]
+	- [[point-to-site VPN routing]]
 - [[OpenVPN, IKEv2, SSTP]]
 - [[VPN deployment]]
+- [[Redundancy of Gateways]]
 - Authentication
 	- [[Certificate Authentication]]
 	- [[AD Authentication - notes]]
