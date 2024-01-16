@@ -100,3 +100,21 @@ Summing up, if you need a secure and versatile protocol, OpenVPN is a good choic
 - Once the gateway has been configured, existing clients won't be able to connect until you [deploy and configure the OpenVPN clients](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-cert-windows#view-openvpn).
 
 ---
+
+**Tuesday, 16-01-2024, 12:55 pm**
+
+**
+**breakdown of supported protocols for each VPN type in Azure:**
+
+**Point-to-Site (P2S):**
+
+- OpenVPN (SSL)
+- IKEv2
+- Secure Socket Tunneling Protocol (SSTP)
+
+**Site-to-Site (S2S):**
+
+- IPsec IKEv2
+- IPsec IKEv1
+**
+---
