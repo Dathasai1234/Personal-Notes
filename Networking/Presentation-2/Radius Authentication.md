@@ -14,7 +14,7 @@ tags:
 - A #RADIUS server to handle user authentication.
 	- The RADIUS server can be deployed on-premises, or in the Azure VNet.
 	- You can also configure two RADIUS servers for high availability.
-- The VPN client profile configuration package. The VPN client profile configuration package is a package that you generate. It provides the settings required for a VPN client to connect over P2S.
+- The VPN client profile configuration package is a package that you generate. It provides the settings required for a VPN client to connect over P2S.
 
 ---
 # Radius server configuration
