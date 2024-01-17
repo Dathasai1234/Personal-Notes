@@ -36,7 +36,7 @@ We can take an entire company worth of Ip addresses and translate them into one 
 # Things to Remember
 
 - NAT Gateway can be associated with multiple subnets
-- Subnets in a VNet can be associated with multiple subnets
+- NAT Gateway in a VNet can be associated with multiple subnets
 - A subnet cannot be associated with multiple NAT Gateways
 - Basic resources not supported for a NAT Gateway subnet
 - A NAT gateway can’t be used with IPv6 public IP addresses or prefixes.
@@ -58,10 +58,11 @@ We can take an entire company worth of Ip addresses and translate them into one 
 
 ---
 
-- ! NAT Gateway is not an outbound service. So NAT is associated to a single source subnet and destination side is not associated with NAT Gateway.
+- ! NAT Gateway is an outbound service. So NAT is associated to a single source subnet and destination side is not associated with NAT Gateway.
 
 %%
 ![[chat-gpt.png | 30]]
+%%
 # SNAT Ports
 
 - Each public IP address associated with a NAT gateway provides **64,512** SNAT ports
@@ -77,6 +78,7 @@ We can take an entire company worth of Ip addresses and translate them into one 
 
 - SNAT port exhaustion can occur if there are too many outbound connections for the available ports. However, with the large pool offered by NAT gateway, this is less likely compared to other Azure services like Azure Firewall.
 - If needed, you can scale the NAT gateway by adding more public IP addresses, further increasing the available SNAT ports.
+%%
 ![[chat-gpt.png | 30]]
 %%
 
@@ -86,6 +88,8 @@ We can take an entire company worth of Ip addresses and translate them into one 
 - ! **Different SNAT ports** are used to make connections to the **same destination endpoint** in order to distinguish different connection flows from one another.
 - SNAT ports being reused to connect to the same destination are placed on a [reuse cool down timer](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource#port-reuse-timers) before they can be reused.
 
+![[arc - SNAT port useage]]
+
 ---
 
 # Availability zones
@@ -93,7 +97,7 @@ We can take an entire company worth of Ip addresses and translate them into one 
 - A NAT gateway can be created in a specific availability zone or placed in **no zone**. When a NAT gateway is placed in no zone, Azure selects a zone for the NAT gateway to reside in.
 %%
 ![[chat-gpt.png | 30]]
-
+%%
 1. **Specific Availability Zone:**
     - If you choose a specific availability zone (e.g., Zone 1, Zone 2, or Zone 3), the NAT gateway is explicitly placed in that chosen zone.
     - Placing the NAT gateway in a specific zone ensures high availability within that zone, but it means that if that zone becomes unavailable, the NAT gateway won't be accessible.
@@ -110,6 +114,8 @@ We can take an entire company worth of Ip addresses and translate them into one 
     - Suppose you have a multi-tier application deployed across different availability zones for resilience. Placing the NAT gateway in no zone ensures that, in case of a failure in one zone, the NAT gateway seamlessly operates in another zone, preserving connectivity for the application.
 
 In summary, placing a NAT gateway in no zone allows Azure to automatically select an availability zone within the region for redundancy, enhancing high availability for your networking infrastructure. It is a suitable choice when you want Azure to manage the placement of the NAT gateway for optimal resilience across availability zones.
+
+%%
 ![[chat-gpt.png | 30]]
 %%
 
@@ -168,6 +174,7 @@ NAT gateway public IP address 65.52.1.1
 ---
 %%
 ![[bard.png | 30]]
+%%
 # TCP reset
 
 In the context of a NAT gateway, a TCP reset (RST) packet is a specific response sent by the gateway to abruptly terminate a TCP connection. This can happen for several reasons, and understanding them is crucial for troubleshooting connectivity issues in your network.
@@ -195,6 +202,7 @@ Here's a breakdown of TCP resets in NAT gateways:
 - **Monitor and investigate:** Review connection logs and network metrics to identify frequent reset occurrences and diagnose potential causes.
 
 By understanding the role and causes of TCP resets in NAT gateways, you can gain better control over your network connectivity and mitigate their disruptive effects.
+%%
 ![[bard.png | 30]]
 %%
 
