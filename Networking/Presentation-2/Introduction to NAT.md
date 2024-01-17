@@ -212,7 +212,7 @@ By understanding the role and causes of TCP resets in NAT gateways, you can gain
 - for TCP protocols - 4 minutes to 120 minutes
 - for UDP protocols - 4 minutes
 <br>
-- NAT gateway holes the SNAT port until the connection idle times out.
+- NAT gateway holds the SNAT port until the connection idle times out.
 - long idle timeouts will increase the likelihood of SNAT port exhaustion
 - Recommended to increase the TCP idle timeout duration to longer than the default time of 4 minutes.
 
