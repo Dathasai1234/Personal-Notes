@@ -4,6 +4,13 @@ date: 2024-01-16
 resources: https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable#activestandby
 tags:
 ---
+# Index
+
+- [[#Highly Available cross-premises|Highly Available cross-premises]]
+	- [[#Highly Available cross-premises#Multiple on-premises VPN devices|Multiple on-premises VPN devices]]
+	- [[#Highly Available cross-premises#Active-active VPN gateways|Active-active VPN gateways]]
+	- [[#Highly Available cross-premises#Dual-redundancy: active-active VPN gateways for both Azure and on-premises networks|Dual-redundancy: active-active VPN gateways for both Azure and on-premises networks]]
+
 # Highly Available cross-premises
 
 To provide better availability for your cross premises connections, there are a few options available:
