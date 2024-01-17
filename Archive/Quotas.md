@@ -18,6 +18,11 @@ tags:
 - We can have **500** subscriptions in a single tenant instance.
 
 ---
+# Virtual Network
+
+- **3000** subnets in a single Vnet.
+
+---
 # Resource Groups
 
 - We can have **250** resource groups in a Subscription.
@@ -33,3 +38,6 @@ tags:
 ## Storage accounts
 
 - Maximum of **250** storage accounts can be created in a single resource group.
+
+---
+
