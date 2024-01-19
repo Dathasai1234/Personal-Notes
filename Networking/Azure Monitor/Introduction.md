@@ -5,7 +5,7 @@ resources:
 tags:
 ---
 > [!note] 
-> ![[Archive/Azure_Public_Service_Icons/Icons/monitor/00001-icon-service-Monitor.svg | 150]]
+> ![[Archive/Azure_Public_Service_Icons/Icons/monitor/00001-icon-service-Monitor.svg | 50]]
 > 
 > Monitor is a comprehensive solution of monitoring, analyzing, and responding to the monitoring data collected from your cloud and on-premises.
 
