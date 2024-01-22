@@ -51,7 +51,7 @@ tags:
 [Azure Monitor Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-platform-metrics) stores numeric data from monitored resources into a time-series database.  The metric database is automatically created for each Azure subscription. Use Metrics Explorer to analyze data from Azure Monitor Metrics.
 ## Types of metrics
 
-- #Native_Metrics
+- #Native_Metrics ^e590fb
 	- *platform metrics* - metrics that are collected from Azure resources, have no cost and no configurations.
 	- *Custom metrics* - metrics collected from different sources that you configure including applications, and agents running on virtual machines.
 - #Prometheus_metrics - collected from Kubernetes clusters including Azure Kubernetes service (AKS) and use industry standard tools for analyzing and alerting such as #PromQL and #Grafana.
@@ -69,3 +69,18 @@ tags:
 |Alert|[metrics alert rule](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/tutorial-metric-alert)|[metrics alert rule](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/tutorial-metric-alert)|[Prometheus alert rule](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/prometheus-rule-groups)|
 |Visualize|[Workbooks](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-overview)  <br>[Azure dashboards](https://learn.microsoft.com/en-us/azure/azure-monitor/app/overview-dashboard#create-custom-kpi-dashboards-using-application-insights)  <br>[Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/grafana-plugin)|[Workbooks](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-overview)  <br>[Azure dashboards](https://learn.microsoft.com/en-us/azure/azure-monitor/app/overview-dashboard#create-custom-kpi-dashboards-using-application-insights)  <br>[Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/grafana-plugin)|[Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/overview)|
 |Retrieve|[Azure CLI](https://learn.microsoft.com/en-us/cli/azure/monitor/metrics)  <br>[Azure PowerShell cmdlets](https://learn.microsoft.com/en-us/powershell/module/az.monitor)  <br>[REST API](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/rest-api-walkthrough) or client library  <br>[.NET](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/Monitor.Query-readme)  <br>[Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/monitor/azquery)  <br>[Java](https://learn.microsoft.com/en-us/java/api/overview/azure/monitor-query-readme)  <br>[JavaScript](https://learn.microsoft.com/en-us/javascript/api/overview/azure/monitor-query-readme)  <br>[Python](https://learn.microsoft.com/en-us/python/api/overview/azure/monitor-query-readme)|[Azure CLI](https://learn.microsoft.com/en-us/cli/azure/monitor/metrics)  <br>[Azure PowerShell cmdlets](https://learn.microsoft.com/en-us/powershell/module/az.monitor)  <br>[REST API](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/rest-api-walkthrough) or client library  <br>[.NET](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/Monitor.Query-readme)  <br>[Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/monitor/azquery)  <br>[Java](https://learn.microsoft.com/en-us/java/api/overview/azure/monitor-query-readme)  <br>[JavaScript](https://learn.microsoft.com/en-us/javascript/api/overview/azure/monitor-query-readme)  <br>[Python](https://learn.microsoft.com/en-us/python/api/overview/azure/monitor-query-readme)|[Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/overview)|
+
+- #Activity_log
+	- sub level events that track operations for each Azure resource.  for example, creating a new resource or starting a virtual machine.z
+	- Activity log events are automatically generated and collected for viewing in the Azure portal.
+	- You can create a <u>diagnostic setting</u> to send the activity log to Azure Monitor Logs.
+- #platform_matrics
+	- Numerical values that are automatically collected at regular intervals and describe some aspect of a resource at a particular time. 
+	- Platform metrics are automatically generated and collected in Azure Monitor Metrics.
+- #resource_logs 
+	- Provide insight into operations that were performed by an Azure resource.
+	- Operation examples might be getting a secret from a key vault or making a request to a database.
+	- Resource logs are generated automatically, but you must create a diagnostic setting to send them to Azure Monitor Logs.
+- #Virtual_machine_guest_metrics_and_logs
+	- Performance and log data from the guest operating system of Azure virtual machines.
+	- You must install an agent on the virtual machine to collect this data and send it to Azure Monitor Metrics and Azure Monitor Logs.
