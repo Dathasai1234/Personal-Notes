@@ -4,14 +4,22 @@ date: 2023-12-29
 resources: 
 tags:
 ---
+# Index
+
+- [[#Connections you can create|Connections you can create]]
+- [[#Gateway SKUs|Gateway SKUs]]
+- [[#Availability Zones|Availability Zones]]
+- [[#Pricing|Pricing]]
+- [[#Pricing##Data-transfer-costs|#Data-transfer-costs]]
+
 **7:05:20**
 
-- Type of a virtual Network composed of 2 or more azure managed VMs which are automatically configured and deployed to a specific subnet called **GatewaySubnet**.
+- Type of a #virtual_Network composed of 2 or more azure managed VMs which are automatically configured and deployed to a specific subnet called #GatewaySubnet.
 - These VM’s contains *routing tables* and run specific gateway services.
 - You specify *gateway type* which determines how the Vnet gateway will be used and the actions that gateway takes.
 - A Vnet can have 2 Vnet gateways
-	- VPN gateway
-	- ExpressRoute gateway
+	- #VPN_gateway
+	- #ExpressRoute gateway
 - Both of them use different gateway type.
 - After you create VPN gateway, you can configure connections.
 
@@ -20,9 +28,9 @@ tags:
 
 ## Connections you can create
 
-- VPN tunnel connection between that VPN gateway and another VPN gateway (**VNet-to-VNet**).
-- Cross-premises *IPsec/IKE* VPN tunnel connection between the VPN gateway and an on-premises VPN device (**Site-to-Site**).
-- **Point-to-Site** VPN connection (VPN over *OpenVPN*, *IKEv2*, or *SSTP*), which lets you connect to your virtual network from a remote location, such as from a conference or from home.
+- VPN tunnel connection between that VPN gateway and another VPN gateway #VNet-to-VNet.
+- Cross-premises *IPsec/IKE* VPN tunnel connection between the VPN gateway and an on-premises VPN device #Site-to-Site.
+- #Point-to-Site VPN connection (VPN over #OpenVPN, #IKEv2, or #SSTP), which lets you connect to your virtual network from a remote location, such as from a conference or from home.
 
 - [Site-to-Site VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/design#s2smulti)
 - [Point-to-Site VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/design#P2S)
@@ -81,9 +89,9 @@ physically and logically separates gateways within a region, while protecting yo
 - The cost is for the gateway itself and is in addition to the data transfer that flows through the gateway
 - Cost for active-active setup is same as active-passive.
 
-## Data transfer costs
+## #Data-transfer-costs
 
-- Egress data transfer from the Vnet gateway.
+- #VPN_gateway/Egress data transfer from the Vnet gateway.
 - The cost is for the gateway itself and is in addition to the data transfer that flows through the gateway
 <br>
 - sending traffic **to your on-premises VPN device**, It will be charged with the internet egress data transfer rate.

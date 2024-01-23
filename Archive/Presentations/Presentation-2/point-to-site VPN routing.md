@@ -3,6 +3,7 @@ title: Presentation-2
 date: 2024-01-16
 resources: https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing
 tags:
+  - "#VPN-routing"
 ---
 # Index
 

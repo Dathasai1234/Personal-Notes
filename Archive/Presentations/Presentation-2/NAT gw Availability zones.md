@@ -40,7 +40,7 @@ tags:
 
 ## Single zonal NAT gateway resource for zone-spanning resources
 
-- A single zonal NAT gateway resource can be configured to either
+- A single #zonal-NAT gateway resource can be configured to either
 	- A subnet that contains virtual machines that span across multiple availability zones.
 	- or to multiple subnets with different zonal virtual machines.
 - If the zone that NAT gateway is deployed in goes down, then outbound connectivity across all virtual machine instances associated with the NAT gateway will also go down.

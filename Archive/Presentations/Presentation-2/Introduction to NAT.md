@@ -65,7 +65,7 @@ We can take an entire company worth of Ip addresses and translate them into one 
 %%
 # SNAT Ports
 
-- Each public IP address associated with a NAT gateway provides **64,512** SNAT ports
+- Each public IP address associated with a NAT gateway provides **64,512** #SNAT-ports
 - A single NAT gateway can scale up to 16 public IP address, offering a total of over **1 million** SNAT ports.
 
 **Allocation:**
@@ -76,7 +76,7 @@ We can take an entire company worth of Ip addresses and translate them into one 
 
 **Exhaustion and scaling:**
 
-- SNAT port exhaustion can occur if there are too many outbound connections for the available ports. However, with the large pool offered by NAT gateway, this is less likely compared to other Azure services like Azure Firewall.
+- SNAT #port-exhaustion can occur if there are too many outbound connections for the available ports. However, with the large pool offered by NAT gateway, this is less likely compared to other Azure services like Azure Firewall.
 - If needed, you can scale the NAT gateway by adding more public IP addresses, further increasing the available SNAT ports.
 %%
 ![[chat-gpt.png | 30]]
@@ -177,7 +177,7 @@ NAT gateway public IP address 65.52.1.1
 %%
 # TCP reset
 
-In the context of a NAT gateway, a TCP reset (RST) packet is a specific response sent by the gateway to abruptly terminate a TCP connection. This can happen for several reasons, and understanding them is crucial for troubleshooting connectivity issues in your network.
+In the context of a NAT gateway, a #TCP-reset (RST) packet is a specific response sent by the gateway to abruptly terminate a TCP connection. This can happen for several reasons, and understanding them is crucial for troubleshooting connectivity issues in your network.
 
 Here's a breakdown of TCP resets in NAT gateways:
 
@@ -218,21 +218,21 @@ By understanding the role and causes of TCP resets in NAT gateways, you can gain
 
 ## TCP keepalives
 
-- TCP keepalives can be used to provide a pattern of refreshing long idle connections and endpoint liveness detection
+- #TCP-keepalives can be used to provide a pattern of refreshing long idle connections and endpoint liveness detection
 - [source](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource#:~:text=TCP%20keepalives%20can%20be%20used%20to%20provide%20a%20pattern%20of%20refreshing%20long%20idle%20connections%20and%20endpoint%20liveness%20detection)
 
 ## UDP keepalive
 
-- UDP keepalives should be used to ensure that the idle timeout value isn't reached, and that the connection is maintained.
+- #UDP-keepalives should be used to ensure that the idle timeout value isn't reached, and that the connection is maintained.
 - Unlike TCP connections, a UDP keepalive enabled on one side of the connection only applies to traffic flow in **one direction**.
 - UDP keepalives must be **enabled on both sides** of the traffic flow in order to keep the traffic flow alive.
 
 ### Idle Timeout Timers
 
-|Timer|Description|Value|
+|#idle_timeout/Timer |Description|Value|
 |---|---|---|
-|TCP idle timeout|TCP connections can go idle when no data is transmitted between either endpoint for a prolonged period of time. A timer can be configured from 4 minutes (default) to 120 minutes (2 hours) to time out a connection that has gone idle. Traffic on the flow resets the idle timeout timer.|Configurable; 4 minutes (default) - 120 minutes|
-|UDP idle timeout|UDP connections can go idle when no data is transmitted between either endpoint for a prolonged period of time. UDP idle timeout timers are 4 minutes and are **not configurable**. Traffic on the flow resets the idle timeout timer.|**Not configurable**; 4 minutes|
+|#idle_timeout/TCP-idle-timeout |TCP connections can go idle when no data is transmitted between either endpoint for a prolonged period of time. A timer can be configured from 4 minutes (default) to 120 minutes (2 hours) to time out a connection that has gone idle. Traffic on the flow resets the idle timeout timer.|Configurable; 4 minutes (default) - 120 minutes|
+|#idle_timeout/UDP-idle-timeout |UDP connections can go idle when no data is transmitted between either endpoint for a prolonged period of time. UDP idle timeout timers are 4 minutes and are **not configurable**. Traffic on the flow resets the idle timeout timer.|**Not configurable**; 4 minutes|
 
 ---
 # Bandwidth

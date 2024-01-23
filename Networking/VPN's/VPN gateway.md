@@ -58,13 +58,15 @@ tags:
 
 # Example - 1 PowerShell console session still open
 
-- ! The Root certificate and Client certificate much be executed in the same powershell console session.
+- ! The #Root-Certificate and #Client-Certificate much be executed in the same powershell console session.
 - The root certificate is used exported to Azure VPN Gateway.
 - And the Client certificate is used in the client server.
 
 ## Self Signed root certificate
 
-- powershell script
+#Self-Signed-root-certificate
+
+- #root-certificate/powershell-script
 ```powershell
 $params = @{
     Type = 'Custom'
@@ -89,7 +91,7 @@ $cert = New-SelfSignedCertificate @params
 ---
 ## Generate a Client Certificate
 
-- powershell script
+- #client-certificate/powershell-script
 ```powershell
 $params = @{
        Type = 'Custom'

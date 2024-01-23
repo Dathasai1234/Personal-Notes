@@ -5,6 +5,19 @@ resources: https://learn.microsoft.com/en-us/azure/vpn-gateway/ikev2-openvpn-fro
 resource_2: https://rublon.com/blog/sstp-openvpn-difference/#:~:text=The%20main%20difference,SSTP%20vs.%20OpenVPN.
 tags:
 ---
+# Index
+
+- [[#LLTP vs PPTP vs SSTP]]
+- [[#SSTP vs OpenVpn|SSTP vs OpenVpn]]
+	- [[#SSTP vs OpenVpn#Advantages of OpenVPN over SSTP|Advantages of OpenVPN over SSTP]]
+	- [[#SSTP vs OpenVpn#Advantages of SSTP over OpenVPN|Advantages of SSTP over OpenVPN]]
+	- [[#SSTP vs OpenVpn#Conclusion of SSTP vs. OpenVPN: Which One Should You Use?|Conclusion of SSTP vs. OpenVPN: Which One Should You Use?]]
+- [[#IKEv2|IKEv2]]
+	- [[#IKEv2#Conclusion of IKEv2 vs. OpenVPN|Conclusion of IKEv2 vs. OpenVPN]]
+- [[#Migrating from SSTP to IKEv2 or OpenVPN|Migrating from SSTP to IKEv2 or OpenVPN]]
+	- [[#Migrating from SSTP to IKEv2 or OpenVPN#Option - 1|Option - 1]]
+- [[#Option - 2|Option - 2]]
+
 **4:05:12**
 
 - **OpenVPN® Protocol**, an SSL/TLS based VPN protocol. An SSL VPN solution can penetrate firewalls, since most firewalls open TCP port 443 outbound, which SSL uses. OpenVPN can be used to connect from Android, iOS (versions 11.0 and above), Windows, Linux and Mac devices (macOS versions 10.13 and above).
@@ -15,9 +28,13 @@ tags:
 
 
 > [!note] 
->  IKEv2 and OpenVPN for P2S are available for the [Resource Manager deployment model](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/deployment-models) only. They are not available for the classic deployment model. The Basic gateway SKU does not support IKEv2 or OpenVPN protocols. If you are using the Basic SKU, you will have to delete and recreate a production SKU virtual network gateway.
+> IKEv2 and OpenVPN for P2S are available for the [Resource Manager deployment model](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/deployment-models) only. They are not available for the classic deployment model. The Basic gateway SKU does not support IKEv2 or OpenVPN protocols. If you are using the Basic SKU, you will have to delete and recreate a production SKU virtual network gateway.
 
 # LLTP vs PPTP vs SSTP
+
+#LLTP
+#PPTP
+#SSTP
 
 **05-01-2024**
 **3:13:16**
@@ -27,10 +44,10 @@ tags:
 SSTP provides better security comparative to PPTP L2TP.
 
 ---
-# SSTP vs OpenVpn
+# #SSTP vs #OpenVpn
 
 The main difference between SSTP and OpenVPN is that 
-- SSTP is less secure than OpenVPN. This is because SSTP uses the deprecated SSL 3.0 protocol which is vulnerable to the POODLE bug. 
+- #SSTP is less secure than #OpenVPN. This is because SSTP uses the deprecated SSL 3.0 protocol which is vulnerable to the POODLE bug. 
 - On the other hand, OpenVPN uses the TLS protocol which is generally more secure and is not affected by POODLE. 
 - Another difference between SSTP and OpenVPN is that SSTP primarily works on Windows and might be hard to configure on other operating systems, 
 - Whereas OpenVPN works on every platform. Read on to learn more about the differences between SSTP vs. OpenVPN.
@@ -69,11 +86,11 @@ The main difference between SSTP and OpenVPN is that
 SSTP is a fast and stable VPN protocol that works well on Windows devices, but it has some security drawbacks due to its use of SSL 3.0. In contrast, OpenVPN is a more secure and versatile VPN protocol that works on every platform and offers more configuration options. Use OpenVPN if you can.
 
 ---
-# IKEv2
+# #IKEv2
 
 [source]([IKEv2 vs. OpenVPN: What’s the Difference? - Rublon](https://rublon.com/blog/ikev2-openvpn-difference/#:~:text=The%20main%20difference%20between%20IKEv2,more%20flexibility%20and%20security%20options.))
 
-## Conclusion of IKEv2 vs. OpenVPN
+## Conclusion of IKEv2 vs OpenVPN
 
 IKEv2 and OpenVPN are two secure protocols used to establish and authenticate communication between a VPN client and a VPN server. Generally, IKEv2 is faster than OpenVPN. Further, IKEv2 has the ability to re-establish a connection after a loss of signal and handle changes in the network very well thanks to the MOBIKE protocol. On the other hand, OpenVPN can use both UDP and TCP as transport layer protocols. It is open-source, secure, reliable, and cost-efficient. 
 
@@ -104,7 +121,9 @@ Summing up, if you need a secure and versatile protocol, OpenVPN is a good choic
 
 **Tuesday, 16-01-2024, 12:55 pm**
 
-**
+%%
+![[bard.png | 30]]
+%%
 **breakdown of supported protocols for each VPN type in Azure:**
 
 **Point-to-Site (P2S):**
@@ -117,5 +136,8 @@ Summing up, if you need a secure and versatile protocol, OpenVPN is a good choic
 
 - IPsec IKEv2
 - IPsec IKEv1
-**
+%%
+![[bard.png | 30]]
+%%
+
 ---

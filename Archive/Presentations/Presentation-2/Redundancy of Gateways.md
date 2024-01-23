@@ -13,11 +13,10 @@ tags:
 
 # Highly Available cross-premises
 
-To provide better availability for your cross premises connections, there are a few options available:
-
-- Multiple on-premises VPN devices
-- Active-active Azure VPN gateway
-- Combination of both
+- To provide better availability for your #VPN_gateway/cross-premises-connections, there are a few options available:
+	- Multiple on-premises VPN devices
+	- Active-active Azure VPN gateway
+	- Combination of both
 
 ---
 ## Multiple on-premises VPN devices
