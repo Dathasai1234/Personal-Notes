@@ -13,7 +13,7 @@ tags:
 
 **11:20**
 
-- zonal resource
+- #zonal-resource
 - can be deployed and operate out of individual availability zones.
 <br>
 - Two options to deploy
@@ -40,7 +40,7 @@ tags:
 
 ## Single zonal NAT gateway resource for zone-spanning resources
 
-- A single #zonal-NAT gateway resource can be configured to either
+- A single #zonal-NAT-gateway resource can be configured to either
 	- A subnet that contains virtual machines that span across multiple availability zones.
 	- or to multiple subnets with different zonal virtual machines.
 - If the zone that NAT gateway is deployed in goes down, then outbound connectivity across all virtual machine instances associated with the NAT gateway will also go down.
@@ -53,8 +53,8 @@ _Figure: Single zonal NAT gateway resource for multi-zone spanning resources doe
 ## Zonal NAT gateway resource for each zone in a region to create zone-resiliency
 
  - when a virtual machine instance using a NAT gateway resource is in the same zone as the NAT gateway resource and its public IP addresses.
- - The pattern you want to use for zone isolation is creating a *"zonal stack"* per availability zone.
- - This #zonal_stack consists of virtual machine instances, a NAT gateway resource with public IP addresses or prefix on a subnet all in the same zone.
+ - The pattern you want to use for zone isolation is creating a #NAT/zonal-stack per availability zone.
+ - This #NAT/zonal_stack consists of virtual machine instances, a NAT gateway resource with public IP addresses or prefix on a subnet all in the same zone.
 
 ![[Pasted image 20240109125012.png | 300]]
 

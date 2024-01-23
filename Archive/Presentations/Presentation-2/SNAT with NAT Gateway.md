@@ -42,6 +42,8 @@ tags:
 
 ## NAT gateway SNAT port selection and reuse
 
+#SNAT-ports/reuse
+
 - NAT gateway selects a SNAT port at random out of the available inventory of ports to make new outbound connections.
 - If NAT gateway doesn't find any available SNAT ports, then it reuses a SNAT port.
 - The same SNAT port can be used to connect to multiple different destinations at the same time.
@@ -52,5 +54,4 @@ tags:
 - This process is helpful when destination endpoints have firewalls or other services configured that place a cool down timer on source ports.
 
 ---
-# Design virtual networks with Azure NAT Gateway
 
