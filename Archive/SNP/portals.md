@@ -7,10 +7,10 @@ tags:
 ---
 
 
-| name                                                                                  | portal                                                                                                                         |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| name | portal |
+| ---- | ---- |
 | Payslips, Reimbursements, Tax Calculations and other compensation-related information | https://snpcloudtechnologies.greythr.com/v3/portal/ess/payroll/payslips/payslip |
-| attendance                                                                            | [snpcosec.matrixvyom.com](https://snpcosec.matrixvyom.com/)                                                                    |
-| videos                                                                                | https://we.tl/t-vOtq48OVJK                                                                                                     | 
+| attendance | [snpcosec.matrixvyom.com](https://snpcosec.matrixvyom.com/) |
+| backgound verification | [OnGrid - Best Background Verification Company for Employees, Contractors & Partners](https://ongrid.in/) |
 
-![[Pasted image 20240118165738.png]]
+![[Pasted image 20240118165738.png | 300]]
