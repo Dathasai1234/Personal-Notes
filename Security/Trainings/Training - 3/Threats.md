@@ -14,7 +14,7 @@ tags:
 
 # What is a network security threat?
 
-protects the boundary between internal and external networks, keeping sensitive information vital and safe from unauthorized users. 
+protects the boundary between internal and external networks, keeping sensitive information vital and safe from unauthorized users.
 
 ## Types of network threats
 
