@@ -74,3 +74,5 @@ tags:
 - Defender highlights the security recommendations that need to be resolved in order to mitigate it.
 
 <img src = "https://learn.microsoft.com/en-us/azure/defender-for-cloud/media/how-to-manage-attack-path/attack-path-blade.png">
+
+---
