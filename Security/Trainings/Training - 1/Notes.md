@@ -29,6 +29,8 @@ WAF
 ---
 # Conditional Access Policies
 
+^4836f0
+
 - Restrict the access for those devices with no anti virus software and other specific security configurations.
 - Limit the access and require MFA for guest access and collaborators.
 - Can use `legacyAuthAllowed` for the legacy applications that organizations want to use and can only access resources using basic authentication and absolutely cannot be updated or migrated.

@@ -66,4 +66,11 @@ tags:
 - **security incident**
 	- **A security incident** is a collection of related alerts.
 	- Incidents provide you with a single view of an attack and its related alerts, so that you can quickly understand the actions an attacker took, and the affected resources
-	- 
+
+---
+## Attack Path Analysis
+
+- Attack path analysis helps you to address the security issues that pose immediate threats with the greatest potential of being exploited in your environment.
+- Defender highlights the security recommendations that need to be resolved in order to mitigate it.
+
+<img src = "https://learn.microsoft.com/en-us/azure/defender-for-cloud/media/how-to-manage-attack-path/attack-path-blade.png">

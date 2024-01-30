@@ -5,13 +5,14 @@ resources:
 tags:
   - Compute
 ---
+
 Containers orchestrated by Kubernetes
 Typically Stateless or Externalised State
 Multiple pods running across Virtual Machines
 Master Control Plane is public
 Workload endpoints are private by default unless exposed by Load Balancer or Proxy
 Worker nodes are Single Tenant, Control Plane managed by Microsoft
-Kubernetes can be deployed on other platforms, AKS is a native service
+Kubernetes can be deployed on other platforms, Ask is a native service
 Node autoscale functionality is in preview (currently!), can scale pods
 Deployed into a virtual network
 Worker nodes using Availability Sets — 99.95% SLA

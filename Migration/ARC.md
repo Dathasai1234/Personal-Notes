@@ -8,6 +8,7 @@ tags:
   - ARC
   - ARC-Machine
 ---
+
 # Index
 
 - [[#Icons|Icons]]
@@ -64,6 +65,6 @@ tags:
 
 - The policies and defender can work on that EC2 instance.
 
-## EC2 in defenders inventory
+## EC2 in Defenders Inventory
 
 ![[Pasted image 20240130164015.png]]
