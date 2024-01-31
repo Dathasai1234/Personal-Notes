@@ -144,7 +144,7 @@ Following features:
 - Detailed visibility into the security state of your assets and workloads
 - Hardening guidance to help you efficiently and effectively improve your Security posture
 
-## CSPM Plans
+# CSPM Plans
 
 ![[Pasted image 20240131124030.png | 400]]
 
@@ -299,3 +299,135 @@ If you don't want to use Sentinel as a *Security information and event managemen
 ---
 ### Remediations
 
+Can be done manually and have another option which azure take cares to remediate the recomm, (when you click on Quick fix).
+
+- Security recommendations should be remediated frequently
+- Defender for Cloud always explains how to do this in general
+- There is also a quick fix option available. Be careful if:
+	- You manage resources with laC (you will introduce so-called *drift*)
+	- You don't know the workload as you can heavily impact it by applying a fix Automatically
+
+There will be a period called Freshness period which will tale 30 minutes to remove the recommendation after you click on *quick fix*
+
+---
+### Microsoft Cloud Security Benchmark
+
+	Cloud Security > regulatory compliance
+
+Renamed from
+Azure Security Benchmark
+⬇️
+Microsoft Cloud Security Benchmark.
+
+- Benchmark provides best practices and recommendations for your resources
+- Control Domains
+	- Network Security
+	- Identity Management
+	- Privileged Access
+	- Data Protection
+	- Asset Management
+	- Logging and Threat Detection
+	- Incident Response
+	- Posture and Vulnerability Management
+	- Endpoint Security
+	- Backup and recovery
+	- DevOps Security
+	- Governance and Strategy
+
+Lot of them are invented by Microsoft but. It also had a look at the most prominent industry benchmarks, like 
+
+- CIS benchmarks
+- NIST
+- PCI
+- DSS
+- AWS well-Architected framework
+
+Microsoft took and grouped under an umbrella, which is now called Microsoft Cloud Security Benchmark.
+
+You can leverage the benchmark to identify recomm in defender for cloud and then also to address them accordingly.
+
+- ! These domains have all the controls and these controls have sub-controls
+![[Pasted image 20240131152745.png | 1000]]
+
+---
+## Defender CSPM (paid version)
+
+### Governance Rules
+
+	> Environment settings > Governance rules
+
+- You can define rules that *assign an owner* and *add a due date* for Remediating a recommendation
+- Governance rules drive accountability and you are providing an SLA as you are adding a due date for a recommendation to be remediated.
+
+- You don't have to assign a stuff to an owner and add due dates individually for every recommendation.
+- Using this feature, you will save your time and efficiency and secondly, reduce the errors because you define this automation once and then you can be sure that it is working correctly in the background all the time.
+
+![[Pasted image 20240131155257.png | 1000]]
+
+We can have multiple Governance rules with same conditions. So priority comes into play to choose which Governance rules to play around.
+
+---
+### Regulatory Compliance Standards
+
+- Defender for Cloud assesses your resources against popular frameworks and regulatory standards, e.g.:
+	- ISO 27001
+	- NIST 800-53R4
+	- PCl DSS v4
+	- SOC 2 Type 2
+	- CIS Microsoft Azure Foundations Benchmark
+
+It accesses your compliance and security posture based on the controls of certain frameworks.
+
+- Features
+	- Manage compliance policies
+	- Check compliance offerings
+	- Audio reports of all Microsoft audits
+	- Download reports of your compliance based on the selected compliance framework as PFD and CVE
+
+---
+### Cloud Security Explorer
+
+- Cloud security Explorer is a very nice feature but not as capable as KQL.
+- Cloud security explorer allows you to query resources and logs Without the need for writing KQL queries
+- You can query all resources connected to Defender for Cloud.
+- KQL still has more capabilities but the barrier to use cloud security Explorer is way lower
+- You can also find Query templates to use.
+
+---
+### Attack Path Analysis
+
+- Visualizes exploitable attack paths in your environment, e.g.:
+	- VM containing critical vulnerabilities is exposed to the internet
+	- VM containing critical vulnerabilities is exposed to the internet with read Permissions to a key vault
+	- Azure Blob storage with sensitive data is publicly accessible
+
+- This one actually visualizes certain exploitable attack paths.
+
+---
+### Agentless Scanning for VMs
+
+- Requires Defender CSPM or Defender for Servers Plan 2.
+- Available for Azure, AWS, and GCP.
+- Zero Performance Impact.
+
+![[Pasted image 20240131165319.png]]
+
+- So the vulnerability scanning is done by an agent in a Virtual machine.
+- Based on the CVE id, the captured vulnerability is sent to the defender for cloud.
+
+- *agentless scanning* is a kind of scanning which is done on a snapshot of a disk, taken to a so-called *Isolated Scanning Environment* and scanned there.
+- The scanning is not done on the actual work load which does not effect the performance of the VM.
+- The Vulnerability engine scans the snapshot of the disk and results of the scan are fetched out and sent to the Defender for cloud.
+
+---
+### Agentless Discovery for Kubernetes
+
+- API-based discovery of your Kubernetes clusters, their Configurations, and deployments
+- Allows you to get an idea of your Kubernetes cluster configuration and its security posture.
+
+---
+### Container Registry Vulnerability Assessment
+
+- Container Vulnerability Assessment is powered by MDVM (Microsoft Defender Vulnerability Management)
+- Scans the Azure Container Registry (ACR) and identifies vulnerabilities
+- Also included in Defender for Containers
