@@ -329,7 +329,7 @@ Microsoft took and grouped under an umbrella, which is now called Microsoft Clou
 You can leverage the benchmark to identify recomm in defender for cloud and then also to address them accordingly.
 
 - ! These domains have all the controls and these controls have sub-controls
-![[Pasted image 20240131152745.png | 1000]]
+![[Pasted image 20240131152745.png]]
 
 ---
 ## Defender CSPM (paid version)
@@ -344,7 +344,7 @@ You can leverage the benchmark to identify recomm in defender for cloud and then
 - You don't have to assign a stuff to an owner and add due dates individually for every recommendation.
 - Using this feature, you will save your time and efficiency and secondly, reduce the errors because you define this automation once and then you can be sure that it is working correctly in the background all the time.
 
-![[Pasted image 20240131155257.png | 1000]]
+![[Pasted image 20240131155257.png]]
 
 We can have multiple Governance rules with same conditions. So priority comes into play to choose which Governance rules to play around.
 
