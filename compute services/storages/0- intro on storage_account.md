@@ -5,7 +5,8 @@ resources:
 tags:
   - storages
 ---
-# Table of contents
+
+# Table of Contents
 
 - [[#Creating a storage account|Creating a storage account]]
 - [[#Access Level|Access Level]]
@@ -33,7 +34,7 @@ tags:
 	- Tables
 
 > Storage accounts are the management service that serves five different azure storage services.
-# Creating a storage account
+# Creating a Storage account
 
 - Basic tab
 	- Instance details
@@ -65,7 +66,7 @@ Depends on multiple factors
 - Data redundancy option selected.
 
 ---
-# Access tires
+# Access Tires
 
 - Hot
 	- accessed more frequently
@@ -102,16 +103,16 @@ Depends on multiple factors
 - changing tier at blob level will give an additional tier called archive tier.
 - ! Setting the access tier to “Archive” will make your blob inaccessible until it is rehydrated back to “Hot” or “Cool”, which may take several hours.
 
-## Access tires for **premium block blobs storage**
+## Access Tires for **premium Block Blobs storage**
 
 > [!important]
 > Data stored in a premium block blob storage account cannot be tiered to hot, cool, cold or archive.
 > - [source](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview#:~:text=Data%20stored%20in%20a%20premium%20block%20blob%20storage%20account%20cannot%20be%20tiered%20to%20hot%2C%20cool%2C%20cold%20or%20archive%20by%20using%20Set%20Blob%20Tier%20or%20using%20Azure%20Blob%20Storage%20lifecycle%20management.)
 
 ---
-# Life cycle management rules
+# Life Cycle Management Rules
 
-## for general storage account
+## For General Storage account
 
 ![[Pasted image 20231127192103.png | 500]]
 
@@ -119,7 +120,7 @@ Depends on multiple factors
 > - The general storage account allows to change tire of the blobs between hot, cool and archive.
 > - So the lifecycle management shows all the changing options depending on the conditions
 
-## for premium Storage account
+## For Premium Storage account
 
 ![[Pasted image 20231127192019.png | 500]]
 
@@ -141,9 +142,9 @@ Depends on multiple factors
 
 ---
 
-# Premium performance
+# Premium Performance
 
-## premium account type
+## Premium account Type
 
 1. Block blobs
 2. File share
@@ -163,7 +164,7 @@ Depends on multiple factors
 - SMB Azure file shares are accessible from Windows, Linux, and macOS clients.
 - NFS Azure file shares are accessible from Linux clients
 
-## Azure files deployment
+## Azure Files Deployment
 
 2 ways
 
@@ -171,7 +172,7 @@ Depends on multiple factors
 2. Caching Azure file shares on-premises using Azure **File sync**
 
 ---
-# Blob rehydration from Archive tire
+# Blob Rehydration from Archive Tire
 
 [source](https://learn.microsoft.com/en-us/azure/storage/blobs/archive-rehydrate-overview#:~:text=While%20a%20blob,online%20tier.)
 

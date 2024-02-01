@@ -76,3 +76,8 @@ tags:
 <img src = "https://learn.microsoft.com/en-us/azure/defender-for-cloud/media/how-to-manage-attack-path/attack-path-blade.png">
 
 ---
+![[Pasted image 20240131203148.png]]
+
+![[Pasted image 20240131203151.png]]
+
+![[Pasted image 20240131203401.png]]
