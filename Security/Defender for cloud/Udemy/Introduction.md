@@ -198,7 +198,7 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 	- Severity of recommendations (High, medium, low)
 	- Resource health (Unhealthy, Healthy, Not applicable)
 		- Unhealthy : A resource with an active recommendation
-			- Healthy : A resource with no active recommendation
+		- Healthy : A resource with no active recommendation
 	- Status of the recommendation (completed or not)
 	- Overdue recommendations
 	- Recommendations drilling down for you resources using filters
