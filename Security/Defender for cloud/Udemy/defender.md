@@ -73,8 +73,6 @@ tags:
 - Attack path analysis helps you to address the security issues that pose immediate threats with the greatest potential of being exploited in your environment.
 - Defender highlights the security recommendations that need to be resolved in order to mitigate it.
 
-<img src = "https://learn.microsoft.com/en-us/azure/defender-for-cloud/media/how-to-manage-attack-path/attack-path-blade.png">
-
 ---
 ![[Pasted image 20240131203148.png]]
 

@@ -119,7 +119,7 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 	- Memory used
 	- Free quota per month
 
-## Premium plan
+## Premium Plan
 
 |Meter|Pay as you go|1 year savings plan|3 year savings plan|
 |---|---|---|---|
@@ -150,14 +150,14 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 ```
 - ! Every premium plan has at least one active (billed) instance at all times.
 
-### Create a premium plan
+### Create a Premium Plan
 
 - When you create a function app in the Azure portal, the Consumption plan is the default.
 - ! To create a function app that runs in a Premium plan, you must explicitly create or choose an Azure Functions Premium hosting plan using one of the _Elastic Premium_ SKUs.
 - The Azure portal makes it easy to create both the Premium plan and the function app at the same time.
 - You can run more than one function app in the same Premium plan, but they must both run on the same operating system (Windows or Linux).
 
-### Eliminate cold starts
+### Eliminate Cold Starts
 
 Premium plan :
 - Always ready instance
@@ -180,7 +180,7 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 ![Scale out graph](https://learn.microsoft.com/en-us/azure/azure-functions/media/functions-premium-plan/scale-graph.png)
 
 ---
-# Supported languages
+# Supported Languages
 
 | Language | Runtime stack | Linux | Windows | In-portal editing |
 | ---- | ---- | ---- | ---- | ---- |
