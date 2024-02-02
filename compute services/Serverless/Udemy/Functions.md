@@ -206,7 +206,9 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 - You will also select an operating system in which your function app will run.
 - You may monitor your functions using *Application Insights*, which is a powerful logging and telemetry platform, which can give you a lot of operational insights of how your functions are performing in production.
 
-## Creating a Function
+## Creating a Function using HTTP Trigger
+
+![[Pasted image 20240202224609.png | 500]]
 
 - Authorization level for a function while creating
 	- Function : a key to invoke this function
@@ -225,15 +227,54 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 #### Url for the Function with the KEY
 ![[Pasted image 20240202155725.png]]
 
+```javascript
+module.exports = async function (context, req) {
+    context.log('JavaScript HTTP trigger function processed a request.');
+
+    const name = (req.query.name || (req.body && req.body.name));
+    const responseMessage = name
+        ? "Hello, " + name + ". This HTTP triggered function executed successfully."
+        : "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
+
+    context.res = {
+        // status: 200, /* Defaults to 200 */
+        body: responseMessage
+    };
+}
+```
+
 ##### How to Get the KEY for Accessing the Url
 ![[Pasted image 20240202155940.png]]
 
 Url - https://datha-app.azurewebsites.net/api/HttpTrigger1?name=Datha&code=Iw5ib3VH0DxAwD23Aev9b8EC4hf6_G2Ogf7fA7nzoz94AzFuPCY78w==
 
-![[Pasted image 20240202155416.png]]
+![[Pasted image 20240202155416.png | 400]]
 
-Add *name=datha&[key]*
+Add *name=datha&code=[key]*
 ![[Pasted image 20240202155419.png]]
 
+---
+# Authorization levels
+
+## Anonymous
+
+- No key required
+- Function can be called by anyone on the internet
+
+## Function
+
+- Function or host key required
+- Function key - specific function
+- Host key - all functions within function app
+
+## Admin
+
+- Master key required
+- Provides admin level privileges
+- Do not share with others ot=r use in client applications
 
 ---
+# Function Invocation History
+
+- To view the invocation history, you need to enable application insights while creating the function app.
+- You can go to monitoring session and enable to view all the invocation history of that function.
