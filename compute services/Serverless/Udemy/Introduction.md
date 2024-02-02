@@ -159,3 +159,39 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 
 ### Eliminate cold starts
 
+Premium plan :
+- Always ready instance
+- Prewarmed instances
+
+```cardlink
+url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan?tabs=portal#:~:text=Always%20ready%20instances%20are%20a%20category%20of%20preallocated%20instances%20unaffected%20by%20scaling%2C%20and%20the%20prewarmed%20ones%20are%20a%20buffer%20as%20you%20scale%20due%20to%20HTTP%20events.
+title: "Azure Functions Premium plan"
+description: "Details and configuration options (virtual network, no cold start, unlimited execution duration) for the Azure Functions Premium plan."
+host: learn.microsoft.com
+image: https://learn.microsoft.com/en-us/media/open-graph-image.png
+```
+
+- When events trigger the app, they're first routed to the always ready instances.
+- As the function becomes active due to HTTP events, other instances are warmed as a buffer.
+- These buffered instances are called prewarmed instances. This buffer reduces cold start for new instances required during scale.
+- ! A premium function app has two always ready instances configured, and the default of one prewarmed instance.
+- You cannot change the number of pre-warmed instances using the portal, but using CLI and powershell, you can.
+
+![Scale out graph](https://learn.microsoft.com/en-us/azure/azure-functions/media/functions-premium-plan/scale-graph.png)
+
+---
+# Supported languages
+
+| Language | Runtime stack | Linux | Windows | In-portal editing |
+| ---- | ---- | ---- | ---- | ---- |
+| C# (isolated worker Model) | .NET | ✓ | ✓ |  |
+| C# (in-process model) | .NET | ✓ | ✓ |  |
+| C# script | .NET | ✓ | ✓ | ✓ |
+| JavaScript | Node.js | ✓ | ✓ | ✓ |
+| Python | Python | ✓ |  | ✓ |
+| Java | Java | ✓ | ✓ |  |
+| PowerShell | PowerShell Core | ✓ | ✓ | ✓ |
+| TypeScript | Node.js | ✓ | ✓ |  |
+| Go/Rust/other | Custom Handlers | ✓ | ✓ |  |
+
+---
