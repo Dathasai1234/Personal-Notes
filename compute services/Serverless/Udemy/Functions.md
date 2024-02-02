@@ -195,3 +195,45 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 | Go/Rust/other | Custom Handlers | ✓ | ✓ |  |
 
 ---
+# Creating a Function App
+
+- A function app can be used to combine multiple functions.
+- The name of the function app must be globally unique as it is used for the url.
+- A runtime stack should be selected.
+- All the functions in that function app will only support the selected runtime stack.
+- Azure uses the storage account to hold all your function app code files.
+- In the hosting session, you will choose a storage account.
+- You will also select an operating system in which your function app will run.
+- You may monitor your functions using *Application Insights*, which is a powerful logging and telemetry platform, which can give you a lot of operational insights of how your functions are performing in production.
+
+## Creating a Function
+
+- Authorization level for a function while creating
+	- Function : a key to invoke this function
+	- Anonymous : anyone can invoke the function on the internet
+	- Admin : master key to access all the functions
+
+### Code and Test in Portal
+![[Pasted image 20240202155550.png]]
+
+### Integration
+![[Pasted image 20240202155559.png]]
+
+---
+### Running the Code
+
+#### Url for the Function with the KEY
+![[Pasted image 20240202155725.png]]
+
+##### How to Get the KEY for Accessing the Url
+![[Pasted image 20240202155940.png]]
+
+Url - https://datha-app.azurewebsites.net/api/HttpTrigger1?name=Datha&code=Iw5ib3VH0DxAwD23Aev9b8EC4hf6_G2Ogf7fA7nzoz94AzFuPCY78w==
+
+![[Pasted image 20240202155416.png]]
+
+Add *name=datha&[key]*
+![[Pasted image 20240202155419.png]]
+
+
+---
