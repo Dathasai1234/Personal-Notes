@@ -278,3 +278,101 @@ Add *name=datha&code=[key]*
 
 - To view the invocation history, you need to enable application insights while creating the function app.
 - You can go to monitoring session and enable to view all the invocation history of that function.
+
+---
+# Functions app in VScode
+
+- Http trigger using javascript in vscode
+
+```cardlink
+url: https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-node?pivots=nodejs-model-v4
+title: "Create a JavaScript function using Visual Studio Code - Azure Functions"
+description: "Learn how to create a JavaScript function, then publish the local Node.js project to serverless hosting in Azure Functions using the Azure Functions extension in Visual Studio Code."
+host: learn.microsoft.com
+image: https://learn.microsoft.com/en-us/media/open-graph-image.png
+```
+
+- File structure in vscode
+
+```cardlink
+url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node?tabs=javascript%2Cwindows%2Cazure-cli&pivots=nodejs-model-v4
+title: "Node.js developer reference for Azure Functions"
+description: "Understand how to develop functions by using Node.js."
+host: learn.microsoft.com
+image: https://learn.microsoft.com/en-us/media/open-graph-image.png
+```
+
+```powershell
+<project_root>/
+ | - .vscode/
+ | - node_modules/
+ | - src/
+ | | - functions/
+ | | | - myFirstFunction.js
+ | | | - mySecondFunction.js
+ | - test/
+ | | - functions/
+ | | | - myFirstFunction.test.js
+ | | | - mySecondFunction.test.js
+ | - .funcignore
+ | - host.json
+ | - local.settings.json
+ | - package.json
+```
+
+- In order to register a function, you must import the `app` object from the `@azure/functions` npm module and call the method specific to your trigger type.
+
+```js
+const { app } = require('@azure/functions');
+```
+
+- The first argument when registering a function is the function name.
+
+```js
+app.http('httpExample');
+```
+
+- The second argument is an `options` *object* specifying configuration for your trigger, your handler, and any other inputs or outputs.
+
+```js
+app.http('httpExample', {
+    methods: ['GET', 'POST'],
+    authLevel: 'anonymous',
+    handler: async (request, context) => {
+        context.log(`Http function processed request for url "${request.url}"`);
+
+        const name = request.query.get('name') || await request.text() || 'world';
+
+        return { body: `Hello, ${name}!` };
+    }
+});
+```
+
+- Registering a function can be done from any file in your project, as long as that file is loaded (directly or indirectly) based on the `main` field in your `package.json` file.
+- If you use the alternative Node.js `console.log` method, those logs are tracked at the app-level and will _not_ be associated with any specific function. It is _highly recommended_ to use `context` for logging instead of `console` so that all logs are associated with a specific function.
+- **Invocation context** : Each invocation of your function is passed an invocation `context` object, with information about your invocation and methods used for logging. In the v4 model, the `context` object is typically the second argument passed to your handler.
+- Refer for objects w.r.t context
+
+```cardlink
+url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node?tabs=javascript%2Cwindows%2Cazure-cli&pivots=nodejs-model-v4#:~:text=Property,defaults%20explicitly%20specified.
+title: "Node.js developer reference for Azure Functions"
+description: "Understand how to develop functions by using Node.js."
+host: learn.microsoft.com
+image: https://learn.microsoft.com/en-us/media/open-graph-image.png
+```
+
+- **HTTP triggers**: HTTP and webhook triggers use `HttpRequest` and `HttpResponse` objects to represent HTTP messages.
+	- **HTTP Request**: The request can be accessed as the first argument to your *handler* for an HTTP triggered function.
+```js
+async (request, context) => {
+    context.log(`Http function processed request for url "${request.url}"`);
+```
+- The `HttpRequest` object has the following properties:
+```cardlink
+url: https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node?tabs=javascript%2Cwindows%2Cazure-cli&pivots=nodejs-model-v4#:~:text=The%20HttpRequest%20object,Expand%20table
+title: "Node.js developer reference for Azure Functions"
+description: "Understand how to develop functions by using Node.js."
+host: learn.microsoft.com
+image: https://learn.microsoft.com/en-us/media/open-graph-image.png
+```
+
