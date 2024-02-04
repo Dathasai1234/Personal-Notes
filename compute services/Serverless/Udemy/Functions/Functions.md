@@ -206,7 +206,7 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 - You will also select an operating system in which your function app will run.
 - You may monitor your functions using *Application Insights*, which is a powerful logging and telemetry platform, which can give you a lot of operational insights of how your functions are performing in production.
 
-## Creating a Function using HTTP Trigger
+## Creating a Function Using HTTP Trigger
 
 ![[Pasted image 20240202224609.png | 500]]
 
@@ -254,7 +254,7 @@ Add *name=datha&code=[key]*
 ![[Pasted image 20240202155419.png]]
 
 ---
-# Authorization levels
+# Authorization Levels
 
 ## Anonymous
 
@@ -280,7 +280,7 @@ Add *name=datha&code=[key]*
 - You can go to monitoring session and enable to view all the invocation history of that function.
 
 ---
-# Functions app in VScode
+# Functions App in VScode
 
 - Http trigger using javascript in vscode
 
