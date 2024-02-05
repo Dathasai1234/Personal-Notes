@@ -54,6 +54,10 @@ tags:
 - A new rule will be created in Your NSG named as "securitycenter..."
 - You can also see or apply the feature from defender from cloud.
 
+![[Pasted image 20240205165754.png]]
+
+![[Pasted image 20240205165803.png]]
+
 ---
 # Alerts and Security Incidents.
 

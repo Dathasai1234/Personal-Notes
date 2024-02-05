@@ -420,3 +420,15 @@ It accesses your compliance and security posture based on the controls of certai
 ![[Pasted image 20240131170944.png | 700]] 
 
 ---
+# CWP
+
+- Realtime threat protection for your workloads in Azure, multi-cloud And on-premises scenarios
+- Integration with SIEM **Security information and event management** and XDR
+- Available for most resource types
+
+---
+# Tasks
+
+- Adoptive application control working.
+- Use-case AACW.
+- Use-case for agent and agentless in the VM's.
