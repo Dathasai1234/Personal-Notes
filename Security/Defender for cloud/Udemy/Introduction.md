@@ -446,3 +446,21 @@ It accesses your compliance and security posture based on the controls of certai
 |Log analytics workspaces are region specific as whatever resources you create will have their own specific location.(Monday) |5-2-24|
 |CWPP plans research and more detailed PPT on entire DFC(Thursday)|8-2-24|
 |Different ways to onboard non-Azure Windows Servers to MDE(Tuesday)|6-2-24|
+
+---
+# Defender for endpoint
+
+- Defender for endpoint is Microsoft's EDR (Endpoint Detect Response) solution
+![[Pasted image 20240205195116.png]]
+
+- If we have fewer than 300 employees, then you require a defender for business license.
+- You have most of the features in defender for business which are in Defender for P2.
+- If you take cyber security more seriously, you require Microsoft Business Premium which is 18.10 pounds per user, per month.
+- This includes
+- ![[Pasted image 20240205195723.png]]
+<br>
+- Microsoft 365 defender is a unified place where we configure
+	- Defender for cloud apps
+	- Defender for office
+	- Defender for endpoint
+	- Defender for identity 
