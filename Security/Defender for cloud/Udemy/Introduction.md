@@ -432,3 +432,17 @@ It accesses your compliance and security posture based on the controls of certai
 - Adoptive application control working.
 - Use-case AACW.
 - Use-case for agent and agentless in the VM's.
+- Exporting logs to 3rd party (Event hub).
+- Default log analytic workspace region deployment.
+- Recommendations and alerts difference
+- Governance rules.
+- Ways to enable the defender for endpoint.
+- Onboarding the servers in defender for endpoint and defender for servers.
+- Adoptive network hardening.
+
+|   |   |
+|---|---|
+|Task|Deadline|
+|Log analytics workspaces are region specific as whatever resources you create will have their own specific location.(Monday) |5-2-24|
+|CWPP plans research and more detailed PPT on entire DFC(Thursday)|8-2-24|
+|Different ways to onboard non-Azure Windows Servers to MDE(Tuesday)|6-2-24|
