@@ -429,16 +429,16 @@ It accesses your compliance and security posture based on the controls of certai
 ---
 # Tasks
 
-- Adoptive application control working.
-- Use-case AACW.
-- Use-case for agent and agentless in the VM's.
-- Exporting logs to 3rd party (Event hub).
-- Default log analytic workspace region deployment.
-- Recommendations and alerts difference
-- Governance rules.
-- Ways to enable the defender for endpoint.
-- Onboarding the servers in defender for endpoint and defender for servers.
-- Adoptive network hardening.
+- [ ] Adoptive application control working.
+- [ ] Use-case AACW.
+- [ ] Use-case for agent and agentless in the VM's.
+- [ ] Exporting logs to 3rd party (Event hub).
+- [ ] Default log analytic workspace region deployment.
+- [ ] Recommendations and alerts difference
+- [ ] Governance rules.
+- [ ] Ways to enable the defender for endpoint.
+- [ ] Onboarding the servers in defender for endpoint and defender for servers.
+- [ ] Adoptive network hardening.
 
 |   |   |
 |---|---|
@@ -448,7 +448,7 @@ It accesses your compliance and security posture based on the controls of certai
 |Different ways to onboard non-Azure Windows Servers to MDE(Tuesday)|6-2-24|
 
 ---
-# Defender for endpoint
+# Defender for Endpoint
 
 - Defender for endpoint is Microsoft's EDR (Endpoint Detect Response) solution
 ![[Pasted image 20240205195116.png]]
@@ -463,4 +463,78 @@ It accesses your compliance and security posture based on the controls of certai
 	- Defender for cloud apps
 	- Defender for office
 	- Defender for endpoint
-	- Defender for identity 
+	- Defender for identity
+
+---
+# Defender for servers
+
+- Threat detection and advanced defenses to your windows and Linux servers
+- This plan includes the integrated license for 
+- Microsoft Defender for Endpoint
+- vulnerability assessment scanning, 
+- adaptive application controls (AAC), 
+- file integrity monitoring (FIM),
+- and more.
+<br>
+- Microsoft Defender for Servers includes an automatic, native integration with Microsoft Defender for Endpoint.
+- ! The windows 2012/16 are the servers which are onboarded to MDE using Microsoft monitoring agent.
+- ![[Pasted image 20240206154950.png]]
+- Once the customer starts paying to the P2 plan of defender for servers, and once the data collection is installed, the MDC install the monitoring agent on the machines.
+- On the workspace, the security solution is configured.
+- The security solution have many features, and MDE is one of those features.
+- The MDC need to create a license to the customers.
+- The MDC communicated with MDE, and creates a license for the customers.
+- If a license already exists for a customer. It is used.
+- After the license is created, the MDC again communicates to MDE the workspaces that the customer has with the relevant security solution installed on them.
+- The monitoring agent will then successfully run on the server as the license and configured by MDE.
+<br>
+**alert flow from server 2012, 16 > MDE > MDC**
+
+- If any alert on the server. It first sent to MDE service, the MDE then identifies the alert that comes from the machine which is provisioned by MDC.
+- That alert is forwarded to the MDC, then the alerts are available to work on it by the customer.
+- The above process is only for the 2012 and 2016 servers of windows.
+- In 2019 servers the MMA is not related at all.
+- ! The security solution that consists MDE product doesn't work on the win 2019 and Linux.
+<br>
+**MDE in windows 2019**
+
+- ! The windows servers part of 2019 does not require a monitoring agent to install MDE.
+- $ The MDE is already a part of the operating system and already installed.
+- All need to done is to configure the agent with customer information.
+- Its called *on-boarding*, not installing. As MDE is already installed.
+- ![[Pasted image 20240206162541.png]]
+- The difference in 2019 servers is to get the onboarding script of MDE to onboard the server to the MDE.
+- Once the extension starts running, the machine is successfully onboarded to the MDE.
+- The entire licensing part and alerts flow is the same.
+- The process in Linux servers is roughly same as the windows but takes an extra step to install the script.
+<br>
+**unified Agent**
+
+- The servers 2012 and 16 which should have a MMA is going to deprecate.
+- These servers needs to be migrated to the unified Agent solution.
+- This solution will decouples the dependency with the MMA.
+- The customers having issues installing the MMA or other limitations.
+- ![[Pasted image 20240206163830.png]]
+1. License creation
+2. Alerts integration
+3. Enablement for MMA based (Windows Server 2012/2016)
+4. Extension Auto Provisioning (Windows Server 2019 / Linux / Unified Solution)
+<br>
+**API to invoke at the subscription level**
+
+- Options to deploy at scale
+![[Pasted image 20240206164314.png]]
+
+• WDATP (windows)
+• WDATP_EXCLUDE_LINUX_PUBLIC_PREVIEW (Linux)
+• WDATP_UNIFIED_SOLUTION (Unified)
+
+---
+
+```cardlink
+url: https://learn.microsoft.com/en-us/azure/azure-monitor/agents/log-analytics-agent
+title: "Log Analytics agent overview - Azure Monitor"
+description: "This article helps you understand how to collect data and monitor computers hosted in Azure, on-premises, or other cloud environments with Log Analytics."
+host: learn.microsoft.com
+image: https://learn.microsoft.com/en-us/media/open-graph-image.png
+```

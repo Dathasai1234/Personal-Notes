@@ -4,7 +4,8 @@ date: 2024-01-04
 resources: 
 tags:
 ---
-# Table of contents
+
+# Table of Contents
 
 - [[#Done|Done]]
 - [[#Not done|Not done]]
@@ -22,7 +23,7 @@ done
 ```
 
 
-# Not done
+# Not Done
 
 ```tasks
 not done
