@@ -466,7 +466,7 @@ It accesses your compliance and security posture based on the controls of certai
 	- Defender for identity
 
 ---
-# Defender for servers
+# Defender for Servers
 
 - Threat detection and advanced defenses to your windows and Linux servers
 - This plan includes the integrated license for 
@@ -476,6 +476,10 @@ It accesses your compliance and security posture based on the controls of certai
 - file integrity monitoring (FIM),
 - and more.
 <br>
+## Defender for Endpoint
+
+- A basic flowchart explaining the Defender for Servers Plan 1/ Plan 2 integration flow:
+- ![[Pasted image 20240206184411.png | 400]]
 - Microsoft Defender for Servers includes an automatic, native integration with Microsoft Defender for Endpoint.
 - ! The windows 2012/16 are the servers which are onboarded to MDE using Microsoft monitoring agent.
 - ![[Pasted image 20240206154950.png]]
@@ -529,8 +533,6 @@ It accesses your compliance and security posture based on the controls of certai
 • WDATP_EXCLUDE_LINUX_PUBLIC_PREVIEW (Linux)
 • WDATP_UNIFIED_SOLUTION (Unified)
 
----
-
 ```cardlink
 url: https://learn.microsoft.com/en-us/azure/azure-monitor/agents/log-analytics-agent
 title: "Log Analytics agent overview - Azure Monitor"
@@ -538,3 +540,25 @@ description: "This article helps you understand how to collect data and monitor 
 host: learn.microsoft.com
 image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 ```
+
+---
+## Microsoft Defender Vulnerability Management
+
+- Defender Vulnerability Management delivers asset visibility, intelligent assessments, and built-in remediation tools for Windows, macOS, Linux, Android, iOS, and network devices.
+- Defender Vulnerability Management rapidly and continuously prioritizes the biggest vulnerabilities on your most critical assets and provides security recommendations to mitigate risk.
+- ![[Pasted image 20240206180139.png]]
+- Remediate vulnerabilities and mis-configurations all in one place
+- We can block vulnerable versions of applications
+- ![[Pasted image 20240206180514.png]]
+- You can see consolidated asset inventory.
+<br>
+- **browser extensions**![[Pasted image 20240206180948.png]]
+- ![[Pasted image 20240206181027.png | 400]]
+- **Certificates** : Can filter-out the view based on expiry-date.
+- ![[Pasted image 20240206181315.png | 300]]
+- Can get the details of that certificate
+- ![[Pasted image 20240206181343.png]]
+- 
+- Pro-actively monitor compliance against industry benchmarks.
+- We can identify, assess, and remediate vulnerabilities all at one place.
+- 
