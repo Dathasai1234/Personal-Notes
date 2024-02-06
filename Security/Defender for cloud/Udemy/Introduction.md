@@ -511,6 +511,8 @@ It accesses your compliance and security posture based on the controls of certai
 - Once the extension starts running, the machine is successfully onboarded to the MDE.
 - The entire licensing part and alerts flow is the same.
 - The process in Linux servers is roughly same as the windows but takes an extra step to install the script.
+- **Onboard package**
+- ![[Pasted image 20240206214906.png]]
 <br>
 **unified Agent**
 
@@ -523,15 +525,6 @@ It accesses your compliance and security posture based on the controls of certai
 2. Alerts integration
 3. Enablement for MMA based (Windows Server 2012/2016)
 4. Extension Auto Provisioning (Windows Server 2019 / Linux / Unified Solution)
-<br>
-**API to invoke at the subscription level**
-
-- Options to deploy at scale
-![[Pasted image 20240206164314.png]]
-
-• WDATP (windows)
-• WDATP_EXCLUDE_LINUX_PUBLIC_PREVIEW (Linux)
-• WDATP_UNIFIED_SOLUTION (Unified)
 
 ```cardlink
 url: https://learn.microsoft.com/en-us/azure/azure-monitor/agents/log-analytics-agent
@@ -544,21 +537,22 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 ---
 ## Microsoft Defender Vulnerability Management
 
+![[Pasted image 20240206213455.png]]
+
 - Defender Vulnerability Management delivers asset visibility, intelligent assessments, and built-in remediation tools for Windows, macOS, Linux, Android, iOS, and network devices.
 - Defender Vulnerability Management rapidly and continuously prioritizes the biggest vulnerabilities on your most critical assets and provides security recommendations to mitigate risk.
 - ![[Pasted image 20240206180139.png]]
 - Remediate vulnerabilities and mis-configurations all in one place
 - We can block vulnerable versions of applications
-- ![[Pasted image 20240206180514.png]]
 - You can see consolidated asset inventory.
 <br>
 - **browser extensions**![[Pasted image 20240206180948.png]]
 - ![[Pasted image 20240206181027.png | 400]]
 - **Certificates** : Can filter-out the view based on expiry-date.
-- ![[Pasted image 20240206181315.png | 300]]
 - Can get the details of that certificate
 - ![[Pasted image 20240206181343.png]]
 - 
 - Pro-actively monitor compliance against industry benchmarks.
 - We can identify, assess, and remediate vulnerabilities all at one place.
-- 
+
+---
