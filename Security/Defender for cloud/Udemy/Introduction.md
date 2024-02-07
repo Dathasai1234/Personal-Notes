@@ -429,16 +429,16 @@ It accesses your compliance and security posture based on the controls of certai
 ---
 # Tasks
 
-- [ ] Adoptive application control working.
+- [x] Adoptive application control working. ✅ 2024-02-07
 - [ ] Use-case AACW.
-- [ ] Use-case for agent and agentless in the VM's.
+- [x] Use-case for agent and agentless in the VM's. ✅ 2024-02-07
 - [ ] Exporting logs to 3rd party (Event hub).
 - [ ] Default log analytic workspace region deployment.
 - [ ] Recommendations and alerts difference
 - [ ] Governance rules.
-- [ ] Ways to enable the defender for endpoint.
-- [ ] Onboarding the servers in defender for endpoint and defender for servers.
-- [ ] Adoptive network hardening.
+- [x] Ways to enable the defender for endpoint. ✅ 2024-02-07
+- [x] Onboarding the servers in defender for endpoint and defender for servers. ✅ 2024-02-07
+
 
 |   |   |
 |---|---|
@@ -558,12 +558,12 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 - We can identify, assess, and remediate vulnerabilities all at one place.
 
 ---
-## Log analytic workspace
+## Log Analytic Workspace
 
 The agent will be collecting information and sending it to the workspace. If you are Using Azure Defender for Server, you have up to *500 MB* per day per node, and after that, Log Analytics Charges will apply.
 
 ---
-## Adaptive network hardening
+## Adaptive Network Hardening
 
 > [!note] 
 > Improve your network security posture with adaptive network hardening
@@ -633,7 +633,7 @@ using all this information to understand what's normal and what's suspicious, an
 - [Enable File Integrity Monitoring (Azure Monitor Agent) - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-ama)
 
 ---
-## Adaptive application controls
+## Adaptive Application Controls
 
 - Enhance your security with this data-driven, intelligent automated solution that defines allowlists of known-safe applications for your machines.
 - Microsoft Defender for Cloud uses machine learning to analyze the applications running on your machines and create a list of the known-safe software.
@@ -654,7 +654,7 @@ using all this information to understand what's normal and what's suspicious, an
 
 ![[Pasted image 20240207175809.png | 400]]
 
-## Protects applications running over Azure App Service
+## Protects Applications Running over Azure App Service
 
 - Attackers probe web applications to find and exploit weaknesses.
 - Before being routed to specific environments, requests to applications running in Azure go through several gateways, where they're inspected and logged.
@@ -673,7 +673,7 @@ Defender for App Service detects a multitude of threats to your App Service reso
 - the underlying sandboxes and VMs
 - App Service internal logs
 
-### Threats by MITRE ATT&CK tactics
+### Threats by MITRE ATT&CK Tactics
 
 Defender for Cloud monitors for many threats to your App Service resources. The alerts cover almost the complete list of MITRE ATT&CK tactics from pre-attack to command and control.
 
@@ -683,7 +683,7 @@ Defender for Cloud monitors for many threats to your App Service resources. The 
     
 - **Execution threats** - Defender for Cloud can detect attempts to run high privilege commands, Linux commands on a Windows App Service, fileless attack behavior, digital currency mining tools, and many other suspicious and malicious code execution activities.
 
-### Dangling DNS detection
+### Dangling DNS Detection
 
 - [source]([Microsoft Defender for App Service - the benefits and features - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-app-service-introduction))
 - Subdomain takeovers are a common, high-severity threat for organizations. When a threat actor detects a dangling DNS entry, they create their own site at the destination address.
@@ -691,7 +691,7 @@ Defender for Cloud monitors for many threats to your App Service resources. The 
 ![[Pasted image 20240207184822.png]]
 [source]([Prevent subdomain takeovers with Azure DNS alias records and Azure App Service's custom domain verification | Microsoft Learn](https://learn.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover))
 
-## All the features of Defender for App service.
+## All the Features of Defender for App Service.
 
 - Protects applications running over Azure App Service
 - Assesses resources covered by your App Service plan and generates security recommendations
@@ -732,9 +732,9 @@ Defender for Cloud monitors for many threats to your App Service resources. The 
 - [**Coverage of the top cloud storage threats**](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction#:~:text=Coverage%20of%20the%20top%20cloud%20storage%20threats)
 - [**Comprehensive security without enabling logs**](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction#:~:text=Comprehensive%20security%20without%20enabling%20logs)
 
-## Service working
+## Service Working
 
-### Activity monitoring
+### Activity Monitoring
 
 - Continuously analyzes data and control plane logs from protected storage accounts when enabled.
 - There's no need to turn on resource logs for security benefits.
@@ -748,45 +748,72 @@ Defender for Cloud monitors for many threats to your App Service resources. The 
 - Every file type is scanned, and scan results are returned for every file.
 - The Malware Scanning capability is an agentless SaaS solution that allows simple setup at scale, with zero maintenance, and supports automating response at scale.
 
-### Sensitive data threat protection
+### Sensitive Data Threat Protection
 
+- [ ] [Detect threats to sensitive data - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-data-sensitivity)
 - Enables security teams to efficiently prioritize and examine security alerts by considering the sensitivity of the data that could be at risk, leading to better detection and preventing data breaches.
 - ‘Sensitive data threat detection’ is powered by the “Sensitive Data Discovery” engine, an agentless engine that uses a smart sampling method to find resources with sensitive data.
 - The service is integrated with *Microsoft Purview's sensitive information types (SITs)* and classification labels, allowing seamless inheritance of your organization's sensitivity settings.
 
-## Pricing and cost controls
+## Pricing and Cost Controls
 
 ### Malware Scanning
 
 - Billing per GB, monthly capping
 - By default, the limit is set to 5,000 GB per month per storage account. Once this threshold is exceeded, scanning will cease for the remaining blobs, with a 20-GB confidence interval. For configuration details, refer to [configure Defender for Storage](https://learn.microsoft.com/en-us/azure/storage/common/azure-defender-storage-configure).
 
-### Difference between Malware Scanning and hash reputation analysis
+### Difference between Malware Scanning and Hash Reputation Analysis
 
-#### Malware Scanning (paid add-on feature available only on the new plan)
+#### Malware Scanning (paid Add-on Feature Available only on the New plan)
 
 - **Malware Scanning** uses Microsoft Defender Antivirus (MDAV) to scan blobs uploaded to Blob storage, providing a comprehensive analysis that includes deep file scans and hash reputation analysis.
 
-#### Hash reputation analysis (available in all plans)
+#### Hash Reputation Analysis (available in All plans)
 
 - **Hash reputation analysis** detects potential malware in Blob storage and Azure Files by comparing the hash values of newly uploaded blobs/files against those of known malware by Microsoft Threat Intelligence.
 - Not all file protocols and operation types are supported with this capability, leading to some operations not being monitored for potential malware uploads.
 
 In summary, Malware Scanning, which is only available on the new plan for Blob storage, offers a more comprehensive approach to malware detection by analyzing the full content of files and incorporating hash reputation analysis in its scanning methodology.
 
-## Enabling Defender for storage
+## Enabling Defender for Storage
 
 - Enabling Defender for Storage via a policy is recommended
 - This keeps the storage accounts protected with Defender for Storage according to the organization's defined configuration.
 - You can always configure specific storage accounts with custom configurations that differ from the settings configured at the subscription level (override subscription-level settings).
 - [process](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-policy-enablement#:~:text=subscription%2Dlevel%20settings)
-- 
 
-## Sending malware scanning results
+## Sending Malware Scanning Results
 
 Malware Scanning can be configured to send scanning results to the following: 
 
+<img src = "https://learn.microsoft.com/en-us/azure/defender-for-cloud/media/defender-for-storage-malware-scan/view-and-consume-malware-scan-results.png#lightbox"/>
+
 **Event Grid custom topic** - for near-real time automatic response based on every scanning result. Learn more how to [configure malware scanning to send scanning events to an Event Grid custom topic](https://learn.microsoft.com/en-us/azure/storage/common/azure-defender-storage-configure?toc=%2Fazure%2Fdefender-for-cloud%2Ftoc.json&tabs=enable-storage-account#setting-up-event-grid-for-malware-scanning).  
 **Log Analytics workspace** - for storing every scan result in a centralized log repository for compliance and audit. Learn more how to [configure malware scanning to send scanning results to a Log Analytics workspace](https://learn.microsoft.com/en-us/azure/storage/common/azure-defender-storage-configure?toc=%2Fazure%2Fdefender-for-cloud%2Ftoc.json&tabs=enable-storage-account#setting-up-logging-for-malware-scanning).
+
+---
+# Defender for Key-vault
+
+The azure key vault is used to store *keys*, *Certificates* and *Secrets*
+
+**Keys** - a file with plain string used to decrypt an encrypted information.
+
+**Certificates** - They are used as an identity. Commonly used to represent an identity of an application to another application for may be a secure communication.
+
+- Microsoft Defender for Key Vault detects unusual and potentially harmful attempts to access or exploit Key Vault accounts.
+- ! Microsoft Defender for Key Vault is designed to help identify suspicious activity caused by stolen credentials. **Don't** dismiss the alert simply because you recognize the user or application. Contact the owner of the application or the user and verify the activity was legitimate. You can create a suppression rule to eliminate noise if necessary. Learn more in [Suppress security alerts](https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-suppression-rules).
+
+	- [ ] [Suppressing false positives or other unwanted security alerts - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-suppression-rules)⏫ 
+
+---
+# Defender for Resource Manager
+
+![[Pasted image 20240207220937.png]]
+
+## benefits of Microsoft Defender for Resource Manager
+
+- **Suspicious resource management operations**
+- **Use of exploitation toolkits** like Microburst or PowerZure
+- **Lateral movement**
 
 ---

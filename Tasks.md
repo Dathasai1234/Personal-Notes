@@ -15,18 +15,8 @@ tags:
 
 **04-01-2024**
 **12:50:51**
-# Done
-
-```tasks
-
-done
-```
-
-
 # Not Done
 
 ```tasks
 not done
 ```
-
-
