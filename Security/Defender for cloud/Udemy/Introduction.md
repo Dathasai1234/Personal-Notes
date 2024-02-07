@@ -723,3 +723,70 @@ Defender for Cloud monitors for many threats to your App Service resources. The 
 	- Malware Scanning (new plan only)
 - ![[defender-for-storage-overview.gif]]
 - You can also exclude specific storage accounts from protected subscriptions.
+
+### Benefits
+
+- [**Better protection against malware**](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction#:~:text=Better%20protection%20against%20malware)
+- [**Improved threat detection and protection of sensitive data**:](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction#:~:text=Improved%20threat%20detection%20and%20protection%20of%20sensitive%20data%3A)
+- [**Detection of entities without identities**](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction#:~:text=Detection%20of%20entities%20without%20identities%3A)
+- [**Coverage of the top cloud storage threats**](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction#:~:text=Coverage%20of%20the%20top%20cloud%20storage%20threats)
+- [**Comprehensive security without enabling logs**](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction#:~:text=Comprehensive%20security%20without%20enabling%20logs)
+
+## Service working
+
+### Activity monitoring
+
+- Continuously analyzes data and control plane logs from protected storage accounts when enabled.
+- There's no need to turn on resource logs for security benefits.
+- It also builds data models and uses statistical and machine-learning methods to spot baseline activity anomalies, which might indicate malicious behavior.
+![[Pasted image 20240207194141.png]]
+
+### Malware Scanning
+
+- Helps protect storage accounts from malicious content by performing a full malware scan on uploaded content in near real time, applying Microsoft Defender Antivirus capabilities.
+- It's designed to help fulfill security and compliance requirements to handle untrusted content.
+- Every file type is scanned, and scan results are returned for every file.
+- The Malware Scanning capability is an agentless SaaS solution that allows simple setup at scale, with zero maintenance, and supports automating response at scale.
+
+### Sensitive data threat protection
+
+- Enables security teams to efficiently prioritize and examine security alerts by considering the sensitivity of the data that could be at risk, leading to better detection and preventing data breaches.
+- ‘Sensitive data threat detection’ is powered by the “Sensitive Data Discovery” engine, an agentless engine that uses a smart sampling method to find resources with sensitive data.
+- The service is integrated with *Microsoft Purview's sensitive information types (SITs)* and classification labels, allowing seamless inheritance of your organization's sensitivity settings.
+
+## Pricing and cost controls
+
+### Malware Scanning
+
+- Billing per GB, monthly capping
+- By default, the limit is set to 5,000 GB per month per storage account. Once this threshold is exceeded, scanning will cease for the remaining blobs, with a 20-GB confidence interval. For configuration details, refer to [configure Defender for Storage](https://learn.microsoft.com/en-us/azure/storage/common/azure-defender-storage-configure).
+
+### Difference between Malware Scanning and hash reputation analysis
+
+#### Malware Scanning (paid add-on feature available only on the new plan)
+
+- **Malware Scanning** uses Microsoft Defender Antivirus (MDAV) to scan blobs uploaded to Blob storage, providing a comprehensive analysis that includes deep file scans and hash reputation analysis.
+
+#### Hash reputation analysis (available in all plans)
+
+- **Hash reputation analysis** detects potential malware in Blob storage and Azure Files by comparing the hash values of newly uploaded blobs/files against those of known malware by Microsoft Threat Intelligence.
+- Not all file protocols and operation types are supported with this capability, leading to some operations not being monitored for potential malware uploads.
+
+In summary, Malware Scanning, which is only available on the new plan for Blob storage, offers a more comprehensive approach to malware detection by analyzing the full content of files and incorporating hash reputation analysis in its scanning methodology.
+
+## Enabling Defender for storage
+
+- Enabling Defender for Storage via a policy is recommended
+- This keeps the storage accounts protected with Defender for Storage according to the organization's defined configuration.
+- You can always configure specific storage accounts with custom configurations that differ from the settings configured at the subscription level (override subscription-level settings).
+- [process](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-policy-enablement#:~:text=subscription%2Dlevel%20settings)
+- 
+
+## Sending malware scanning results
+
+Malware Scanning can be configured to send scanning results to the following: 
+
+**Event Grid custom topic** - for near-real time automatic response based on every scanning result. Learn more how to [configure malware scanning to send scanning events to an Event Grid custom topic](https://learn.microsoft.com/en-us/azure/storage/common/azure-defender-storage-configure?toc=%2Fazure%2Fdefender-for-cloud%2Ftoc.json&tabs=enable-storage-account#setting-up-event-grid-for-malware-scanning).  
+**Log Analytics workspace** - for storing every scan result in a centralized log repository for compliance and audit. Learn more how to [configure malware scanning to send scanning results to a Log Analytics workspace](https://learn.microsoft.com/en-us/azure/storage/common/azure-defender-storage-configure?toc=%2Fazure%2Fdefender-for-cloud%2Ftoc.json&tabs=enable-storage-account#setting-up-logging-for-malware-scanning).
+
+---
