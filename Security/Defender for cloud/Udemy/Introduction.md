@@ -558,3 +558,77 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 - We can identify, assess, and remediate vulnerabilities all at one place.
 
 ---
+## Log analytic workspace
+
+The agent will be collecting information and sending it to the workspace. If you are Using Azure Defender for Server, you have up to *500 MB* per day per node, and after that, Log Analytics Charges will apply.
+
+---
+## Adaptive network hardening
+
+> [!note] 
+> Improve your network security posture with adaptive network hardening
+
+- Adaptive network hardening provides recommendations to further harden the NSG rules.
+- Adaptive Network Hardening recommendations Should be applied on internet facing virtual machines
+- **Machine learning algorithm:** This makes the system "smart" and able to learn from data.
+- **Actual traffic:** How devices and users interact with the network.
+- **Known trusted configuration:** Approved settings for devices and connections.
+- **Threat intelligence:** Information about known cyber threats.
+- **Indicators of compromise:** Signs that a system might be hacked.
+- **IP/port tuples:** Specific combinations of internet addresses and ports used for connections.
+
+using all this information to understand what's normal and what's suspicious, and then recommends blocking any connections that seem risky.
+
+ For example, let's say the existing NSG rule is to allow traffic from 140.20.30.10/24 on port 22. Based on traffic analysis, adaptive network hardening might recommend narrowing the range to allow traffic from 140.23.30.10/29, and deny all other traffic to that port. For the full list of supported ports
+
+- **VMs are Classic VMs**: Only Azure Resource Manager VMs are supported.
+- **Not enough data is available**: In order to generate accurate traffic hardening recommendations, Defender for Cloud requires at least 30 days of traffic data.
+- **VM is not protected by Microsoft Defender for Servers**: Only VMs protected with *Microsoft Defender for Servers* are eligible for this feature.
+
+1. From the **Unhealthy resources** tab, select a VM to view its alerts and the recommended hardening rules to apply.
+    
+    - The **Rules** tab lists the rules that adaptive network hardening recommends you add
+    - The **Alerts** tab lists the alerts that were generated due to traffic, flowing to the resource, which is not within the IP range allowed in the recommended rules.
+
+![[Pasted image 20240207154912.png]]
+
+- The enforced rules are added to the NSG(s) protecting the VM.
+
+**Modify rules**
+
+- Cannot change an allow rule to become deny rule.
+- You can modify the parameters of **allow** rules only.
+- A **Deny all traffic** rule is the only type of "deny" rule that would be listed here, and it cannot be modified. You can, however, delete it.
+
+**Add a new rule**
+
+- You can add an "allow" rule that was not recommended by Defender for Cloud.
+- Only "allow" rules can be added here. If you want to add "deny" rules, you can do so directly on the NSG.
+
+**Delete a rule**
+
+- When necessary, you can delete a recommended rule for the current session. For example, you might determine that applying a suggested rule could block legitimate traffic.
+
+---
+## File Integrity Monitor
+
+- Examines operating system files, Windows registries, application software, and Linux system files for changes that might indicate an attack.
+- Uses the *Azure Change Tracking solution* to track and identify changes in your environment.
+- When FIM is enabled, you have a **Change Tracking** resource of type **Solution**.
+- If you remove that resource, You are also disabling the FIM in MDC.
+![[Pasted image 20240207161222.png]]
+![[Pasted image 20240207161325.png]]
+- The average Log Analytics data usage for a machine using Change Tracking and Inventory is approximately 40 MB per month, depending on your environment.
+- The default collection frequency for Windows services is 30 minutes. You can configure the frequency using a slider on the **Windows services** tab under **Edit Settings**.
+<img src = "https://learn.microsoft.com/en-us/azure/automation/change-tracking/media/overview/windowservices.png"/>
+- High the frequency, might miss some changes. Setting the frequency to a smaller value allows you to catch changes that might be missed otherwise.
+- For critical services, we recommend marking the **Startup** state as **Automatic**(Delayed Start) so that, once the VM reboots, the services data collection will start after the MMA agent starts instead of starting quickly as soon as the VM is up.
+- ! Change Tracking and Inventory using Log Analytics agent will retire on **31 August 2024** and we recommend that you use Azure Monitoring Agent as the new supporting agent. Follow the guidelines for [migration from Change Tracking and inventory using Log Analytics to Change Tracking and inventory using Azure Monitoring Agent version](https://learn.microsoft.com/en-us/azure/automation/change-tracking/guidance-migration-log-analytics-monitoring-agent).
+- *Which files should I monitor?*
+	- Consider the files that are critical for your system and applications. Monitor files that you don’t expect to change without planning.
+	- If you choose files that are frequently changed by applications or operating system (such as log files and text files) it will create noise, making it difficult to identify an attack.
+	- [recommended items to monitor based on known attack patterns.]([Fetching Data#dizz](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-overview#:~:text=recommended%20items%20to%20monitor%20based%20on%20known%20attack%20patterns.))
+
+- Enable File Integrity Monitoring when using the Azure Monitor Agent
+	- [Enable File Integrity Monitoring (Azure Monitor Agent) - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-ama)
+	- 
