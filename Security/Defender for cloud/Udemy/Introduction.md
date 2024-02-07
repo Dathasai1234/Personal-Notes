@@ -482,6 +482,8 @@ It accesses your compliance and security posture based on the controls of certai
 - ![[Pasted image 20240206184411.png | 400]]
 - Microsoft Defender for Servers includes an automatic, native integration with Microsoft Defender for Endpoint.
 - ! The windows 2012/16 are the servers which are onboarded to MDE using Microsoft monitoring agent.
+- ![[Pasted image 20240206223515.png]]
+- On-boarding script not working in windows 2016 server
 - ![[Pasted image 20240206154950.png]]
 - Once the customer starts paying to the P2 plan of defender for servers, and once the data collection is installed, the MDC install the monitoring agent on the machines.
 - On the workspace, the security solution is configured.
