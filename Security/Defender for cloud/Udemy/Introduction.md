@@ -629,6 +629,97 @@ using all this information to understand what's normal and what's suspicious, an
 	- If you choose files that are frequently changed by applications or operating system (such as log files and text files) it will create noise, making it difficult to identify an attack.
 	- [recommended items to monitor based on known attack patterns.]([Fetching Data#dizz](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-overview#:~:text=recommended%20items%20to%20monitor%20based%20on%20known%20attack%20patterns.))
 
-- Enable File Integrity Monitoring when using the Azure Monitor Agent
-	- [Enable File Integrity Monitoring (Azure Monitor Agent) - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-ama)
-	- 
+- [Enable File Integrity Monitoring (Log Analytics agent) - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-log-analytics)
+- [Enable File Integrity Monitoring (Azure Monitor Agent) - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-ama)
+
+---
+## Adaptive application controls
+
+- Enhance your security with this data-driven, intelligent automated solution that defines allowlists of known-safe applications for your machines.
+- Microsoft Defender for Cloud uses machine learning to analyze the applications running on your machines and create a list of the known-safe software.
+- When you enable and configure adaptive application controls, you get security alerts if any application runs other than the ones you defined as safe.
+
+### Benefits
+
+- Identify potential malware, even any that antimalware solutions can miss
+- Improve compliance with local security policies that dictate the use of only licensed software
+- Identify outdated or unsupported versions of applications
+- Identify software your organization banned but is nevertheless running on your machines
+- Increase oversight of apps that access sensitive data
+<br>
+- Defender for Cloud needs at least two weeks of data to define the unique recommendations per group of machines.
+
+---
+# Defender for App Services
+
+![[Pasted image 20240207175809.png | 400]]
+
+## Protects applications running over Azure App Service
+
+- Attackers probe web applications to find and exploit weaknesses.
+- Before being routed to specific environments, requests to applications running in Azure go through several gateways, where they're inspected and logged.
+- The data is then used to identify exploits and attackers, and to learn new patterns that are used later.
+
+### Secure
+
+- Defender for App Service assesses the resources covered by your App Service plan and generates security recommendations based on its findings.
+- Use the detailed instructions in these recommendations to harden your App Service resources.
+### Detect
+
+Defender for App Service detects a multitude of threats to your App Service resources by monitoring:
+
+- the VM instance in which your App Service is running, and its management interface
+- the requests and responses sent to and from your App Service apps
+- the underlying sandboxes and VMs
+- App Service internal logs
+
+### Threats by MITRE ATT&CK tactics
+
+Defender for Cloud monitors for many threats to your App Service resources. The alerts cover almost the complete list of MITRE ATT&CK tactics from pre-attack to command and control.
+
+- **Pre-attack threats** - Defender for Cloud can detect the execution of multiple types of vulnerability scanners that attackers frequently use to probe applications for weaknesses.
+    
+- **Initial access threats** - [Microsoft Threat Intelligence](https://go.microsoft.com/fwlink/?linkid=2128684) powers these alerts that include triggering an alert when a known malicious IP address connects to your Azure App Service FTP interface.
+    
+- **Execution threats** - Defender for Cloud can detect attempts to run high privilege commands, Linux commands on a Windows App Service, fileless attack behavior, digital currency mining tools, and many other suspicious and malicious code execution activities.
+
+### Dangling DNS detection
+
+- [source]([Microsoft Defender for App Service - the benefits and features - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-app-service-introduction))
+- Subdomain takeovers are a common, high-severity threat for organizations. When a threat actor detects a dangling DNS entry, they create their own site at the destination address.
+- The traffic intended for the organization’s domain is then directed to the threat actor's site, and they can use that traffic for a wide range of malicious activity.
+![[Pasted image 20240207184822.png]]
+[source]([Prevent subdomain takeovers with Azure DNS alias records and Azure App Service's custom domain verification | Microsoft Learn](https://learn.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover))
+
+## All the features of Defender for App service.
+
+- Protects applications running over Azure App Service
+- Assesses resources covered by your App Service plan and generates security recommendations
+- Monitors the VM host of your App Service and its management interface
+- Monitors requests and responses sent between App Service apps
+- Monitors the underlying sandboxes and VMs
+- Monitors App Service internal logs
+- Identifies attack methodologies applying to multiple targets
+	- As a cloud-native solution, Defender for App Service can identify attack methodologies applying to multiple targets. For example, from a single host it would be difficult to identify a distributed attack from a small subset of IPs, crawling to similar endpoints on multiple hosts.
+- Generates detailed, context-based, security alerts easily integrated with any SIEM
+- Alerts include guidelines to help investigate and mitigate identified threats
+- Regulatory compliance and industry best practices.
+
+---
+# Defender for Storages
+
+- It helps prevent the three major impacts on your data and workload: 
+	- malicious file uploads, 
+	- sensitive data exfiltration, and 
+	- Data corruption.
+- Microsoft Defender for Storage provides comprehensive security by analyzing the *data plane* and *control plane* telemetry generated by Azure Blob Storage, Azure Files, and Azure Data Lake Storage services.
+- It uses advanced threat detection capabilities powered by 
+	- [Microsoft Threat Intelligence](https://go.microsoft.com/fwlink/?linkid=2128684)
+	- Microsoft Defender Antivirus, and 
+	- [Sensitive Data Discovery](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-data-sensitivity) to help you discover and mitigate potential threats.
+- Defender for Storage includes:
+	- Activity Monitoring
+	- Sensitive data threat detection (preview feature, new plan only)
+	- Malware Scanning (new plan only)
+- ![[defender-for-storage-overview.gif]]
+- You can also exclude specific storage accounts from protected subscriptions.
