@@ -4,6 +4,68 @@ date: 2024-01-30
 resources: 
 tags:
 ---
+# Index
+
+- [[#Introduction|Introduction]]
+	- [[#Introduction#CSPM Vs CWPP|CSPM Vs CWPP]]
+	- [[#Introduction#Azure Policy|Azure Policy]]
+		- [[#Azure Policy#Effects in Policy|Effects in Policy]]
+	- [[#Introduction#ARC|ARC]]
+	- [[#Introduction#KQL Query Development Process|KQL Query Development Process]]
+	- [[#Introduction#Log Analytics Dedicated Cluster|Log Analytics Dedicated Cluster]]
+- [[#CSPM|CSPM]]
+- [[#CSPM Plans|CSPM Plans]]
+	- [[#CSPM Plans#Foundational CSPM|Foundational CSPM]]
+		- [[#Foundational CSPM#Inventory|Inventory]]
+		- [[#Foundational CSPM#Security Recommendations|Security Recommendations]]
+		- [[#Foundational CSPM#Secure Score|Secure Score]]
+		- [[#Foundational CSPM#Workbooks|Workbooks]]
+		- [[#Foundational CSPM#Data Exporting|Data Exporting]]
+		- [[#Foundational CSPM#Remediations|Remediations]]
+		- [[#Foundational CSPM#Microsoft Cloud Security Benchmark|Microsoft Cloud Security Benchmark]]
+	- [[#CSPM Plans#Defender CSPM (paid version)|Defender CSPM (paid version)]]
+		- [[#Defender CSPM (paid version)#Governance Rules|Governance Rules]]
+		- [[#Defender CSPM (paid version)#Regulatory Compliance Standards|Regulatory Compliance Standards]]
+		- [[#Defender CSPM (paid version)#Cloud Security Explorer|Cloud Security Explorer]]
+		- [[#Defender CSPM (paid version)#Attack Path Analysis|Attack Path Analysis]]
+		- [[#Defender CSPM (paid version)#Agentless Scanning for VMs|Agentless Scanning for VMs]]
+		- [[#Defender CSPM (paid version)#Agentless Discovery for Kubernetes|Agentless Discovery for Kubernetes]]
+		- [[#Defender CSPM (paid version)#Container Registry Vulnerability Assessment|Container Registry Vulnerability Assessment]]
+		- [[#Defender CSPM (paid version)#DevSecOps on Azure DevOps|DevSecOps on Azure DevOps]]
+- [[#CWP|CWP]]
+- [[#Tasks|Tasks]]
+- [[#Defender for Endpoint|Defender for Endpoint]]
+- [[#Defender for Servers|Defender for Servers]]
+	- [[#Defender for Servers#Defender for Endpoint|Defender for Endpoint]]
+	- [[#Defender for Servers#Microsoft Defender Vulnerability Management|Microsoft Defender Vulnerability Management]]
+	- [[#Defender for Servers#Log Analytic Workspace|Log Analytic Workspace]]
+	- [[#Defender for Servers#Adaptive Network Hardening|Adaptive Network Hardening]]
+	- [[#Defender for Servers#File Integrity Monitor|File Integrity Monitor]]
+	- [[#Defender for Servers#Adaptive Application Controls|Adaptive Application Controls]]
+		- [[#Adaptive Application Controls#Benefits|Benefits]]
+- [[#Defender for App Services|Defender for App Services]]
+	- [[#Defender for App Services#Protects Applications Running over Azure App Service|Protects Applications Running over Azure App Service]]
+		- [[#Protects Applications Running over Azure App Service#Secure|Secure]]
+		- [[#Protects Applications Running over Azure App Service#Detect|Detect]]
+		- [[#Protects Applications Running over Azure App Service#Threats by MITRE ATT&CK Tactics|Threats by MITRE ATT&CK Tactics]]
+		- [[#Protects Applications Running over Azure App Service#Dangling DNS Detection|Dangling DNS Detection]]
+	- [[#Defender for App Services#All the Features of Defender for App Service.|All the Features of Defender for App Service.]]
+- [[#Defender for Storages|Defender for Storages]]
+		- [[#All the Features of Defender for App Service.#Benefits|Benefits]]
+	- [[#Defender for Storages#Service Working|Service Working]]
+		- [[#Service Working#Activity Monitoring|Activity Monitoring]]
+		- [[#Service Working#Malware Scanning|Malware Scanning]]
+		- [[#Service Working#Sensitive Data Threat Protection|Sensitive Data Threat Protection]]
+	- [[#Defender for Storages#Pricing and Cost Controls|Pricing and Cost Controls]]
+		- [[#Pricing and Cost Controls#Malware Scanning|Malware Scanning]]
+		- [[#Pricing and Cost Controls#Difference between Malware Scanning and Hash Reputation Analysis|Difference between Malware Scanning and Hash Reputation Analysis]]
+			- [[#Difference between Malware Scanning and Hash Reputation Analysis#Malware Scanning (paid Add-on Feature Available only on the New plan)|Malware Scanning (paid Add-on Feature Available only on the New plan)]]
+			- [[#Difference between Malware Scanning and Hash Reputation Analysis#Hash Reputation Analysis (available in All plans)|Hash Reputation Analysis (available in All plans)]]
+	- [[#Defender for Storages#Enabling Defender for Storage|Enabling Defender for Storage]]
+	- [[#Defender for Storages#Sending Malware Scanning Results|Sending Malware Scanning Results]]
+- [[#Defender for Key-vault|Defender for Key-vault]]
+- [[#Defender for Resource Manager|Defender for Resource Manager]]
+	- [[#Defender for Resource Manager#benefits of Microsoft Defender for Resource Manager|benefits of Microsoft Defender for Resource Manager]]
 
 # Introduction
 
@@ -479,6 +541,17 @@ It accesses your compliance and security posture based on the controls of certai
 ## Defender for Endpoint
 
 - A basic flowchart explaining the Defender for Servers Plan 1/ Plan 2 integration flow:
+- Endpoint detection and response (EDR) features that are provided by Microsoft Defender for Endpoint Plan 2.
+	- [Attack surface reduction](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
+		- Hardware isolation
+		- Application control
+		- Ransomware protection
+		- Controlled folder access
+		- Network protection
+		- Web protection
+		- Exploit protection
+		- Device control
+	- [Next-generation protection](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/next-generation-protection), including real-time scanning and protection and [Microsoft Defender Antivirus](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/next-generation-protection).
 - ![[Pasted image 20240206184411.png | 400]]
 - Microsoft Defender for Servers includes an automatic, native integration with Microsoft Defender for Endpoint.
 - ! The windows 2012/16 are the servers which are onboarded to MDE using Microsoft monitoring agent.
@@ -648,6 +721,17 @@ using all this information to understand what's normal and what's suspicious, an
 - Increase oversight of apps that access sensitive data
 <br>
 - Defender for Cloud needs at least two weeks of data to define the unique recommendations per group of machines.
+
+---
+# Network layer threat detection
+
+Some network configurations restrict MDC to generate alerts on suspicious network activity.
+
+For Defender for Cloud to generate network alerts, ensure that:
+
+- Your virtual machine has a public IP address (or is on a load balancer with a public IP address).
+- Your virtual machine's network egress traffic isn't blocked by an external IDS solution.
+
 
 ---
 # Defender for App Services
