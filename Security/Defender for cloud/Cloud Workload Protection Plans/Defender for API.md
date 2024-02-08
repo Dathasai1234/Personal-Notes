@@ -4,6 +4,7 @@ date: 2024-02-08
 resources: 
 tags:
 ---
+
 - API (Application Programming Interface)
 - Core of communication for applications to interact each other.
 - Most of web traffic is driven by API's
