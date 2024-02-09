@@ -51,6 +51,12 @@ It accesses your compliance and security posture based on the controls of certai
 
 - This one actually visualizes certain exploitable attack paths.
 
+![[Pasted image 20240209105904.png]]
+
+![[Pasted image 20240209110211.png]]
+
+![[Pasted image 20240209110427.png]]
+
 ---
 ## Agentless Scanning for VMs
 
