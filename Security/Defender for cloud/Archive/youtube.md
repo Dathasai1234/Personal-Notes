@@ -45,13 +45,20 @@ The meta data shared back within Defender for cloud. Within one day, you should 
 Notion of scanning a VM for Secrets, creds and malware.
 
  What are those secrets
- 1. SSH private keys.
- 2. AWS access keys.
- 3. AWS RDS SQL connection string.
- 4. Storage account connection strings.
- 5. Storage account SAS tokens.
- 6. SQL connection strings.
+ [source]( https://learn.microsoft.com/en-us/azure/defender-for-cloud/secret-scanning#:~:text=By%20using%20agentless%20secrets%20scanning%2C%20you%20can%20proactively%20discover%20the%20following%20types%20of%20secrets%20across%20your%20environments%20 (in%20 Azure%2 C%20 AWS%20 and%20 GCP%20 cloud%20 providers)%3A)
+
+Defender for Cloud's agentless secrets scanning for Virtual Machines (VM) locates plaintext secrets that exist in your environment
 
 We already got a snapshot of a VM disk and scanned by the #MDVM (Microsoft Defender Vulnerability Management) engine. Another engine set of engine also scanning the same disk for *secrets* like the above once.
 
-The thing is not only finding the vulnerabilities for a VM, lets say using that vulnerability the attacker might exploit and have a bridge to that VM and take those secrets and laterally moving to next workload to attack and most likely to access. I
+The thing is not only finding the vulnerabilities for a VM, lets say using that vulnerability the attacker might exploit and have a bridge to that VM and take those secrets and laterally moving to next workload to attack and most likely to access.
+
+![[Pasted image 20240208232921.png]]
+
+Secrets findings can be found using the *Cloud Security Explorer* and the *Secrets* tab with their metadata like secrets type, file name, file path, last access time, and more.
+
+You can also find the secret findings in the asset inventory, select a VM and open the secrets tab.
+
+The agentless scanner verifies whether SSH private keys can be used to move laterally in your network. Keys that aren't successfully verified are categorized as `unverified` on the Recommendations page.
+
+You can remediate the secret findings from *attack path analysis*, you can also use *cloud security explorer* and use pre-designed templates as shown in the above screenshot.
