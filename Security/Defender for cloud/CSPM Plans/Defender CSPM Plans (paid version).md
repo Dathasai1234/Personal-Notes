@@ -10,9 +10,17 @@
 - You don't have to assign a stuff to an owner and add due dates individually for every recommendation.
 - Using this feature, you will save your time and efficiency and secondly, reduce the errors because you define this automation once and then you can be sure that it is working correctly in the background all the time.
 
+- **Grace period** - if the recommendation which is assigned to an owner should be remediated in a week, till then, the secure score will be not effected. This feature is for the organizations who need some time to remediate the recommendation and dont want to impact the secure score till the grace period is crossed
+
+![[Pasted image 20240209124221.png]]
+
 ![[Pasted image 20240131155257.png]]
 
 We can have multiple Governance rules with same conditions. So priority comes into play to choose which Governance rules to play around.
+
+![[20240209-0705-36.7561215.mp4]]
+
+![[Pasted image 20240209124509.png]]
 
 ---
 ## Regulatory Compliance Standards
