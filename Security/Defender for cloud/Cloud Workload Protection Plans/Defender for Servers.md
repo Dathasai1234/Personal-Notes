@@ -64,7 +64,7 @@ tags:
 - The above process is only for the 2012 and 2016 servers of windows.
 - In 2019 servers the MMA is not related at all.
 - ! The security solution that consists MDE product doesn't work on the win 2019 and Linux.
-<br>
+
 **MDE in windows 2019**
 
 - ! The windows servers part of 2019 does not require a monitoring agent to install MDE.
