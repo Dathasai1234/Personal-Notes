@@ -4,31 +4,43 @@ date: 2024-02-09
 resources: 
 tags:
 ---
-# Docker commands
 
-# run an image
+# Docker Commands
+
+# Run an Image
 
 ```cmd
 docker run nginx
 ```
 
 - If image not exist locally, it will install from hub.docker.com
+- This command will pull the image remotely and creates a container out of it.
+
+# Pulling an Image
+
+```cmd
+docker pull nginx
+```
+
+- Just pulling an image but not creating a container out of it.
 
 ---
-# List containers
+# List Containers
+
+- List of all active containers
 
 ```cmd
 docker ps
 ```
 
-- To see all containers running or not
+- To see all dead containers and running containers.
 
 ```cmd
 docker ps -a
 ```
 
 ---
-# Stop a container
+# Stop a Container
 
 ```cmd
 docket ps
@@ -37,10 +49,12 @@ docker ps -a
 ```
 
 ---
-# Removing a stopped container permanently
+# Removing a Stopped Container Permanently
+
+- ! Disk cleanup
 
 ```cmd
-docker rm silly_sammet
+docker rm [name1 name2 name3]/[id1 id2 id3]
 ```
 
 Return value - name of the container itself
@@ -52,19 +66,25 @@ docker ps -a
 ```
 
 ---
-# List images
+# List Images
 
 ```cmd
 docker images
 ```
 
-## Remove the image
+## Remove the Image
 
 ```cmd
 docker rmi nginx
 ```
 
 ---
-# CentOS container
+# CentOS Container
 
 ![[Pasted image 20240209231345.png]]
+
+---
+
+![[01-docker-commands.pdf]]
+
+---
