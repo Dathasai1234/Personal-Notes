@@ -6,7 +6,8 @@ resource_2: https://youtu.be/4wGns611G4w
 tags:
   - governance
 ---
-# Table of contents
+
+# Table of Contents
 
 - [[#RBAC vs policy|RBAC vs policy]]
 - [[#Types of policies|Types of policies]]
@@ -22,7 +23,7 @@ tags:
 - **audit effect** (allowed a resource to be created with a warning message).
 	- shows non compliant resources in ==> *compliance **/** policy name **/** activity logs*.
 
-# RBAC vs policy
+# RBAC Vs Policy
 
 | RBAC                                                                                              | Policy                                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -74,19 +75,19 @@ policies
 	- audit if not exist
 	- deploy if not exist (execute a template, to perform some remediation to make something right)
 
-# Types of policies
+# Types of Policies
 
 1. built-in
 2. custom
 3. static
 
 ---
-# policy assignment
+# Policy Assignment
 
 assigning that particular policy to a level of hierarchy and that policy can be inherited to the lower levels.
 
 ---
-# Policy enforcement
+# Policy Enforcement
 
 1. enabled
 2. disabled
@@ -94,7 +95,7 @@ assigning that particular policy to a level of hierarchy and that policy can be 
 - think of disabled as *what-if* mode.
 
 ---
-# exclusions (not scope)
+# Exclusions (not scope)
 
 exclude that policy to a particular
 - sub
@@ -103,7 +104,7 @@ exclude that policy to a particular
 
 ---
 
-# policy limits
+# Policy Limits
 
 
 <mark style="background: #FF5582A6;">exclusions limit</mark> - **400 exclusions**

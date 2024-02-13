@@ -9,14 +9,14 @@ tags:
 
 - [[#Defender for Servers|Defender for Servers]]
 	- [[#Defender for Servers#Defender for Endpoint|Defender for Endpoint]]
-- [[#Defender for Endpoint|Defender for Endpoint]]
-	- [[#Defender for Endpoint#Microsoft Defender Vulnerability Management|Microsoft Defender Vulnerability Management]]
-	- [[#Defender for Endpoint#Log Analytic Workspace|Log Analytic Workspace]]
-	- [[#Defender for Endpoint#Adaptive Network Hardening|Adaptive Network Hardening]]
-	- [[#Defender for Endpoint#File Integrity Monitor|File Integrity Monitor]]
-	- [[#Defender for Endpoint#Adaptive Application Controls|Adaptive Application Controls]]
-		- [[#Adaptive Application Controls#Benefits|Benefits]]
-- [[#Network Layer Threat Detection|Network Layer Threat Detection]]
+	- [[#Defender for Servers#Defender for Endpoint Features|Defender for Endpoint Features]]
+		- [[#Defender for Endpoint Features#Microsoft Defender Vulnerability Management|Microsoft Defender Vulnerability Management]]
+		- [[#Defender for Endpoint Features#Log Analytic Workspace|Log Analytic Workspace]]
+		- [[#Defender for Endpoint Features#Adaptive Network Hardening|Adaptive Network Hardening]]
+		- [[#Defender for Endpoint Features#File Integrity Monitor|File Integrity Monitor]]
+		- [[#Defender for Endpoint Features#Adaptive Application Controls|Adaptive Application Controls]]
+		- [[#Defender for Endpoint Features#Benefits|Benefits]]
+		- [[#Defender for Endpoint Features#Network Layer Threat Detection|Network Layer Threat Detection]]
 
 # Defender for Servers
 
@@ -57,7 +57,7 @@ tags:
 - After the license is created, the MDC again communicates to MDE the workspaces that the customer has with the relevant security solution installed on them.
 - The monitoring agent will then successfully run on the server as the license and configured by MDE.
 <br>
-**alert flow from server 2012, 16 > MDE > MDC**
+**Alert flow from server 2012, 16 > MDE > MDC**
 
 - If any alert on the server. It first sent to MDE service, the MDE then identifies the alert that comes from the machine which is provisioned by MDC.
 - That alert is forwarded to the MDC, then the alerts are available to work on it by the customer.
@@ -99,7 +99,7 @@ host: learn.microsoft.com
 image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 ```
 
-# Defender for Endpoint
+## Defender for Endpoint Features
 
 - Defender for endpoint is Microsoft's EDR (Endpoint Detect Response) solution
 ![[Pasted image 20240205195116.png]]
@@ -117,8 +117,7 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 	- Defender for identity
 
 ---
-[[Defender for Servers]]
-## Microsoft Defender Vulnerability Management
+### Microsoft Defender Vulnerability Management
 
 ![[Pasted image 20240206213455.png]]
 
@@ -139,12 +138,12 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 - We can identify, assess, and remediate vulnerabilities all at one place.
 
 ---
-## Log Analytic Workspace
+### Log Analytic Workspace
 
 The agent will be collecting information and sending it to the workspace. If you are Using Azure Defender for Server, you have up to *500 MB* per day per node, and after that, Log Analytics Charges will apply.
 
 ---
-## Adaptive Network Hardening
+### Adaptive Network Hardening
 
 > [!note] 
 > Improve your network security posture with adaptive network hardening
@@ -191,7 +190,7 @@ Using all this information to understand what's normal and what's suspicious, an
 - When necessary, you can delete a recommended rule for the current session. For example, you might determine that applying a suggested rule could block legitimate traffic.
 
 ---
-## File Integrity Monitor
+### File Integrity Monitor
 
 - Examines operating system files, Windows registries, application software, and Linux system files for changes that might indicate an attack.
 - Uses the *Azure Change Tracking solution* to track and identify changes in your environment.
@@ -214,7 +213,7 @@ Using all this information to understand what's normal and what's suspicious, an
 - [Enable File Integrity Monitoring (Azure Monitor Agent) - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-ama)
 
 ---
-## Adaptive Application Controls
+### Adaptive Application Controls
 
 - Enhance your security with this data-driven, intelligent automated solution that defines allowlists of known-safe applications for your machines.
 - Microsoft Defender for Cloud uses machine learning to analyze the applications running on your machines and create a list of the known-safe software.
@@ -231,7 +230,7 @@ Using all this information to understand what's normal and what's suspicious, an
 - Defender for Cloud needs at least two weeks of data to define the unique recommendations per group of machines.
 
 ---
-# Network Layer Threat Detection
+### Network Layer Threat Detection
 
 Some network configurations restrict MDC to generate alerts on suspicious network activity.
 
