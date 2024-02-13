@@ -21,3 +21,11 @@ tags:
 - **Lateral movement**
 
 ---
+
+- [ ] Sensitive info discovery process.
+- [ ] *Defender for cloud apps* and *defender for cloud*.
+- [ ] Adaptive application.
+- [ ] How to exempt a recommendation without using it.
+- [ ] Difference between AMA (Data collection rules *DCR*) and MMA (pull all the logs is a disadvantage).
+- [ ] Which one to recommend, ARC or *direct onboarding* (P1 and P2).
+- [ ] Licensing process for local script process.

@@ -4,6 +4,7 @@ date: 2024-01-19
 resources: 
 tags:
 ---
+
 > [!note] 
 > ![[Archive/Azure_Public_Service_Icons/Icons/monitor/00001-icon-service-Monitor.svg | 50]]
 > 
@@ -21,7 +22,7 @@ tags:
 - It stores it in a common data platform for consumption by a common set of tools that can correlate, analyze, visualize, and/or respond to the data.
 - You can also integrate other Microsoft and non-Microsoft tools.
 
-# High level architecture of monitor
+# High Level Architecture of Monitor
 
 ![[Pasted image 20240122125040.png]]
 
@@ -49,18 +50,18 @@ tags:
 # Metrics
 
 [Azure Monitor Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-platform-metrics) stores numeric data from monitored resources into a time-series database.  The metric database is automatically created for each Azure subscription. Use Metrics Explorer to analyze data from Azure Monitor Metrics.
-## Types of metrics
+## Types of Metrics
 
 - #Native_Metrics ^e590fb
 	- *platform metrics* - metrics that are collected from Azure resources, have no cost and no configurations.
 	- *Custom metrics* - metrics collected from different sources that you configure including applications, and agents running on virtual machines.
-- #Prometheus_metrics - collected from Kubernetes clusters including Azure Kubernetes service (AKS) and use industry standard tools for analyzing and alerting such as #PromQL and #Grafana.
+- #Prometheus_metrics - collected from Kubernetes clusters including Azure Kubernetes service (Ask) and use industry standard tools for analyzing and alerting such as #PromQL and #Grafana.
 
 ![[Pasted image 20240122143403.png]]
 
 |**Category** |**Native platform metrics** |**Native custom metrics** |**Prometheus metrics** |
 |---|---|---|---|
-|Sources|Azure resources|Azure Monitor agent  <br>Application insights  <br>REST API|Azure Kubernetes service (AKS) cluster  <br>Any Kubernetes cluster through remote-write|
+|Sources|Azure resources|Azure Monitor agent  <br>Application insights  <br>REST API|Azure Kubernetes service (Ask) cluster  <br>Any Kubernetes cluster through remote-write|
 |Configuration|None|Varies by source|Enable Azure Monitor managed service for Prometheus|
 |Stored|Subscription|Subscription|[Azure Monitor workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/azure-monitor-workspace-overview)|
 |Cost|No|Yes|Yes (free during preview)|
