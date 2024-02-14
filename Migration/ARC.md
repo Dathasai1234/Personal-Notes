@@ -43,9 +43,6 @@ tags:
 - You just need to install Azure ARC client on supported version of servers, and that's it
 - Your Servers will be onboarded to Azure as resource
 - Then you can use different control which Azure ARC for servers has to offer.
-- ant is small.
-- elephant is big.
-
 ---
 # ARC Lab
 
