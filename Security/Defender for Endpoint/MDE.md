@@ -203,6 +203,9 @@ tags:
 
 ### Onboarding 2012 and 2016 servers
 
+- If you try to on-board directly, it will give you an error.
+![[Pasted image 20240215192538.png]]
+
 
 
 ---
