@@ -150,4 +150,61 @@ tags:
 - Not normally used in production deployments.
 - Microsoft recommends limiting the number of deployments using local scripts to *ten*.
 - If you want to onboard more than 10 devices, it is recommended to use other deployment options like *Group Policy* or *Microsoft Endpoint Configuration Manager*.
-- 
+
+- The onboarding process is straight forward for 2019 and 2022 servers as the *MDE.Windows* extention is already integrated with operating system. We just have to provision it using the onboarding script
+- But in previous versions 2019 and 2012 servers needs some extra steps to onboard.
+- There are some pre-requisites for the on-boarding process.
+	- The servers needs to be updated (security updates).
+	- Two packages *md4ws.msc* package and *on-boarding script* needs to be downloaded from the defender portal.
+	- Md4ws script should be executed and then on-boarding script.
+- This will now on-board the server to MDE.
+
+![[Pasted image 20240215190259.png | 500]]
+
+
+### Onboarding 2019 and 2022 servers.
+
+- You can get the *Local Script package* from the *Microsoft Defender portal*.
+- Click on `Settings > Onboarding`
+- Select an operating system : The process of onboarding will change depending on the operating system you choose.
+![[Pasted image 20240215171940.png]]
+
+- Deployment model : Select *Local Script*
+![[Pasted image 20240215172013.png]]
+
+- Now you can download the Package.
+- Run the Script by extracting the package in the server you want to onboard.
+- You can only run the script as an administrator.
+- The onboarding process will begin.
+![[Pasted image 20240215181735.png]]
+
+- You can run the cmd command to check the status of on-boarding.
+- `sc query sense`
+![[Pasted image 20240215172242.png]]
+
+#### Registry Which Shows the Onboarding Status
+
+`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Advanced Threat Protection\Status`
+
+##### Registry of a Machine Which is On-boarded
+
+![[Pasted image 20240215182014.png]]
+
+##### Registry of a Machine Which is not yet On-boarded
+![[Pasted image 20240215173128.png]]
+
+- Running the On-boarding Script will change the registry.
+- It will take some time to show the on-boarded in defender endpoint portal.
+- You can also offboarding using Local Script.
+
+![[Pasted image 20240215183409.png]]
+
+- This will change the registry properties: OnboardingState to 0.
+
+### Onboarding 2012 and 2016 servers
+
+
+
+---
+## Onboarding via Group Policy
+
