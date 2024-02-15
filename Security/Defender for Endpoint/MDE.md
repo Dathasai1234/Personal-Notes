@@ -151,7 +151,7 @@ tags:
 - Microsoft recommends limiting the number of deployments using local scripts to *ten*.
 - If you want to onboard more than 10 devices, it is recommended to use other deployment options like *Group Policy* or *Microsoft Endpoint Configuration Manager*.
 
-- The onboarding process is straight forward for 2019 and 2022 servers as the *MDE.Windows* extention is already integrated with operating system. We just have to provision it using the onboarding script
+- The onboarding process is straight forward for 2019 and 2022 servers as the *MDE.Windows* extension is already integrated with operating system. We just have to provision it using the onboarding script
 - But in previous versions 2019 and 2012 servers needs some extra steps to onboard.
 - There are some pre-requisites for the on-boarding process.
 	- The servers needs to be updated (security updates).
@@ -162,7 +162,7 @@ tags:
 ![[Pasted image 20240215190259.png | 500]]
 
 
-### Onboarding 2019 and 2022 servers.
+### Onboarding 2019 and 2022 Servers.
 
 - You can get the *Local Script package* from the *Microsoft Defender portal*.
 - Click on `Settings > Onboarding`
@@ -201,7 +201,7 @@ tags:
 
 - This will change the registry properties: OnboardingState to 0.
 
-### Onboarding 2012 and 2016 servers
+### Onboarding 2012 and 2016 Servers
 
 - If you try to on-board directly, it will give you an error.
 ![[Pasted image 20240215192538.png]]
@@ -211,3 +211,6 @@ tags:
 ---
 ## Onboarding via Group Policy
 
+```
+hi
+```
