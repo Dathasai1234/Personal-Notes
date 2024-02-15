@@ -137,6 +137,17 @@ tags:
 - Same Features which are provided to Android.
 
 ---
-# Supported Microsoft Defender for Endpoint capabilities by platform
+# Onboarding Servers to Microsoft Defender for Endpoint.
 
-[source](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/supported-capabilities-by-platform?view=o365-worldwide#:~:text=Supported%20Microsoft%20Defender%20for%20Endpoint%20capabilities%20by%20platform,-Article)
+![[Pasted image 20240215170703.png]]
+## Onboarding Using Local Script
+
+- You first manually onboard individual devices to MDE.
+- You might want to do this first when *testing* the service before you commit to onboarding all the devices in your network.
+- This script has been optimized for use on up to ten devices.
+- Local scripting is a special onboarding method for evaluating (testing) Microsoft Defender for Endpoint.
+- The data reporting frequency is *higher* than with other onboarding methods when onboarding using a local script.
+- Not normally used in production deployments.
+- Microsoft recommends limiting the number of deployments using local scripts to *ten*.
+- If you want to onboard more than 10 devices, it is recommended to use other deployment options like *Group Policy* or *Microsoft Endpoint Configuration Manager*.
+- 
