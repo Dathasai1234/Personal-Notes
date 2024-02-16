@@ -48,8 +48,15 @@ tags:
 
 ## EC2 Instance in *AWS*
 
+- Server from different cloud providers can be directly onboarded to Azure environment using a server called ARC.
+- Here we are spinning up a server in AWS environment and on-boarded using ARC.
+
 ![[Pasted image 20240130163207.png]]
 ## Onboarding to Azure Using *ARC*
+
+
+
+- 
 
 ![[Pasted image 20240130163303.png]]
 ## Onboarded EC2 to Azure as Azure Resource
@@ -62,6 +69,6 @@ tags:
 
 - The policies and defender can work on that EC2 instance.
 
-## EC2 in Defenders Inventory
+## EC2 in Defender Inventory
 
 ![[Pasted image 20240130164015.png]]

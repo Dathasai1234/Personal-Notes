@@ -5,6 +5,33 @@ resources:
 tags:
 ---
 
+# Index
+
+- [[#Defender for Endpoint Plan 1:|Defender for Endpoint Plan 1:]]
+- [[#Defender for Endpoint Plan 2:|Defender for Endpoint Plan 2:]]
+- [[#Requirements|Requirements]]
+	- [[#Requirements#Licensing Requirements|Licensing Requirements]]
+		- [[#Licensing Requirements#Difference between Microsoft **Defender for Business servers** and **Microsoft Defender for Servers Plan 1 and Plan 2**|Difference between Microsoft **Defender for Business servers** and **Microsoft Defender for Servers Plan 1 and Plan 2**]]
+	- [[#Requirements#Network and Data Storage and Configuration Requirements|Network and Data Storage and Configuration Requirements]]
+	- [[#Requirements#Microsoft Defender Antivirus Configuration Requirement|Microsoft Defender Antivirus Configuration Requirement]]
+- [[#MDE on non-Microsoft Products|MDE on non-Microsoft Products]]
+	- [[#MDE on non-Microsoft Products#Mac OS|Mac OS]]
+		- [[#Mac OS#Not Currently Supported on macOS Endpoints:|Not Currently Supported on macOS Endpoints:]]
+	- [[#MDE on non-Microsoft Products#Linux|Linux]]
+		- [[#Linux#Not Currently Supported on Linux Endpoints:|Not Currently Supported on Linux Endpoints:]]
+	- [[#MDE on non-Microsoft Products#Android|Android]]
+	- [[#MDE on non-Microsoft Products#IOS|IOS]]
+- [[#Onboarding Servers to Microsoft Defender for Endpoint.|Onboarding Servers to Microsoft Defender for Endpoint.]]
+	- [[#Onboarding Servers to Microsoft Defender for Endpoint.#Onboarding Using Local Script|Onboarding Using Local Script]]
+		- [[#Onboarding Using Local Script#Onboarding 2019 and 2022 Servers.|Onboarding 2019 and 2022 Servers.]]
+			- [[#Onboarding 2019 and 2022 Servers.#Registry Which Shows the Onboarding Status|Registry Which Shows the Onboarding Status]]
+				- [[#Registry Which Shows the Onboarding Status#Registry of a Machine Which is On-boarded|Registry of a Machine Which is On-boarded]]
+				- [[#Registry Which Shows the Onboarding Status#Registry of a Machine Which is not yet On-boarded|Registry of a Machine Which is not yet On-boarded]]
+		- [[#Onboarding Using Local Script#Onboarding 2012 and 2016 Servers|Onboarding 2012 and 2016 Servers]]
+			- [[#Onboarding 2012 and 2016 Servers#Windows 2016 Server Onboarding|Windows 2016 Server Onboarding]]
+		- [[#Onboarding Using Local Script#Onboarding Linux (Ubuntu) Servers|Onboarding Linux (Ubuntu) Servers]]
+		- [[#Onboarding Using Local Script#Onboarding Linux (CentOS) Servers|Onboarding Linux (CentOS) Servers]]
+
 # Defender for Endpoint Plan 1:
 
 - Microsoft Defender for Endpoint P1 delivers core endpoint protection capabilities such as
@@ -211,6 +238,42 @@ tags:
 
 ![[Pasted image 20240215192538.png]]
 
+#### Windows 2016 Server Onboarding
+
+In Older method the MMA agent is inbuilt in 2016, just have to turn on "Windows defender features" and then check in settings if Windows Defender appears in the blade or if in Recovery tabs there is Microsoft defender. So, you have to install an MMA agent manually along with
+
+![[Pasted image 20240216153828.png]]
+
+In the workflow we can see or select to install windows defender features and check by accessing windows defender
+
+But, the new solution which is the modern unified solution for 2012 and 2016 is as simple as a toggle button.
+
+![[Pasted image 20240216153907.png]]
+
+Here as you can see the process has been streamlined a lot and it just shows up as an option to just choose and complete the same process twice as quickly.
+
+![[Pasted image 20240216153952.png]]
+
+So since we already know that the AV solution is there on the 2016 one in-built what it does is the solution aids in installing the EDR solution as well and then we can just go ahead and complete the onboarding steps.
+
+![[Pasted image 20240216154821.png]]
+
+The installation package is Windows Defender Antivirus agent
+
+**Prerequisites for Windows Server 2016**
+
+It's recommended to install the latest available SSU and LCU on the server.
+
+- The Servicing Stack Update (SSU) from September 14, 2021 or later must be installed.
+- The Latest Cumulative Update (LCU) from September 20, 2018 or later must be installed.
+- Enable the Microsoft Defender Antivirus feature and ensure it's up to date. For more [information on enabling Defender Antivirus on Windows Server, see Re-enable Defender](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/enable-update-mdav-to-latest-ws?view=o365-worldwide&re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) [Antivirus on Windows Server if it was disabled and Re-enable Defender Antivirus on](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/enable-update-mdav-to-latest-ws?view=o365-worldwide&re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled) [Windows Server if it was uninstalled.](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/enable-update-mdav-to-latest-ws?view=o365-worldwide&re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)
+- Download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)
+
+You have to go to the Windows Defender Settings as well and update it manually if required. After the updates are done and the KB packages are up to date, then you have to reboot it and then start your onboarding process aka The MSI installation package and then onboarding script.
+
+  ![[Pasted image 20240216154242.png]]
+
+---
 ### Onboarding Linux (Ubuntu) Servers
 
 - The process is different from Ubuntu and CentOS distributions.
@@ -375,3 +438,11 @@ mdatp health
 - Usually takes 24 hours to onboard.
 
 ---
+### Onboarding Linux (CentOS) Servers
+
+- The process of onboarding Centos servers is same as ubuntu servers.
+- Difference is that you use `yum` instead of `sudo`. The entire process will be same.
+
+---
+# Onboarding via Arc
+
