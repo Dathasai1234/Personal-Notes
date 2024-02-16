@@ -167,6 +167,7 @@ tags:
 - You can get the *Local Script package* from the *Microsoft Defender portal*.
 - Click on `Settings > Onboarding`
 - Select an operating system : The process of onboarding will change depending on the operating system you choose.
+
 ![[Pasted image 20240215171940.png]]
 
 - Deployment model : Select *Local Script*
@@ -207,13 +208,170 @@ tags:
 ### Onboarding 2012 and 2016 Servers
 
 - If you try to on-board directly, it will give you an error.
+
 ![[Pasted image 20240215192538.png]]
 
+### Onboarding Linux (Ubuntu) Servers
 
+- The process is different from Ubuntu and CentOS distributions.
+- Install `curl` if isn't installed yet.
+
+```bash
+sudo apt-get install curl
+```
+
+- Install `libplist-utils` if it isn't installed yet:
+
+```bash
+sudo apt-get install libplist-utils
+```
+
+- If you're running `Ubuntu 22.04` and wish to deploy MDE from the `prod` channel.
+
+```bash
+curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+```
+
+```bash
+curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+```
+
+- Install repository configuration,  if you chose `prod` channel:
+
+```bash
+sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
+```
+
+```bash
+sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
+```
+
+- Install `gpg` package if not already installed:
+
+```bash
+sudo apt-get install gpg
+```
+
+- If `gpg` is not available, then install `gnupg`.
+
+```bash
+sudo apt-get install gnupg
+```
+
+- Install Microsoft GPG public key
+- Debian 11 and earlier
+
+```bash
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+```
+
+- Debian 12 and later
+
+```bash
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
+```
+
+- Install the `HTTPS driver`
+
+```bash
+sudo apt-get install apt-transport-https
+```
+
+- Update the repository metadata:
+
+```bash
+sudo apt-get update
+```
+
+- Install `mdatp`
+
+```bash
+sudo apt-get install mdatp
+```
+
+- Now verify if it has downloaded
+
+```bash
+mdatp
+```
+
+![[Pasted image 20240216133452.png]]
+
+- Download the `onboarding package` for linux in defender portal
+
+![[Pasted image 20240216133557.png]]
+
+- Run CMD as administrator.
+- Change the prompt path to the `downloads` folder.
+
+```bash
+cd Downloads
+```
+
+- Unzip the onboard package
+
+```bash
+unzip WindowsDefenderATPOnboardingPackage.zip
+```
+
+- Output
+
+```console
+Archive:  WindowsDefenderATPOnboardingPackage.zip
+inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+```
+
+- Install python if you don't have it.
+- If you're running RHEL 8.x or Ubuntu 20.04 or higher, you'll need to use `python3`.
+- For the rest of distros and versions, you'll need to use `python`.
+
+```bash
+sudo apt-get python3
+```
+
+- Initially the client device is not associated with an `organization` and the `orgId` attribute is blank.
+
+```bash
+mdatp health --field org_id
+```
+
+![[Pasted image 20240216134210.png]]
+
+- Initial Health before on-boarding
+
+```bash
+mdatp health
+```
+
+![[Pasted image 20240216134412.png]]
+
+- Compile the python file (onboarding script)
+
+```bash
+sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+```
+Or
+```bash
+sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+```
+
+![[Pasted image 20240216135353.png]]
+
+- This will onboard the Linux server to MDE
+- To verify, use `mdatp `
+
+```bash
+mdatp health --field org_id
+```
+
+![[Pasted image 20240216135539.png]]
+
+```bash
+mdatp health
+```
+
+![[Pasted image 20240216135640.png]]
+
+- Usually takes 24 hours to onboard.
 
 ---
-## Onboarding via Group Policy
-
-```
-hi
-```
