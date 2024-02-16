@@ -482,10 +482,14 @@ mdatp health
 
 - You will also find that server in the inventory of Defender for cloud.
 
-
 ---
 # Limitations
 
 ## Local Script Limitations
 
-- 
+- This script has been optimized for use on up to ten devices.
+- The script collects data from the device and transmits it to MDE. The frequency rate is higher than with other onboarding methods when onboarding using a local script. The impacts can be:
+	- Increased network traffic
+	- Higher resource usage
+- Not ideal for production. Only for the Evaluation purposes.
+
