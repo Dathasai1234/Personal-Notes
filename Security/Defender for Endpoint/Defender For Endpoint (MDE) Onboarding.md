@@ -446,3 +446,46 @@ mdatp health
 ---
 # Onboarding via Arc
 
+## EC2 Instance in *AWS*
+
+- Server from different cloud providers can be directly onboarded to Azure environment using a server called ARC.
+- Here we are spinning up a server in AWS environment and on-boarded using ARC.
+
+![[Pasted image 20240130163207.png]]
+## Onboarding to Azure Using *ARC*
+
+![[Pasted image 20240216155759.png]]
+
+- A script is generated which we use to execute it in powershell with administrator permissions on the server you want to onboard.
+- Click on Generate script and select a region and operating system (Windows or Linux).
+
+![[Pasted image 20240216160353.png | 500]]
+
+- After running the script, the authentication process will happen in that server browser.
+- After you enter the credentials, the on-boarding process will start.
+- You can see the EC2 server as ARC enabled server in Azure.
+
+![[Pasted image 20240130163303.png]]
+
+
+![[Pasted image 20240130163336.png]]
+
+## We Can Manage and Monitor the EC2 in Azure
+
+![[Pasted image 20240130163413.png]]
+
+- The policies and defender can work on that EC2 instance.
+
+## EC2 in Defender Inventory
+
+![[Pasted image 20240130164015.png]]
+
+- You will also find that server in the inventory of Defender for cloud.
+
+
+---
+# Limitations
+
+## Local Script Limitations
+
+- 

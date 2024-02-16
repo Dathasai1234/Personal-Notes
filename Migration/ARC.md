@@ -13,11 +13,7 @@ tags:
 
 - [[#Icons|Icons]]
 	- [[#Icons#Onboarding Servers to Azure ARC|Onboarding Servers to Azure ARC]]
-- [[#ARC Lab|ARC Lab]]
-	- [[#ARC Lab#EC2 Instance in *AWS*|EC2 Instance in *AWS*]]
-	- [[#ARC Lab#Onboarding to Azure Using *ARC*|Onboarding to Azure Using *ARC*]]
-	- [[#ARC Lab#Onboarded EC2 to Azure as Azure Resource|Onboarded EC2 to Azure as Azure Resource]]
-	- [[#ARC Lab#We Can Manage and Monitor the EC2 in Azure|We Can Manage and Monitor the EC2 in Azure]]
+- [[#LAB|LAB]]
 
 
 > [!note] 
@@ -44,31 +40,6 @@ tags:
 - Your Servers will be onboarded to Azure as resource
 - Then you can use different control which Azure ARC for servers has to offer.
 ---
-# ARC Lab
+# LAB
 
-## EC2 Instance in *AWS*
-
-- Server from different cloud providers can be directly onboarded to Azure environment using a server called ARC.
-- Here we are spinning up a server in AWS environment and on-boarded using ARC.
-
-![[Pasted image 20240130163207.png]]
-## Onboarding to Azure Using *ARC*
-
-
-
-- 
-
-![[Pasted image 20240130163303.png]]
-## Onboarded EC2 to Azure as Azure Resource
-
-![[Pasted image 20240130163336.png]]
-
-## We Can Manage and Monitor the EC2 in Azure
-
-![[Pasted image 20240130163413.png]]
-
-- The policies and defender can work on that EC2 instance.
-
-## EC2 in Defender Inventory
-
-![[Pasted image 20240130164015.png]]
+![[Defender For Endpoint (MDE) Onboarding#Onboarding via Arc]]
