@@ -170,16 +170,19 @@ tags:
 ![[Pasted image 20240215171940.png]]
 
 - Deployment model : Select *Local Script*
+
 ![[Pasted image 20240215172013.png]]
 
 - Now you can download the Package.
 - Run the Script by extracting the package in the server you want to onboard.
 - You can only run the script as an administrator.
 - The onboarding process will begin.
+
 ![[Pasted image 20240215181735.png]]
 
 - You can run the cmd command to check the status of on-boarding.
 - `sc query sense`
+
 ![[Pasted image 20240215172242.png]]
 
 #### Registry Which Shows the Onboarding Status
