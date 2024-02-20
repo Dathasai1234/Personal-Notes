@@ -71,11 +71,10 @@ tags:
 - You can customize granularly using AMA agent using DCR's.
 - All this possible as Azure Monitor uses #ETL (*Extract Transform and Load*) data ingestion pipeline.
 
-# Reasons to migrate MMA to AMA
+# Reasons to Migrate MMA to AMA
 
 - Cost optimization.
-- Simpler management
-	- 
+- Simpler management 
 
 ---
 # Other Topics
