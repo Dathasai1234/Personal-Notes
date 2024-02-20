@@ -1,3 +1,10 @@
+---
+title: CSPM Plans
+date: 2024-02-20
+resources: 
+tags:
+---
+
 # Defender CSPM Plans(paid version)
 
 ## Governance Rules
