@@ -49,7 +49,7 @@ tags:
 - Endpoint Detection and Response (EDR)
 
 - The SIEM is infused with AI, ML and Analytics which will correlate all the different data in the real time.
-- The SIEM outputs High-Fidelity (better alerts) Alerts and they are going to prioritise based on the priority.
+- The SIEM outputs High-Fidelity (better alerts) Alerts and they are going to prioritize based on the priority.
 
 ---
 # What is SOAR
@@ -74,7 +74,7 @@ tags:
 - We can draw these playbook in a GUI.
 - The SOAR system will have have a dashboard which visualize all the happenings, like we have number of tickets opened to certain number of cases, how long it takes to resolve those cases, for our further analysis.
 
-![[Drawing 23-02-2024 5.49.10.excalidraw]]
+![[SOAR working]]
 
 ---
 # EDR, MDR, XDR and SIEM and SOAR.
@@ -106,7 +106,7 @@ tags:
 - EDR focuses on endpoints. XDR solutions integrate data from other systems as well.
 - It is an EDR solution while pull in the logs from other sources like firewalls.
 
-## XDR vs SIEM and SOAR
+## XDR Vs SIEM and SOAR
 
 - SIEM provides a single source for your security data and provides actionable response, but doesn't provide any kind of automated remediation.
 - SOAR can orchestrate and automate the common tasks and remediations.
@@ -114,4 +114,4 @@ tags:
 - XDR is not so comprehensive compared either of these two tools.
 - XDR is more focused on endpoints and data ingestion and analytics of XDR is not as powerful as SIEM tool.
 - The orchestration capabilities are limited compared to SOAR.
-- 
+- The XDR tools are cheaper 
