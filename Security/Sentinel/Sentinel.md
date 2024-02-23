@@ -31,6 +31,8 @@ tags:
 ---
 # What is SIEM
 
+[What Is SIEM? (youtube.com)](https://www.youtube.com/watch?v=9RfsRn7m7OE)
+
 - SIEM - Security Information and Event Management.
 - Hackers need one blind spot and use that vulnerability to exploit.
 - The Security analysts always deal with disconnected tools, 100s of tools which are not communicating with each other. So they're going back and forth, checking all these different tools, which creates 100s if not 1000s alerts daily.
@@ -54,6 +56,7 @@ tags:
 ---
 # What is SOAR
 
+[What is SOAR (Security, Orchestration, Automation & Response) (youtube.com)](https://www.youtube.com/watch?v=k7ju95jDxFA)
 ![[SOAR timeline]]
 
 - There are two scenarios where you manually detect and respond, and automation.
@@ -78,6 +81,8 @@ tags:
 
 ---
 # EDR, MDR, XDR and SIEM and SOAR.
+
+Source - [(719) EDR, MDR & XDR Explained - YouTube](https://www.youtube.com/watch?v=z983AM8etCA)
 
 ![[Pasted image 20240223182601.png]]
 
@@ -114,4 +119,5 @@ tags:
 - XDR is not so comprehensive compared either of these two tools.
 - XDR is more focused on endpoints and data ingestion and analytics of XDR is not as powerful as SIEM tool.
 - The orchestration capabilities are limited compared to SOAR.
-- The XDR tools are cheaper 
+- The XDR tools are cheaper.
+- The SEAM and SOAR tools are expensive.
