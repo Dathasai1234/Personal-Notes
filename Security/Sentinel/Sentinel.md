@@ -100,6 +100,7 @@ Source - [(719) EDR, MDR & XDR Explained - YouTube](https://www.youtube.com/watc
 - Depending on the context every data produced by an EDR system can be good or bad. It is a bit hard to detect a definitely good or definitely bad information.
 - EDR provides way more alerts for investigation than a traditional AV.
 
+[[Endpoint Detection and Response (EDR)]]
 ## MDR
 
 - This is a marketing term used to describe a package that consists of EDR software + managed service to take care of it for you.
