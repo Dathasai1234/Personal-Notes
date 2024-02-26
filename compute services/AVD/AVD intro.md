@@ -4,6 +4,7 @@ date: 2024-02-25
 resources: 
 tags:
 ---
+
 - AVD Service.
 	- PaaS Remote solution built in Azure
 - Windows 10 Multi-user
