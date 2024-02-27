@@ -59,10 +59,11 @@ tags:
 [What is SOAR (Security, Orchestration, Automation & Response) (youtube.com)](https://www.youtube.com/watch?v=k7ju95jDxFA)
 ![[SOAR timeline]]
 
-- There are two scenarios where you manually detect and respond, and automation.
+- There are two scenarios, where you manually detect and respond, 2ns is automation.
 - The problem is that we can do automation only for what you seen before.
-- The concept of *orchestration* is the way you handle these first of the kind. We still have a human involved, but just guiding the actions but not doing every action. Another way of thinking of it, it's like semi-automated.
-- The idea of SOAR is to try to move as much as we can from the manual to a more automated or orchestrated response.
+- The concept of *orchestration* is the way you handle these first of the kind. We still have a human involved, but just guiding the actions but not doing every action. It's like semi-automated.
+- Manual to a more automated or orchestrated response.
+<br>
 - Lets assume we have a breach in a database.
 - It sends an indication up to the SIEM.
 - Takes the incident and give a real time alarm and sends it either within the SIEM and have it managed, or sends it up to *XDR*.
@@ -70,24 +71,27 @@ tags:
 - Case is the thing that we're going to use to manage this all the way through to completion and track it along the process.
 - The case is then attached with many artifacts which have all the information of compromised resources and source IP and all.
 - This case is then assigned to a security analyst.
-- So basically SOAR is a case management system which is detected and attach the appropriate artifacts.
+<br>
+- So basically SOAR is a *case management* system which is detected and attach the appropriate artifacts.
 - Now the analyst have the necessary info on the breach, they can do investigation and they need something to guide them along the way.
-- The *playbook* is basically a set of steps where we have said, in advanced.
-- We can you *dynamic playbook* for that. What you do as the second step will depend on the output of the first step.
-- We can draw these playbook in a GUI.
-- The SOAR system will have have a dashboard which visualize all the happenings, like we have number of tickets opened to certain number of cases, how long it takes to resolve those cases, for our further analysis.
-
+- The *playbook* is basically a set of steps where are created in advanced and running them when needed.
+- What you do as the second step will depend on the output of the first step. S
 ![[SOAR working]]
 
 ---
 # EDR, MDR, XDR and SIEM and SOAR.
 
 Source - [(719) EDR, MDR & XDR Explained - YouTube](https://www.youtube.com/watch?v=z983AM8etCA)
-
-![[Pasted image 20240223182601.png]]
-
+e-book by LogRhythm - [[logrhythm - making sense of XDR EDR NDR and SIEM.pdf]]
+Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&annotation=121R|logrhythm - making sense of xdr edr ndr and siem, page 3]]
 ## EDR
 
+> EDR stands for endpoint detection and response, and its primary goal is to identify malicious activity occurring at the endpoint.
+
+[[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=15,0,17,26|logrhythm - making sense of xdr edr ndr and siem, page 4]]
+
+- ! EDR technology provides a great view of threats occurring at the endpoint.
+- If a user browses to a malicious website and some sort of malware is downloaded, EDR can stop that threat before it turns into something like a ransomware attack.
 - Focus is on malicious behavior.
 - It monitors activities and events on devices, looks for patterns that may indicate malicious action.
 - This provides data for future investigation and this data is vital when the breach is detected.
@@ -95,26 +99,44 @@ Source - [(719) EDR, MDR & XDR Explained - YouTube](https://www.youtube.com/watc
 - This is the part of *Detection* part
 - *Response*: can proactively take action to mitigate attacks before they have a chance to cause damage.
 - If events are recorded that indicate a system has been breached, EDR can automatically isolate the system from the network in order to cut off the network.
-- This is the separate solution for the AV. A lot of security vendors pack both EDR and AV in a single package.
 - ! The challenge with EDR is the amount of information it produces.
-- Depending on the context every data produced by an EDR system can be good or bad. It is a bit hard to detect a definitely good or definitely bad information.
-- EDR provides way more alerts for investigation than a traditional AV.
+- EDR provides way more alerts for investigation than a traditional AV. It is a bit hard to detect a definitely good or definitely bad information.
 
-[[Endpoint Detection and Response (EDR)]]
-## MDR
+---
+## NDR
 
-- This is a marketing term used to describe a package that consists of EDR software + managed service to take care of it for you.
-- The value of an MDR solution comes down to the quality of the filtering and advice they give you.
-- A good MDR service will reduce the efforts and expense required for a company to derive value from an EDR solution.
+> Network detection and response (NDR), identifies malicious activity traversing hosts; for example, detecting lateral movement across the network.
 
+[[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=18,0,20,46|logrhythm - making sense of xdr edr ndr and siem, page 4]]
+
+- This primarily focused across the network.
+- ! It tells you what is occurring on your network, who is coming across it, and what anomalies are happening across your network.
+- NDR also gives you the ability to respond to a threat.
+
+---
 ## XDR
+
+- XDR gives you a combination of EDR and NDR.
+- It merges these two technologies and looks at what is happening at the endpoint and then checks the movement of attackers or malware across a network.
+
+> It combines EDR and NDR functionality with some elements of user and entity behavior analytics (UEBA)
+
+[[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=27,29,29,25|logrhythm - making sense of xdr edr ndr and siem, page 4]]
 
 - EDR focuses on endpoints. XDR solutions integrate data from other systems as well.
 - It is an EDR solution while pull in the logs from other sources like firewalls.
 
+---
 ## XDR Vs SIEM and SOAR
 
-- SIEM provides a single source for your security data and provides actionable response, but doesn't provide any kind of automated remediation.
+> It’s like comparing a speedboat to a warship. Both go in the water and do similar things, but one takes a lot more feeding and watering and provides a lot more protection. One’s very easy to drive, but you can’t do as much with it. So you get there quicker, but you won’t be able to see as much
+
+[[logrhythm - making sense of xdr edr ndr and siem.pdf#page=7&selection=71,0,79,36|logrhythm - making sense of xdr edr ndr and siem, page 7]]
+
+- SIEM is used for threat detection, compliance, operational risk, and many other things. SIEM collects information from many different sources and as a result, it is a broad and shallow approach.
+- It consumes information from solutions such as NDR, UEBA, and EDR.
+- EDR + additional capabilities, like **reporting**, **compliance**, and **operational monitoring**.
+- Provides actionable response, but doesn't provide any kind of automated remediation.
 - SOAR can orchestrate and automate the common tasks and remediations.
 - XDR does the same sort of things as both SIEM and SOAR.
 - XDR is not so comprehensive compared either of these two tools.
@@ -124,6 +146,12 @@ Source - [(719) EDR, MDR & XDR Explained - YouTube](https://www.youtube.com/watc
 - The SEAM and SOAR tools are expensive.
 
 ---
+## MDR and MXDR
+
+- The provider uses tools like *EDR and XDR* along with *human expertise*, to monitor your security environment.
+
+---
 
 - A *Log Analytic workspace* is required to get ready for sentinel as it ingest all of its detections, analytics and other features.
 - Sentinel workspace and its related resources in a dedicated resource group.
+
