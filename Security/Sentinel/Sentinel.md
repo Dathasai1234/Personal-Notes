@@ -122,3 +122,9 @@ Source - [(719) EDR, MDR & XDR Explained - YouTube](https://www.youtube.com/watc
 - The orchestration capabilities are limited compared to SOAR.
 - The XDR tools are cheaper.
 - The SEAM and SOAR tools are expensive.
+
+---
+
+- A *Log Analytic workspace* is required to get ready for sentinel as it ingest all of its detections, analytics and other features.
+- Sentinel workspace and its related resources in a dedicated resource group.
+- 
