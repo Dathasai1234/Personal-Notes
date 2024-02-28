@@ -144,6 +144,10 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 - It is an EDR solution while pull in the logs from other sources like firewalls.
 
 ---
+
+- XDR 
+
+---
 ## XDR Vs SIEM and SOAR
 
 > It’s like comparing a speedboat to a warship. Both go in the water and do similar things, but one takes a lot more feeding and watering and provides a lot more protection. One’s very easy to drive, but you can’t do as much with it. So you get there quicker, but you won’t be able to see as much
