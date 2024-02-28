@@ -84,6 +84,8 @@ tags:
 Source - [(719) EDR, MDR & XDR Explained - YouTube](https://www.youtube.com/watch?v=z983AM8etCA)
 e-book by LogRhythm - [[logrhythm - making sense of XDR EDR NDR and SIEM.pdf]]
 Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&annotation=121R|logrhythm - making sense of xdr edr ndr and siem, page 3]]
+
+![[All DR's and SIEM | 600]]
 ## EDR
 
 > EDR stands for endpoint detection and response, and its primary goal is to identify malicious activity occurring at the endpoint.
@@ -112,6 +114,7 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 - This primarily focused across the network.
 - ! It tells you what is occurring on your network, who is coming across it, and what anomalies are happening across your network.
 - NDR also gives you the ability to respond to a threat.
+- *Microsoft 365 Defender*, specifically the XDR (*Extended Detection and Response*) component, offers NDR capabilities.
 
 ---
 ## XDR
@@ -142,8 +145,7 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 - XDR is not so comprehensive compared either of these two tools.
 - XDR is more focused on endpoints and data ingestion and analytics of XDR is not as powerful as SIEM tool.
 - The orchestration capabilities are limited compared to SOAR.
-- The XDR tools are cheaper.
-- The SEAM and SOAR tools are expensive.
+- The XDR tools are cheap than SEAM and SOAR tools.
 
 ---
 ## MDR and MXDR
@@ -154,4 +156,3 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 
 - A *Log Analytic workspace* is required to get ready for sentinel as it ingest all of its detections, analytics and other features.
 - Sentinel workspace and its related resources in a dedicated resource group.
-
