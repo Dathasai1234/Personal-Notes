@@ -5,6 +5,20 @@ resources:
 tags:
 ---
 
+# Index
+
+- [[#Defender for Cloud and Sentinel|Defender for Cloud and Sentinel]]
+- [[#Microsoft Sentinel Solution|Microsoft Sentinel Solution]]
+- [[#What is SIEM|What is SIEM]]
+	- [[#What is SIEM#Inputs to SIEM|Inputs to SIEM]]
+- [[#What is SOAR|What is SOAR]]
+- [[#EDR, MDR, XDR and SIEM and SOAR.|EDR, MDR, XDR and SIEM and SOAR.]]
+	- [[#EDR, MDR, XDR and SIEM and SOAR.#EDR|EDR]]
+	- [[#EDR, MDR, XDR and SIEM and SOAR.#NDR|NDR]]
+	- [[#EDR, MDR, XDR and SIEM and SOAR.#XDR|XDR]]
+	- [[#EDR, MDR, XDR and SIEM and SOAR.#XDR Vs SIEM and SOAR|XDR Vs SIEM and SOAR]]
+	- [[#EDR, MDR, XDR and SIEM and SOAR.#MDR and MXDR|MDR and MXDR]]
+
 # Defender for Cloud and Sentinel
 
 - Defender for cloud :
@@ -122,7 +136,7 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 - XDR gives you a combination of EDR and NDR.
 - It merges these two technologies and looks at what is happening at the endpoint and then checks the movement of attackers or malware across a network.
 
-> It combines EDR and NDR functionality with some elements of user and entity behavior analytics (UEBA)
+> It combines EDR and NDR functionality with some elements of #UEBA User and Entity Behavior Analytics (UEBA)
 
 [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=27,29,29,25|logrhythm - making sense of xdr edr ndr and siem, page 4]]
 
