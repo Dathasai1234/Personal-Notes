@@ -136,7 +136,7 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 - XDR gives you a combination of EDR and NDR.
 - It merges these two technologies and looks at what is happening at the endpoint and then checks the movement of attackers or malware across a network.
 
-> It combines EDR and NDR functionality with some elements of #UEBA User and Entity Behavior Analytics (UEBA)
+> It combines EDR and NDR functionality with some elements of #UEBA ser and ntity ehavior nalytics (UEBA)
 
 [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=27,29,29,25|logrhythm - making sense of xdr edr ndr and siem, page 4]]
 
@@ -145,7 +145,7 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 
 ---
 
-- XDR 
+- X
 
 ---
 ## XDR Vs SIEM and SOAR
