@@ -145,7 +145,9 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 
 ---
 
-- X
+Domain boundaries of Applications, Endpoints, Identity and Data. Defending a domain can be challenging. An attacker can establish 
+
+1. Alert Fatigue
 
 ---
 ## XDR Vs SIEM and SOAR
