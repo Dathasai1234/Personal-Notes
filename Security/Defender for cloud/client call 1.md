@@ -48,8 +48,10 @@ Use secure score to get visibility to your security posture to help prioritize r
 
 According to IBM, the cost of the data breach, the average ransomware attack costs 4.62 billion dollars.
 
+Reputation
+
 ---
-# Data Aware security posture
+# Data Aware Security Posture
 
 [azure-docs/articles/defender-for-cloud/concept-data-security-posture.md at main · MicrosoftDocs/azure-docs (github.com)](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/defender-for-cloud/concept-data-security-posture.md)
 

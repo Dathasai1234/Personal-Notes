@@ -49,7 +49,7 @@ Notion of scanning a VM for Secrets, creds and malware.
 
 Defender for Cloud's agentless secrets scanning for Virtual Machines (VM) locates plaintext secrets that exist in your environment
 
-We already got a snapshot of a VM disk and scanned by the #MDVM (Microsoft Defender Vulnerability Management) engine. Another engine set of engine also scanning the same disk for *secrets* like the above once.
+We already got a snapshot of a VM disk and scanned by the #MDVM (Microsoft Defender Vulnerability Management) engine. This engine also scans the same disk for *secrets* like the above once.
 
 The thing is not only finding the vulnerabilities for a VM, lets say using that vulnerability the attacker might exploit and have a bridge to that VM and take those secrets and laterally moving to next workload to attack and most likely to access.
 
