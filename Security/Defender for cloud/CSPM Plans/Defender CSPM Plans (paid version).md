@@ -105,3 +105,5 @@ It accesses your compliance and security posture based on the controls of certai
 ## DevSecOps on Azure DevOps
 
 ![[Pasted image 20240131170944.png | 700]] 
+
+![[Pasted image 20240302104238.png]]
