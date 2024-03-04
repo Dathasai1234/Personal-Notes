@@ -5,6 +5,18 @@ resources:
 tags:
 ---
 
+# Index
+
+- [[#Docker Commands|Docker Commands]]
+- [[#Run an Image|Run an Image]]
+- [[#Pulling an Image|Pulling an Image]]
+- [[#List Containers|List Containers]]
+- [[#Stop a Container|Stop a Container]]
+- [[#Removing a Stopped Container Permanently|Removing a Stopped Container Permanently]]
+- [[#List Images|List Images]]
+	- [[#List Images#Remove the Image|Remove the Image]]
+- [[#CentOS Container|CentOS Container]]
+
 # Docker Commands
 
 # Run an Image
