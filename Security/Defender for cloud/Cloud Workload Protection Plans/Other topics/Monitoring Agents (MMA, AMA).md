@@ -77,6 +77,19 @@ tags:
 - Simpler management 
 
 ---
+# Migration
+
+- AMA Migration Helper
+- DCR Config generator
+
+<img src = "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/media/azure-monitor-agent-migration/mma-to-ama-migration-steps.png"/>
+
+## AMA Migration Helper
+
+- Workbook based Azure monitor solution.
+- 
+
+---
 # Other Topics
 
 [[Log Analytic Workspace]]
