@@ -31,8 +31,6 @@ tags:
 
 ---
 
----
-
 - ! Question
 - How can i use azure policy to really enforce those requirements we have?
 
@@ -54,14 +52,12 @@ tags:
 policies
 
 1. Properties
-
 2. definition location
-
 3. parameters
-
 4. Policy rule
 
 ![[Pasted image 20231107122420.png | 500]]
+
 - allof - &
 - anyOf - ||
 - not - !
