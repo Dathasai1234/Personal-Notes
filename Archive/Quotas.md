@@ -4,7 +4,8 @@ date: 2023-12-15
 resources: 
 tags:
 ---
-# Management group
+
+# Management Group
 
 - Up to **10,000** management groups are supported in a single Azure AD tenant.
 - can be created till 6 levels.
@@ -35,7 +36,7 @@ tags:
 - **240** VM’s can be created in a single resource group.
 - min of **0** and max of **1000** VM’s can be created in a scale set.
 
-## Storage accounts
+## Storage Accounts
 
 - Maximum of **250** storage accounts can be created in a single resource group.
 

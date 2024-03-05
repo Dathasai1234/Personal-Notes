@@ -87,7 +87,6 @@ tags:
 ## AMA Migration Helper
 
 - Workbook based Azure monitor solution.
-- 
 
 ---
 # Other Topics
