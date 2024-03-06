@@ -175,6 +175,8 @@ All *14* capabilities of MDVM.
 
 The dashboard of MDVM gives you information of **exposure score**, **Exposure distribution** and **secure score** of your environment.
 
+A lower exposure score means devices are less vulnerable to exploitation.
+
 The dashboard also shows top 3 recommendations, vulnerable software's and exposed devices.
 
 You can increase the security posture by acting on MDVM recommendations.
@@ -182,8 +184,10 @@ You can increase the security posture by acting on MDVM recommendations.
 You can increase the secure score by acting on MDVM recommendations. There are 2 icon associated to the recommendations.
 
 The *bullseye icon* represents *breach insights* which indicates an active recommendation to an active alert in your org
+![arrow hitting a target.](https://learn.microsoft.com/en-us/microsoft-365/media/defender-vulnerability-management/tvm_alert_icon.png?view=o365-worldwide) possible active alerts
 
 The *bug icon* represents *threat insights* indicates one or more vulnerabilities are tied to this recommendations.
+![red bug.](https://learn.microsoft.com/en-us/microsoft-365/media/defender-vulnerability-management/tvm_bug_icon.png?view=o365-worldwide) associated public exploits
 
 You can request the remediation where you can directly open a ticket in Intune or service now.
 
