@@ -119,23 +119,55 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 ---
 ### Microsoft Defender Vulnerability Management
 
-![[Pasted image 20240206213455.png]]
+MDVM capabilities are included in:
+1. MDE plan 2
+2. MDVM standalone license
+3. Defender for servers
 
-- Defender Vulnerability Management delivers asset visibility, intelligent assessments, and built-in remediation tools for Windows, macOS, Linux, Android, iOS, and network devices.
+- These are the capabilities of MDVM in MDE.
+	- [capabilities]( https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-capabilities?view=o365-worldwide#:~:text=Capability )
+- These are the capabilities of MDVM in standalone.
+- These are the capabilities of MDVM in MDFS.
+	- MDAV is natively integrated with MDC.
+	- MDAV premium capabilities are available for MDFS plan 2.
+	- [Capabilities]( https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-capabilities?view=o365-worldwide#:~:text=The%20table%20below%20shows%20the%20availability%20of%20Defender%20Vulnerability%20Management%20capabilities%20across%20the%20Defender%20for%20Servers%20plans. )
+
+| Capabilities wrt MDE                                                                                                                                                          | Capabilities wrt MDFS                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *[Device discovery](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-discovery?view=o365-worldwide)*                                           |                                                                                                                                                                               |
+| *[Device inventory](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/machines-view-overview?view=o365-worldwide)*                                     |                                                                                                                                                                               |
+| *[Vulnerability assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-weaknesses?view=o365-worldwide)*                     | *[Vulnerability assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-weaknesses?view=o365-worldwide)*                     |
+| *[Configuration assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-microsoft-secure-score-devices?view=o365-worldwide)* | *[Configuration assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-microsoft-secure-score-devices?view=o365-worldwide)* |
+| *[Risk based prioritization](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-recommendation?view=o365-worldwide)*       | *[Risk based prioritization](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-recommendation?view=o365-worldwide)*       |
+| *[Remediation tracking](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-remediation?view=o365-worldwide)*                        | *[Remediation tracking](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-remediation?view=o365-worldwide)*                        |
+| *[Continuous monitoring](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications?view=o365-worldwide)*           | *[Continuous monitoring](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications?view=o365-worldwide)*           |
+| *[Software inventory](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-software-inventory?view=o365-worldwide)*                   | *[Software inventory](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-software-inventory?view=o365-worldwide)*                   |
+| *[Software usages insights](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-usage-insights?view=o365-worldwide)*                 | *[Software usages insights](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-usage-insights?view=o365-worldwide)*                 |
+| [Security baselines assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-baselines?view=o365-worldwide)        | [Security baselines assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-baselines?view=o365-worldwide)        |
+| [Block vulnerable applications](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps?view=o365-worldwide)           | [Block vulnerable applications](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps?view=o365-worldwide)           |
+| [Browser extensions assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-browser-extensions?view=o365-worldwide)        | [Browser extensions assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-browser-extensions?view=o365-worldwide)        |
+| [Digital certificate assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-certificate-inventory?view=o365-worldwide)    | [Digital certificate assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-certificate-inventory?view=o365-worldwide)    |
+| [Network share analysis](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-network-share-assessment?view=o365-worldwide)         | [Network share analysis](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-network-share-assessment?view=o365-worldwide)         |
+| [Hardware and firmware assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-hardware-and-firmware?view=o365-worldwide)  | [Hardware and firmware assessment](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-hardware-and-firmware?view=o365-worldwide)  |
+| [Authenticated scan for Windows](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/windows-authenticated-scan?view=o365-worldwide)   | [Authenticated scan for Windows](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/windows-authenticated-scan?view=o365-worldwide)   |
+
+- *Italic* - plan 1
+- Plain text - plan 2 (which also includes plan 1 features)
+<br>
 - Defender Vulnerability Management rapidly and continuously prioritizes the biggest vulnerabilities on your most critical assets and provides security recommendations to mitigate risk.
-- ![[Pasted image 20240206180139.png]]
+![[Pasted image 20240206180139.png]]
 - Remediate vulnerabilities and mis-configurations all in one place
 - We can block vulnerable versions of applications
 - You can see consolidated asset inventory.
-<br>
-- **browser extensions**![[Pasted image 20240206180948.png]]
-- ![[Pasted image 20240206181027.png | 400]]
+- **browser extensions** : Shows all the extensions used in the organization. Also shows the permissions you have granted to the extensions and use them or add restrictions to use those extensions which are not safe to use. All the extension management is done in a centralized way.
 - **Certificates** : Can filter-out the view based on expiry-date.
-- Can get the details of that certificate
-- ![[Pasted image 20240206181343.png]]
-- 
+	- Can get the details of that certificate
 - Pro-actively monitor compliance against industry benchmarks.
 - We can identify, assess, and remediate vulnerabilities all at one place.
+<br>
+- MDVM has all the knows Common vulnerabilities wrt their CVE ID's which are publicly disclosed.
+- This provide org to track vuls, and understand, prioritize and track vuls in their orgs.
+- MDVM uses *endpoint sensors* (Software agents) to scan and detect 
 
 ---
 ### Log Analytic Workspace
