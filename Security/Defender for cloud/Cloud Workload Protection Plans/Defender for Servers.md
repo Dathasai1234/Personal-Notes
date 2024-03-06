@@ -165,9 +165,18 @@ MDVM capabilities are included in:
 - Pro-actively monitor compliance against industry benchmarks.
 - We can identify, assess, and remediate vulnerabilities all at one place.
 <br>
+#### Vulnerability assessment
+
+> Available for
+> - MDVM
+> - MDE p2
+> - Microsoft Defender XDR
+> - MDFS p1 and p2
+
 - MDVM has all the knows Common vulnerabilities wrt their CVE ID's which are publicly disclosed.
 - This provide org to track vuls, and understand, prioritize and track vuls in their orgs.
-- MDVM uses *endpoint sensors* (Software agents) to scan and detect 
+- MDVM uses *endpoint sensors* (Software agents) to scan and detect vuls in an orgs.
+	- **Weaknesses overview page** : list of CVE's your devices are exposed to.
 
 ---
 ### Log Analytic Workspace
