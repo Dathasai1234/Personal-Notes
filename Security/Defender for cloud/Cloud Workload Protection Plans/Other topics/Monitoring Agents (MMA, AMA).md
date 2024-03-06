@@ -88,6 +88,14 @@ tags:
 
 - Workbook based Azure monitor solution.
 
+![[Pasted image 20240306084258.png]]
+
+- While installing Az module
+![[Pasted image 20240306085141.png]]
+
+- Downloaded the latest version of powershell (v - 7.4.1)
+![[Pasted image 20240306101753.png]]
+
 ---
 # Other Topics
 
