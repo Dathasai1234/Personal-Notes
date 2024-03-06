@@ -96,6 +96,8 @@ tags:
 - Downloaded the latest version of powershell (v - 7.4.1)
 ![[Pasted image 20240306101753.png]]
 
+![[Pasted image 20240306110035.png]]
+
 ---
 # Other Topics
 
