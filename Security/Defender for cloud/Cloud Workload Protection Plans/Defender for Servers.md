@@ -125,7 +125,7 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 
 MDVM capabilities are included in:
 
-#### MDVM capabilities you get in MDE plan 2
+#### MDVM Capabilities You Get in MDE Plan 2
 
 3. Defender for servers
 
@@ -151,11 +151,11 @@ If you have *MDE plan 2*, these are the core *MDVM* capabilities you get.
 6. Hardware and firmware assessment
 7. Authenticated scan for Windows
 
-#### MDVM standalone license
+#### MDVM Standalone License
 
 *MDVM standalone* provides full MDVM capabilities for any EDR solution. The above *16* capabilities.
 
-#### MDVM in Defender for servers
+#### MDVM in Defender for Servers
 
 *DEFS plan 1 :*
 
@@ -214,11 +214,6 @@ You can open the software page by clicking a software from the inventory for mor
 	- Can get the details of that certificate
 - Pro-actively monitor compliance against industry benchmarks.
 - We can identify, assess, and remediate vulnerabilities all at one place.
-
----
-### Log Analytic Workspace
-
-The agent will be collecting information and sending it to the workspace. If you are Using Azure Defender for Server, you have up to *500 MB* per day per node, and after that, Log Analytics Charges will apply.
 
 ---
 ### Adaptive Network Hardening
@@ -293,14 +288,36 @@ Using all this information to understand what's normal and what's suspicious, an
 ---
 ### Adaptive Application Controls
 
-- Enhance your security with this data-driven, intelligent automated solution that defines allowlists of known-safe applications for your machines.
+[Source]([Mitigate risks with application block in Microsoft Defender Vulnerability Management](https://techcommunity.microsoft.com/t5/microsoft-defender-vulnerability/mitigate-risks-with-application-block-in-microsoft-defender/ba-p/3752337))
+
+Adaptive application control capabilities are available in
+
+1. MDFS plan 2
+
+![[Pasted image 20240307122042.png]]
+
+You have two options :
+
+1. You can warn the users to use a software or specific version of that software.
+2. You can block all the vulnerable versions of the application from running. Users will be prevented to use those applications and also receive a notification about the block. You can customize the message.
+
+- You can manage the blocked applications in the remediation page, there you can find *Blocked applications* tab.
+- You see all applications which are blocked. You can see more information by clicking on an application.
+	- Vulnerability details like, number of blocked vulnerabilities.
+	- Blocked versions.
+	- Blocked since.
+	- Device groups.
+	- Blocked by.
+<br>
+- Once you enable adaptive application controls, you get security alerts if any application runs which you didn't defined as safe.
+- Enhance your security with this data-driven, intelligent automated solution that defines allow lists of known-safe applications for your machines.
 - Microsoft Defender for Cloud uses machine learning to analyze the applications running on your machines and create a list of the known-safe software.
 - When you enable and configure adaptive application controls, you get security alerts if any application runs other than the ones you defined as safe.
 
 ### Benefits
 
 - Identify potential malware, even any that antimalware solutions can miss
-- Improve compliance with local security policies that dictate the use of only licensed software
+- Improve compliance with the use of only licensed software's
 - Identify outdated or unsupported versions of applications
 - Identify software your organization banned but is nevertheless running on your machines
 - Increase oversight of apps that access sensitive data
