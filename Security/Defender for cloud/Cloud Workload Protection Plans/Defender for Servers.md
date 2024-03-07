@@ -195,7 +195,14 @@ You can create *exceptions* for those recommendations if you have more time to c
 
 You can keep track of MDVM remediations and exceptions in *remediation* tab which is integrated to intune and service now. This tab shows continuous updates and progress of your remediation activity. You can see all the exception you have created in exception tab.
 
+- ! There is a 180 day retention period for completed remediation activities. To keep the Remediation page performing optimally, the remediation activity will be removed 6 months after its completion.
+
 You can also examine *weaknesses* using MDVM. The weaknesses page have all the known vulnerabilities. You can filter out them and remediate.
+
+- ! You also have visibility on software usage in your organization of past 30 days. 
+- This information is critical when it comes to find software's with vulnerabilities in your organizations. These insights help orgs to block vulnerable applications.
+
+You can open the software page by clicking a software from the inventory for more information on it. You can know the number of devices in which that software is used, and in those devices, you get an exposure score in a graph view, and number of vulnerabilities in that software wrt severity.
 
 ---
 
