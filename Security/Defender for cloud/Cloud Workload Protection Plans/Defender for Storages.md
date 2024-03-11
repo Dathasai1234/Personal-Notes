@@ -104,3 +104,15 @@ Malware Scanning can be configured to send scanning results to the following:
 
 **Event Grid custom topic** - for near-real time automatic response based on every scanning result. Learn more how to [configure malware scanning to send scanning events to an Event Grid custom topic](https://learn.microsoft.com/en-us/azure/storage/common/azure-defender-storage-configure?toc=%2Fazure%2Fdefender-for-cloud%2Ftoc.json&tabs=enable-storage-account#setting-up-event-grid-for-malware-scanning).  
 **Log Analytics workspace** - for storing every scan result in a centralized log repository for compliance and audit. Learn more how to [configure malware scanning to send scanning results to a Log Analytics workspace](https://learn.microsoft.com/en-us/azure/storage/common/azure-defender-storage-configure?toc=%2Fazure%2Fdefender-for-cloud%2Ftoc.json&tabs=enable-storage-account#setting-up-logging-for-malware-scanning).
+
+---
+---
+
+> [!note]
+> Prevents the 3 major impacts
+> - malicious file uploads
+> - sensitive data exfiltration
+> - data corruption
+
+- You can enable the service at the subscription and resource group level.
+- You can exclude specific storage account from the protected subscription.
