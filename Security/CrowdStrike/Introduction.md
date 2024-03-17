@@ -4,6 +4,7 @@ date: 2024-03-17
 resources: 
 tags:
 ---
+
 # Sensors
 
 You can use previous version of sensor, but only those versions released in the last 180 days.
@@ -14,7 +15,7 @@ You can use previous version of sensor, but only those versions released in the 
 
 Using a same sensor more than 60 days is not recommended after the release.
 
-## Version management
+## Version Management
 
 - Fixed
 	- Specific version number
@@ -27,7 +28,7 @@ Using a same sensor more than 60 days is not recommended after the release.
 <br>
 - Uninstall and maintenance protection
 
-# Sensor for windows Deployment
+# Sensor for Windows Deployment
 
 Unifies
 
