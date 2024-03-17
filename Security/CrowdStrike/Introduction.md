@@ -26,3 +26,12 @@ Using a same sensor more than 60 days is not recommended after the release.
 - Sensor version updates off
 <br>
 - Uninstall and maintenance protection
+
+# Sensor for windows Deployment
+
+Unifies
+
+- EDR
+- Identity protection
+- Threat intelligence
+- Managed threat hunting all within a single, light weight sensor.
