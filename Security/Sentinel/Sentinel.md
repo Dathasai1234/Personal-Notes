@@ -66,6 +66,7 @@ tags:
 
 - The SIEM is infused with AI, ML and Analytics which will correlate all the different data in the real time.
 - The SIEM outputs High-Fidelity (better alerts) Alerts and they are going to prioritize based on the priority.
+- So basically SIEM is a *case management* system which is detected and attach the appropriate artifacts.
 
 ---
 # What is SOAR
@@ -86,7 +87,7 @@ tags:
 - The case is then attached with many artifacts which have all the information of compromised resources and source IP and all.
 - This case is then assigned to a security analyst.
 <br>
-- So basically SOAR is a *case management* system which is detected and attach the appropriate artifacts.
+- So basically SIEM is a *case management* system which is detected and attach the appropriate artifacts.
 - Now the analyst have the necessary info on the breach, they can do investigation and they need something to guide them along the way.
 - The *playbook* is basically a set of steps where are created in advanced and running them when needed.
 - What you do as the second step will depend on the output of the first step. S
@@ -136,7 +137,7 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 - XDR gives you a combination of EDR and NDR.
 - It merges these two technologies and looks at what is happening at the endpoint and then checks the movement of attackers or malware across a network.
 
-> It combines EDR and NDR functionality with some elements of #UEBA set and ntity ehavior nalytics (UEBA)
+> It combines EDR and NDR functionality with some elements of #UEBA User and Entity Behavior Analytics (UEBA)
 
 [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=27,29,29,25|logrhythm - making sense of xdr edr ndr and siem, page 4]]
 
