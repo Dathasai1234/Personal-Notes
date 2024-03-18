@@ -176,3 +176,22 @@ Domain boundaries of Applications, Endpoints, Identity and Data. Defending a dom
 
 - A *Log Analytic workspace* is required to get ready for sentinel as it ingest all of its detections, analytics and other features.
 - Sentinel workspace and its related resources in a dedicated resource group.
+
+---
+---
+
+> Unified security operations platform which unifies sentinel and MDE. (announced at ignite)
+
+![[Pasted image 20240318103736.png]]
+
+
+- defender for threat intelligence decreases the time to respond to an incident. It will also gives info on compromised resources in the environment.
+- If you have a suspicious login from an IP, if you want to know more about that IP, like who it belongs, Defender threat intelligence will help you investigate on it.
+
+![[Pasted image 20240318112840.png]]
+
+Threat intelligence can be integrated to sentinel to further enrich the incidents. Like in the above image. We can have information of Malicious score of an IP address. This info can be extracted from threat intelligence to sentinel.
+
+A free trial is available for threat intelligence and it provides licensing for both
+- Portal features of defender for Threat intelligence.
+- Defender for Threat intelligence <u>API</u>.
