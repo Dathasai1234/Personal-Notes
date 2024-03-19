@@ -23,6 +23,27 @@ tags:
 - From compliance standpoint, Log analytics workspace can be Used to ingest and save data from multiple solutions for up to 7 years.
 
 ---
+# Cost
+
+There is no upfront cost for creating a log analytic workspace. You will be billed on the bases of
+
+1. Data ingestion.
+2. Retention period (Archive Period).
+3. The Region where you deploy your workspace, which can help your ingress cost.
+
+## Daily Cap
+
+You can limit the amount of data ingestion using this feature. You only configure this if you are sure about the amount of data will not cross the limit you configure.
+
+Once the limit reach, no more data is ingested for that particular day.
+
+Data collection gets resumed at the reset time, and this reset time cannot be changed. An event is sent to a table called *Log Management*. You can optionally create an alert rule to send an alert when this event is created.
+
+You can configure daily cap for your different workspaces.
+
+There are also some data types that are excluded by the daily cap. So billable data types are capped if the daily cap is met.
+
+---
 # Other Topics
 
 [[Monitoring Agents (MMA, AMA)]]

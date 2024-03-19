@@ -185,6 +185,8 @@ Domain boundaries of Applications, Endpoints, Identity and Data. Defending a dom
 
 ![[Pasted image 20240318103736.png]]
 
+---
+## Threat Intelligence in Sentinel
 
 - defender for threat intelligence decreases the time to respond to an incident. It will also gives info on compromised resources in the environment.
 - If you have a suspicious login from an IP, if you want to know more about that IP, like who it belongs, Defender threat intelligence will help you investigate on it.
@@ -196,3 +198,18 @@ Threat intelligence can be integrated to sentinel to further enrich the incident
 A free trial is available for threat intelligence and it provides licensing for both
 - Portal features of defender for Threat intelligence.
 - Defender for Threat intelligence <u>API</u>.
+
+---
+## Analytic Rules in Sentinel
+
+There are two kinds of Analytic rules in Sentinel
+
+1. NRT - analytic rules
+2. Scheduled analytic rules
+
+### NRT Analytic Rules
+
+#### Limitations
+
+- There is a limit on using these rules. We can only use 50 NRT Analytic rules.
+- We cannot use joins or union statements. We can only use one table for NRT Analytic rules.
