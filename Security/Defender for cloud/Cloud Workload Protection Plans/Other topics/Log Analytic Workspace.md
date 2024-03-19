@@ -41,7 +41,25 @@ Data collection gets resumed at the reset time, and this reset time cannot be ch
 
 You can configure daily cap for your different workspaces.
 
-There are also some data types that are excluded by the daily cap. So billable data types are capped if the daily cap is met.
+There are also some data types that are excluded by the daily cap. So billable data types are capped if the daily cap is met. The below are some of the data types which are not effected by the daily cap.
+
+- WindowsEvent
+- SecurityAlert
+- SecurityBaseIine
+- SecurityBaseIineSummary
+- SecurityDetection
+- SecurityEvent
+- WindowsFirewall
+- MaliciouslPCommunication
+- LinuxAuditLog
+- SysmonEvent
+- ProtectionStatus
+- Update
+- UpdateSummary
+- CommonSecurityLog
+- Syslog
+
+![[Pasted image 20240319114149.png]]
 
 ---
 # Other Topics
