@@ -7,7 +7,6 @@ tags:
 
 # Index
 
-- [[#Defender for Cloud and Sentinel|Defender for Cloud and Sentinel]]
 - [[#Microsoft Sentinel Solution|Microsoft Sentinel Solution]]
 - [[#What is SIEM|What is SIEM]]
 	- [[#What is SIEM#Inputs to SIEM|Inputs to SIEM]]
@@ -18,6 +17,10 @@ tags:
 	- [[#EDR, MDR, XDR and SIEM and SOAR.#XDR|XDR]]
 	- [[#EDR, MDR, XDR and SIEM and SOAR.#XDR Vs SIEM and SOAR|XDR Vs SIEM and SOAR]]
 	- [[#EDR, MDR, XDR and SIEM and SOAR.#MDR and MXDR|MDR and MXDR]]
+	- [[#EDR, MDR, XDR and SIEM and SOAR.#Threat Intelligence in Sentinel|Threat Intelligence in Sentinel]]
+	- [[#EDR, MDR, XDR and SIEM and SOAR.#Analytic Rules in Sentinel|Analytic Rules in Sentinel]]
+		- [[#Analytic Rules in Sentinel#NRT Analytic Rules|NRT Analytic Rules]]
+			- [[#NRT Analytic Rules#Limitations|Limitations]]
 
 # Defender for Cloud and Sentinel
 
@@ -45,7 +48,9 @@ tags:
 ---
 # What is SIEM
 
+%%
 [What Is SIEM? (youtube.com)](https://www.youtube.com/watch?v=9RfsRn7m7OE)
+%%
 
 - SIEM - Security Information and Event Management.
 - Hackers need one blind spot and use that vulnerability to exploit.
@@ -71,8 +76,13 @@ tags:
 ---
 # What is SOAR
 
+%%
 [What is SOAR (Security, Orchestration, Automation & Response) (youtube.com)](https://www.youtube.com/watch?v=k7ju95jDxFA)
-![[SOAR timeline]]
+%%
+
+![[SOAR timeline]] 
+
+
 
 - There are two scenarios, where you manually detect and respond, 2ns is automation.
 - The problem is that we can do automation only for what you seen before.
@@ -90,22 +100,27 @@ tags:
 - So basically SIEM is a *case management* system which is detected and attach the appropriate artifacts.
 - Now the analyst have the necessary info on the breach, they can do investigation and they need something to guide them along the way.
 - The *playbook* is basically a set of steps where are created in advanced and running them when needed.
-- What you do as the second step will depend on the output of the first step. S
+- What you do as the second step will depend on the output of the first step 1.
+
 ![[SOAR working]]
 
 ---
 # EDR, MDR, XDR and SIEM and SOAR.
 
+%%
 Source - [(719) EDR, MDR & XDR Explained - YouTube](https://www.youtube.com/watch?v=z983AM8etCA)
 e-book by LogRhythm - [[logrhythm - making sense of XDR EDR NDR and SIEM.pdf]]
 Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&annotation=121R|logrhythm - making sense of xdr edr ndr and siem, page 3]]
+%%
 
 ![[All DR's and SIEM | 600]]
 ## EDR
 
 > EDR stands for endpoint detection and response, and its primary goal is to identify malicious activity occurring at the endpoint.
 
+%%
 [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=15,0,17,26|logrhythm - making sense of xdr edr ndr and siem, page 4]]
+%%
 
 - ! EDR technology provides a great view of threats occurring at the endpoint.
 - If a user browses to a malicious website and some sort of malware is downloaded, EDR can stop that threat before it turns into something like a ransomware attack.
@@ -124,7 +139,9 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 
 > Network detection and response (NDR), identifies malicious activity traversing hosts; for example, detecting lateral movement across the network.
 
+%%
 [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=18,0,20,46|logrhythm - making sense of xdr edr ndr and siem, page 4]]
+%%
 
 - This primarily focused across the network.
 - ! It tells you what is occurring on your network, who is coming across it, and what anomalies are happening across your network.
@@ -139,7 +156,9 @@ Video source - [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=3&ann
 
 > It combines EDR and NDR functionality with some elements of #UEBA User and Entity Behavior Analytics (UEBA)
 
+%%
 [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=4&selection=27,29,29,25|logrhythm - making sense of xdr edr ndr and siem, page 4]]
+%%
 
 - EDR focuses on endpoints. XDR solutions integrate data from other systems as well.
 - It is an EDR solution while pull in the logs from other sources like firewalls.
@@ -155,7 +174,9 @@ Domain boundaries of Applications, Endpoints, Identity and Data. Defending a dom
 
 > It’s like comparing a speedboat to a warship. Both go in the water and do similar things, but one takes a lot more feeding and watering and provides a lot more protection. One’s very easy to drive, but you can’t do as much with it. So you get there quicker, but you won’t be able to see as much
 
+%%
 [[logrhythm - making sense of xdr edr ndr and siem.pdf#page=7&selection=71,0,79,36|logrhythm - making sense of xdr edr ndr and siem, page 7]]
+%%
 
 - SIEM is used for threat detection, compliance, operational risk, and many other things. SIEM collects information from many different sources and as a result, it is a broad and shallow approach.
 - It consumes information from solutions such as NDR, UEBA, and EDR.
