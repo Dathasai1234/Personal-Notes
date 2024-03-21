@@ -8,6 +8,7 @@ tags:
   - P2S
   - Radius-Authentication
 ---
+
 # Pre-requisites
 
 - A RouteBased VPN gateway.
@@ -17,7 +18,7 @@ tags:
 - The VPN client profile configuration package is a package that you generate. It provides the settings required for a VPN client to connect over P2S.
 
 ---
-# Radius server configuration
+# Radius Server Configuration
 
 - Go to tools
 - Computer Management
@@ -76,7 +77,7 @@ tags:
 ![[Pasted image 20240104193507.png | 300]]
 
 ---
-# Things to remember
+# Things to Remember
 
 - Use VPN-client application which you have downloaded from Microsoft Store.
 - That application is only used for AD authentication, Not for certificate authentication and Radius Authentication.
