@@ -5,7 +5,8 @@ resources: https://www.goodaccess.com/blog/vpn-gateway-everything-you-need-to-kn
 tags:
   - networking
 ---
-# Table of contents
+
+# Table of Contents
 
 - [[#Functionalities provided|Functionalities provided]]
 - [[#Requirements to create P2S|Requirements to create P2S]]
@@ -35,7 +36,7 @@ tags:
 - [authentication process](https://www.goodaccess.com/blog/vpn-gateway-everything-you-need-to-know#:~:text=When%20a%20user,for%20better%20security.)
 
 ---
-# Requirements to create P2S
+# Requirements to Create P2S
 
 - **VPN gateway** - need to attach to the Vnet where the VM exists.
 - whenever we connect Gateway with a Vnet. **we require a *GatewaySubnet*** subnet
@@ -56,13 +57,13 @@ tags:
 ---
 
 
-# Example - 1 PowerShell console session still open
+# Example - 1 PowerShell Console Session Still Open
 
 - ! The #Root-Certificate and #Client-Certificate much be executed in the same powershell console session.
 - The root certificate is used exported to Azure VPN Gateway.
 - And the Client certificate is used in the client server.
 
-## Self Signed root certificate
+## Self Signed Root Certificate
 
 #Self-Signed-root-certificate
 
@@ -111,10 +112,10 @@ $params = @{
 ```
 
 - Exporting - **Export the private key** > create a password > and save it.
-- extention - **.pfx**
+- extension - **.pfx**
 
 ---
-# Example 2 - New PowerShell console session
+# Example 2 - New PowerShell Console Session
 
 If you're creating additional client certificates, or aren't using the same PowerShell session that you used to create your self-signed root certificate, use the following steps:
 
@@ -153,19 +154,19 @@ New-SelfSignedCertificate @params
 ```
 
 ---
-# copy paste root cert in portal
+# Copy Paste Root Cert in Portal
 
 ![[Pasted image 20240103121500.png | 500]]
 
 ---
-# Save it and Download VPN client
+# Save it and Download VPN Client
 
 - unzip it.
 - run the exe as administrator
 
 ---
 
-# important resources
+# Important Resources
 
 [About Azure VPN Gateway | Microsoft Learn](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 [VPN protocols compared](https://www.goodaccess.com/blog/vpn-protocols-compared)
@@ -174,6 +175,6 @@ New-SelfSignedCertificate @params
 
 ---
 
-# Other resources
+# Other Resources
 
 [[Introduction to VPN gateways]]
