@@ -4,6 +4,7 @@ date: 2024-01-25
 resources: https://attack.mitre.org/tactics/enterprise/
 tags:
 ---
+
 [![](https://attack.mitre.org/theme/images/mitre_attack_logo.png)](https://attack.mitre.org/)
 # Index
 
