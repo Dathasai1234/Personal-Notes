@@ -5,6 +5,6 @@ resources:
 tags:
 ---
 
-Intro - [[defender]]
+Intro - [[Security/Defender for cloud/Archive/defender]]
 Ob-boarding non-Azure to defender in Azure - [[ARC]]
 Unique conditional policies - [[Notes#Conditional Access Policies]]
