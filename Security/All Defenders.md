@@ -4,6 +4,7 @@ excalidraw-plugin: parsed
 tags: [excalidraw]
 
 ---
+
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
@@ -25,7 +26,7 @@ Endpoint scanning's for
 exploitable binaries ^mHQ2NEDZ
 
 
-# Embedded files
+# Embedded Files
 d5478a25d8946043add3da35af098a90a7d10bad: [[Pasted Image 20240328111549_983.png]]
 
 %%
