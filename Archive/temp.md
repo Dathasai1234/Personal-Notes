@@ -6,4 +6,5 @@ tags:
 ---
 
 - [ ] Cost and budget alerts in azure.
+- [ ] Lab on NRT rules and automation using playbooks in sentinel.
 

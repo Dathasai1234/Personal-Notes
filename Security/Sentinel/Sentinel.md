@@ -238,6 +238,12 @@ There are two kinds of Analytic rules in Sentinel
 ---
 # Sentinel Lab
 
+Source - 
+
+[source - 1](https://www.youtube.com/watch?v=utkYqhXyx00&pp=ygUqd2luZG93cyBhbmQgbGludXggc2VydmVycyBsb2dzIHRvIHNlbnRpbmVs)
+[source - 2]([Master Microsoft Sentinel's NRT Analytic Rules: Fast Threat Detection and Response Explained (youtube.com)](https://www.youtube.com/watch?v=bgg7DhcxBM4&t=673s))
+
+
 - This lab is on how we can leverage *NRT Analytic rules* in sentinel.
 - Exercises
 	- Created an NRT rule in sentinel.
@@ -264,7 +270,7 @@ There are two kinds of Analytic rules in Sentinel
 		- If you are not able to select the logic app. Enable the required permissions in sentinel settings for playbook.
 			- ![[Pasted image 20240401191049.png]]
 
-## Results of the lab
+## Results of the Lab
 
 - Couple of failed login attempts to create some sample logs which will create an incident, which again trigger the playbook (logic app) designed to notify through teams.
 - This incident can be enriched a lot by advances threat intelligence, defender for endpoints connection to sentinel for better investigation.
@@ -279,3 +285,4 @@ There are two kinds of Analytic rules in Sentinel
 ![[Pasted image 20240401193300.png]]
 
 ---
+
