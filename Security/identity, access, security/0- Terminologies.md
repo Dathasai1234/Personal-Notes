@@ -10,6 +10,7 @@ tags:
   - Single_tenant
   - multi-tenant
 ---
+
 #Entra_ID: Identities are stored in Microsoft Entra ID.
 
 #Tenant: Dedicated and trusted instance of Microsoft Entra ID.
