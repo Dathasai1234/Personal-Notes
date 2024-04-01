@@ -234,3 +234,48 @@ There are two kinds of Analytic rules in Sentinel
 
 - There is a limit on using these rules. We can only use 50 NRT Analytic rules.
 - We cannot use joins or union statements. We can only use one table for NRT Analytic rules.
+
+---
+# Sentinel Lab
+
+- This lab is on how we can leverage *NRT Analytic rules* in sentinel.
+- Exercises
+	- Created an NRT rule in sentinel.
+		- General
+			- Give a name.
+			- Description.
+			- Set a severity for the incident.
+			- Select any relevant Tactic and Technique for the generated incident.
+		- Set rule Logic
+			- Type a query which needs to be run when the incident is triggered.
+			- ![[Pasted image 20240401191332.png | 300]]
+			- Event ID *4625* is for failed login on a server.
+			- Logs are ingested to log analytic workspace by installing AMA agents on servers, whenever a failed login is attempted.
+			- Make sure that server logs are ingested to workspace. You can check whether the server is set to data source of that workspace by going to
+				- `Log-analytic-workspace > agents`. If no servers are detected. Create a DCR rule.
+		- Automated response
+			- Can be created later using automated rules.
+	- Create a logic app (Consumption plan is enough)
+		- Design a logic app which can *notify through teams* when the incident (failed login) is triggered. This logic app will be used in *automated response* in sentinel to make it trigger.
+		- ![[Pasted image 20240401190507.png]]
+		- ![[Pasted image 20240401190529.png]]
+	- Create an automated rule in sentinel to trigger the logic app.
+		- ![[Pasted image 20240401190825.png]]
+		- If you are not able to select the logic app. Enable the required permissions in sentinel settings for playbook.
+			- ![[Pasted image 20240401191049.png]]
+
+## Results of the lab
+
+- Couple of failed login attempts to create some sample logs which will create an incident, which again trigger the playbook (logic app) designed to notify through teams.
+- This incident can be enriched a lot by advances threat intelligence, defender for endpoints connection to sentinel for better investigation.
+
+![[Pasted image 20240401192713.png]]
+
+- Incident in sentinel is generated which is a place to further investigate.
+![[Pasted image 20240401192907.png]]
+- The incidents can be assigned to an owner.
+- We can create an incident team by creating a group in Microsoft teams.
+![[Pasted image 20240401193132.png]]
+![[Pasted image 20240401193300.png]]
+
+---
