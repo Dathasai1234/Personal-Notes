@@ -5,7 +5,8 @@ resources:
 tags:
   - network-lab
 ---
-#### vnet1
+
+#### Vnet1
 
 sub1 - 10.0.0.0/24
 VM1 - 10.0.0.4
@@ -15,7 +16,7 @@ VM2 - 10.0.1.4
 
 ---
 
-#### vnet2
+#### Vnet2
 
 sub3 - 10.1.0.0/24
 VM3 - 10.1.0.4
