@@ -38,4 +38,30 @@ Unifies
 - Managed threat hunting all within a single, light weight sensor.
 
 ---
-Can you prepare a report on Crowdstrike monitoring. I would like to understand what are the metrics which Crowdstrike is monitoring and even though we don’t get any incidents what are those metrics which tracks the changes.
+Can you prepare a report on CrowdStrike monitoring. I would like to understand what are the metrics which CrowdStrike is monitoring and even though we don’t get any incidents what are those metrics which tracks the changes.
+
+---
+## Things to do
+
+1. Creating a custom destination table for the event hub data in log analytic workspace.
+2. DCE
+3. DCR
+4. Grant DCR permissions in EventHub
+5. Associate DCR to EventHub.
+
+## Prerequisites
+
+All resources in same region
+
+- LAW
+	- Needs to be linked to a dedicated cluster
+	- Or have a commitment tire
+- EventHub namespace with public network access
+
+### Gather info
+
+subscription ID,
+resource group name,
+workspace name,
+workspace resource ID,
+event hub instance resource ID
