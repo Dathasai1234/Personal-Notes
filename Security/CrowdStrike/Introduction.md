@@ -38,3 +38,4 @@ Unifies
 - Managed threat hunting all within a single, light weight sensor.
 
 ---
+Can you prepare a report on Crowdstrike monitoring. I would like to understand what are the metrics which Crowdstrike is monitoring and even though we don’t get any incidents what are those metrics which tracks the changes.
