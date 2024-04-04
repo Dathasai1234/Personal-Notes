@@ -60,11 +60,11 @@ All resources in same region
 
 ## Gather info
 
-subscription ID,
-resource group name,
-workspace name,
-workspace resource ID,
-event hub instance resource ID
+subscription ID - *a263304e-8647-497f-89cc-79bdd0ae18ea*,
+resource group name - *kdsc-testlab-2*,
+workspace name - *log-workspace-src*,
+workspace resource ID - */subscriptions/a263304e-8647-497f-89cc-79bdd0ae18ea/resourcegroups/kdsc-testlab-2/providers/microsoft. Operationalinsights/workspaces/log-workspace-src*,
+event hub instance resource ID - */subscriptions/a263304e-8647-497f-89cc-79bdd0ae18ea/resourceGroups/kdsc-testlab-2/providers/Microsoft. EventHub/namespaces/kdsc-eventhub-namespace*
 
 ## Dest table in LAW
 
@@ -77,7 +77,7 @@ $tableParams = @'
 {
     "properties": {
         "schema": {
-            "name": "<table_name>",
+            "name": "kdsc-table_CL",
             "columns": [
                 {
                     "name": "TimeGenerated",
@@ -100,13 +100,13 @@ $tableParams = @'
 }
 '@
 
-Invoke-AzRestMethod -Path "/subscriptions/<subscription_id>/resourcegroups/<resource_group_name>/providers/microsoft.operationalinsights/workspaces/<workspace_name>/tables/<table_name>?api-version=2021-12-01-preview" -Method PUT -payload $tableParams
+Invoke-AzRestMethod -Path "/subscriptions/a263304e-8647-497f-89cc-79bdd0ae18ea/resourcegroups/kdsc-testlab-2/providers/microsoft.operationalinsights/workspaces/log-workspace-src/tables/kdsc-table_CL?api-version=2021-12-01-preview" -Method PUT -payload $tableParams
 ```
 
 ## DCE
 
 - To collect data with a data collection rule, you need a data collection endpoint:
-- **Resource id** of DCE
+- **Resource id** of DCE - */subscriptions/a263304e-8647-497f-89cc-79bdd0ae18ea/resourceGroups/kdsc-testlab-2/providers/Microsoft. Insights/dataCollectionEndpoints/mydatacollectionendpoint*
 
 ## DCR
 
@@ -216,4 +216,21 @@ Paste the below resource manager template
     ]
 }
 ```
+
+![[Pasted image 20240404153726.png | 400]]
+
+- expand the **Deployment details** box, and select your data collection rule to view its details. Select **JSON View**.
+- Copy the **Resource ID** for the data collection rule.
+
+## Grant the event hub permission to the data collection rule
+
+From the event hub or Event Hubs namespace in the Azure portal, select **Access Control (IAM)** > **Add role assignment**.
+
+**Azure Event Hubs Data Receiver** > Select **Managed identity** for **Assign access to** and click **Select members**.
+
+![[Pasted image 20240404154200.png]]
+
+Review + assign
+
+## Associate the data collection rule with the event hub
 
