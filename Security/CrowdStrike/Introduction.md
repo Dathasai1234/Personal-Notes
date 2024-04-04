@@ -41,7 +41,7 @@ Unifies
 Can you prepare a report on CrowdStrike monitoring. I would like to understand what are the metrics which CrowdStrike is monitoring and even though we don’t get any incidents what are those metrics which tracks the changes.
 
 ---
-## Things to do
+## Things to Do
 
 1. Creating a custom destination table for the event hub data in log analytic workspace.
 2. DCE
@@ -58,15 +58,34 @@ All resources in same region
 	- Or have a commitment tire
 - EventHub namespace with public network access
 
-## Gather info
+## Gather Info
 
-subscription ID - *a263304e-8647-497f-89cc-79bdd0ae18ea*,
-resource group name - *kdsc-testlab-2*,
-workspace name - *log-workspace-src*,
-workspace resource ID - */subscriptions/a263304e-8647-497f-89cc-79bdd0ae18ea/resourcegroups/kdsc-testlab-2/providers/microsoft. Operationalinsights/workspaces/log-workspace-src*,
-event hub instance resource ID - */subscriptions/a263304e-8647-497f-89cc-79bdd0ae18ea/resourceGroups/kdsc-testlab-2/providers/Microsoft. EventHub/namespaces/kdsc-eventhub-namespace*
+subscription ID - 
+```
+f77f3e58-d03d-49e0-9284-05b69f4bedbc
+```
 
-## Dest table in LAW
+resource group name - 
+```
+sentinel-rg
+```
+
+workspace name - 
+```
+Sentinel-LAW
+```
+
+workspace resource ID - 
+```
+/subscriptions/f77f3e58-d03d-49e0-9284-05b69f4bedbc/resourcegroups/sentinel-rg/providers/microsoft.operationalinsights/workspaces/sentinel-law
+```
+
+event hub instance resource ID - 
+```
+
+```
+
+## Dest Table in LAW
 
 You can ingest data into custom table in LAW.
 
@@ -222,7 +241,9 @@ Paste the below resource manager template
 - expand the **Deployment details** box, and select your data collection rule to view its details. Select **JSON View**.
 - Copy the **Resource ID** for the data collection rule.
 
-## Grant the event hub permission to the data collection rule
+![[Pasted image 20240404192910.png]]
+
+## Grant the Event Hub Permission to the Data Collection Rule
 
 From the event hub or Event Hubs namespace in the Azure portal, select **Access Control (IAM)** > **Add role assignment**.
 
@@ -232,5 +253,5 @@ From the event hub or Event Hubs namespace in the Azure portal, select **Access
 
 Review + assign
 
-## Associate the data collection rule with the event hub
+## Associate the Data Collection Rule with the Event Hub
 
