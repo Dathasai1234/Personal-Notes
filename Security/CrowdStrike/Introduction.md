@@ -60,8 +60,8 @@ All resources in same region
 
 ### Gather info
 
-subscription ID,
-resource group name,
-workspace name,
-workspace resource ID,
+subscription ID - **a263304e-8647-497f-89cc-79bdd0ae18ea**,
+resource group name - **custom_rg**,
+workspace name - **log-workspace**,
+workspace resource ID - **/subscriptions/a263304e-8647-497f-89cc-79bdd0ae18ea/resourcegroups/custom_rg/providers/microsoft. Operationalinsights/workspaces/log-workspace**,
 event hub instance resource ID
