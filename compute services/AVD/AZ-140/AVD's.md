@@ -4,6 +4,7 @@ date: 2024-04-07
 resources: 
 tags:
 ---
+
 # Az-140
 ## Architecture
 
@@ -20,7 +21,7 @@ tags:
 ---
 ## Components of AVD's
 
-### Components Microsoft manages
+### Components Microsoft Manages
 
 **Web access** - This is a feature of Windows Virtual Desktop which allows you to access VD's and remote applications through any HTML-5 compatible web browser from any where on any device. You can secure the web access with MFA authentication in Microsoft Entra ID.
 
@@ -32,7 +33,7 @@ tags:
 
 **Extensibility components** - You can manage AVD's using Windows powershell and even with Rest APIs, which also enable support for 3rd party tools.
 
-### Components we manage
+### Components We Manage
 
 **Azure Virtual Network** - Connecting AVD host pools to AD domain, You can define network topology to access VD's and virtual apps from the intranet or internet.
 
@@ -78,7 +79,7 @@ Each user is a local administrator of the accessed VM. A user can install or uni
 Allows users to always connect to the same specific session host.
 
 ---
-## Azure limitations for AVD
+## Azure Limitations for AVD
 
 | **Azure Virtual Desktop object** | **Per Parent container object**  | **Service limit** |
 | -------------------------------- | -------------------------------- | ----------------- |
@@ -92,3 +93,6 @@ If you require more than 500 application groups, you can submit a support ticket
 
 - It is recommended that you deploy no more than 5000 VM's per subscription per region (applies for both pooled and personal host pools).
 - You can increase the resources of multi-session host pool to accommodate more user sessions.
+- For automated session-host scaling tools, the limits are amount 2,500 VM's per sub per region as the VM status interaction consumes more resources.
+- For enterprise environments with more than 5000 VM's per Azure subscription in the same region. You can create multiple Azure subscription with hub-spoke architecture and connect them via V-net peering. You could also deploy VMs in different regions in same subscription to increase the number of VMs
+- 
