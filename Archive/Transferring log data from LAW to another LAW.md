@@ -1,46 +1,10 @@
 ---
-title: CrowdStrike
-date: 2024-03-17
+title: Archive
+date: 2024-04-01
 resources: 
 tags:
 ---
 
-# Sensors
-
-You can use previous version of sensor, but only those versions released in the last 180 days.
-
-- Update schedules to automatically update to appropriate versions.
-- Update throttling on slower networks.
-- Sensor uninstall protection.
-
-Using a same sensor more than 60 days is not recommended after the release.
-
-## Version Management
-
-- Fixed
-	- Specific version number
-- Automated
-	- Auto - Early Adopter
-	- Auto - latest
-	- Auto - N1
-	- Auto - N2
-- Sensor version updates off
-<br>
-- Uninstall and maintenance protection
-
-# Sensor for Windows Deployment
-
-Unifies
-
-- EDR
-- Identity protection
-- Threat intelligence
-- Managed threat hunting all within a single, light weight sensor.
-
----
-Can you prepare a report on CrowdStrike monitoring. I would like to understand what are the metrics which CrowdStrike is monitoring and even though we don’t get any incidents what are those metrics which tracks the changes.
-
----
 ## Things to Do
 
 1. Creating a custom destination table for the event hub data in log analytic workspace.
@@ -60,27 +24,27 @@ All resources in same region
 
 ## Gather Info
 
-subscription ID - 
+Subscription ID - 
 ```
 f77f3e58-d03d-49e0-9284-05b69f4bedbc
 ```
 
-resource group name - 
+Resource group name - 
 ```
 sentinel-rg
 ```
 
-workspace name - 
+Workspace name - 
 ```
 Sentinel-LAW
 ```
 
-workspace resource ID - 
+Workspace resource ID - 
 ```
 /subscriptions/f77f3e58-d03d-49e0-9284-05b69f4bedbc/resourcegroups/sentinel-rg/providers/microsoft.operationalinsights/workspaces/sentinel-law
 ```
 
-event hub instance resource ID - 
+Event hub instance resource ID - 
 ```
 
 ```
@@ -238,7 +202,7 @@ Paste the below resource manager template
 
 ![[Pasted image 20240404153726.png | 400]]
 
-- expand the **Deployment details** box, and select your data collection rule to view its details. Select **JSON View**.
+- Expand the **Deployment details** box, and select your data collection rule to view its details. Select **JSON View**.
 - Copy the **Resource ID** for the data collection rule.
 
 ![[Pasted image 20240404192910.png]]

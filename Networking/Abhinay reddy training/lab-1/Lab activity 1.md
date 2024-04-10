@@ -4,6 +4,7 @@ excalidraw-plugin: parsed
 tags: [excalidraw]
 
 ---
+
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
@@ -24,7 +25,7 @@ allow only RDP ports ^KQVSX4tK
 x ^JyA0QgSa
 
 
-# Embedded files
+# Embedded Files
 6deac5ea5863f6cd3c4f0aa1655625e7aea43cbc: [[Pasted Image 20231020120430_668.png]]
 
 %%

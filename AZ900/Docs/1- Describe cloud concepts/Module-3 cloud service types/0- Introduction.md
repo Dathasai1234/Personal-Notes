@@ -6,7 +6,7 @@
 - [[#extra resources|extra resources]]
 
 
-# Learning objectives
+# Learning Objectives
 
 After completing this module, you’ll be able to:
 
@@ -34,6 +34,6 @@ After completing this module, you’ll be able to:
 - Think of "SaaS" as "Software as a Service."
 
 ---
-# extra resources
+# Extra Resources
 
 [Azure Shared Responsibility Model: Real World Examples & Best Practices – CoreStack](https://www.corestack.io/azure-security-tools/azure-shared-responsibility-model/)

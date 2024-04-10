@@ -20,7 +20,7 @@ tags:
 - IP packet
 	- structure
 
-| src address | dest addresss | data | header |
+| src address | dest address | data | header |
 | ----------- | ------------- | ---- | ------ |
 
 ---
