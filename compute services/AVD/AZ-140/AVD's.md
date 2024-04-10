@@ -95,4 +95,5 @@ If you require more than 500 application groups, you can submit a support ticket
 - You can increase the resources of multi-session host pool to accommodate more user sessions.
 - For automated session-host scaling tools, the limits are amount 2,500 VM's per sub per region as the VM status interaction consumes more resources.
 - For enterprise environments with more than 5000 VM's per Azure subscription in the same region. You can create multiple Azure subscription with hub-spoke architecture and connect them via V-net peering. You could also deploy VMs in different regions in same subscription to increase the number of VMs
-- 
+
+---
