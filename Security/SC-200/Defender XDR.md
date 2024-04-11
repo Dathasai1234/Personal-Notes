@@ -24,7 +24,7 @@ tags:
 
 ![[Pasted image 20240410220443.png]]
 
-### Restrict and Grant Access inside process.
+### Restrict and Grant Access inside Process.
 
 ![[Access Restricted | 300]]
 
