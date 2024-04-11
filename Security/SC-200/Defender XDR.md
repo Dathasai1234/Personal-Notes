@@ -26,7 +26,7 @@ tags:
 
 ### Restrict and Grant Access inside Process.
 
-![[Access Restricted | 300]]
+![[Access Restricted | 200]]
 
 ---
 ## Defender XDR in SOC
@@ -59,3 +59,11 @@ SOC is composed of several distinct functions. Each function has a primary focus
 - Pro-actively hunts for undetected threats and refines alerts/automation.
 
 ---
+## M365 Defender
+
+M365 Defender aka Defender XDR is a unified pre- and post-breach enterprise breach suite that natively coordinates detection, prevention, investigation, and response across
+- Endpoints
+- Identities
+- Email
+- Applications
+

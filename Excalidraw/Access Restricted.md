@@ -31,8 +31,8 @@ to corporate resources ^QEkqx34p
 	"elements": [
 		{
 			"type": "text",
-			"version": 5,
-			"versionNonce": 1451191674,
+			"version": 7,
+			"versionNonce": 1875375603,
 			"isDeleted": false,
 			"id": "ulW1Oswv",
 			"fillStyle": "solid",
@@ -57,7 +57,7 @@ to corporate resources ^QEkqx34p
 					"type": "arrow"
 				}
 			],
-			"updated": 1712766993742,
+			"updated": 1712838747057,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -125,8 +125,8 @@ to corporate resources ^QEkqx34p
 		},
 		{
 			"type": "text",
-			"version": 45,
-			"versionNonce": 886036710,
+			"version": 47,
+			"versionNonce": 1230034621,
 			"isDeleted": false,
 			"id": "slaK4mOr",
 			"fillStyle": "solid",
@@ -155,7 +155,7 @@ to corporate resources ^QEkqx34p
 					"type": "arrow"
 				}
 			],
-			"updated": 1712767007877,
+			"updated": 1712838747058,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -223,8 +223,8 @@ to corporate resources ^QEkqx34p
 		},
 		{
 			"type": "text",
-			"version": 185,
-			"versionNonce": 282988710,
+			"version": 187,
+			"versionNonce": 1373290387,
 			"isDeleted": false,
 			"id": "m8NUDeh0",
 			"fillStyle": "solid",
@@ -253,7 +253,7 @@ to corporate resources ^QEkqx34p
 					"type": "arrow"
 				}
 			],
-			"updated": 1712767071510,
+			"updated": 1712838747059,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -321,8 +321,8 @@ to corporate resources ^QEkqx34p
 		},
 		{
 			"type": "text",
-			"version": 51,
-			"versionNonce": 1491314214,
+			"version": 53,
+			"versionNonce": 1575024413,
 			"isDeleted": false,
 			"id": "4IXOickA",
 			"fillStyle": "solid",
@@ -351,7 +351,7 @@ to corporate resources ^QEkqx34p
 					"type": "arrow"
 				}
 			],
-			"updated": 1712767196348,
+			"updated": 1712838747059,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -418,46 +418,46 @@ to corporate resources ^QEkqx34p
 			]
 		},
 		{
-			"id": "QEkqx34p",
 			"type": "text",
-			"x": -181.9248693014321,
-			"y": 284.6070747306696,
-			"width": 250.13980102539062,
-			"height": 50,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 88,
+			"versionNonce": 639849779,
+			"isDeleted": false,
+			"id": "QEkqx34p",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -181.9248693014321,
+			"y": 284.6070747306696,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 250.13980102539062,
+			"height": 50,
+			"seed": 388027558,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 388027558,
-			"version": 86,
-			"versionNonce": 2118144698,
-			"isDeleted": false,
 			"boundElements": [
 				{
 					"id": "Wul3JI-jaLeItbJI3gqa1",
 					"type": "arrow"
 				}
 			],
-			"updated": 1712767217539,
+			"updated": 1712838747060,
 			"link": null,
 			"locked": false,
-			"text": "Grant or restrict access\nto corporate resources",
-			"rawText": "Grant or restrict access\nto corporate resources",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "Grant or restrict access\nto corporate resources",
+			"rawText": "Grant or restrict access\nto corporate resources",
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 42,
 			"containerId": null,
 			"originalText": "Grant or restrict access\nto corporate resources",
-			"lineHeight": 1.25
+			"lineHeight": 1.25,
+			"baseline": 42
 		}
 	],
 	"appState": {
@@ -475,10 +475,10 @@ to corporate resources ^QEkqx34p
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 256.4335254323595,
-		"scrollY": 253.6456660075925,
+		"scrollX": 502.4895127971789,
+		"scrollY": 125.58682823525112,
 		"zoom": {
-			"value": 0.9797519347513614
+			"value": 1.4000000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
