@@ -41,20 +41,18 @@ SOC is composed of several distinct functions. Each function has a primary focus
 
 ![[Pasted image 20240410224121.png]]
 
-==Automation== : Resolution of known types with automation. These are well-defines attacks that the organization has been seen many times.
+Automation : Resolution of known types with automation. These are well-defines attacks that the organization has been seen many times.
 
-==Triage (Tier 1)== : 
+Triage (Tier 1) : 
 - Rapid remediation of high volume of well-known incidents that require quick human judgement.
 - Identify anything anomalous or interesting that might need further investigation by Tier 2.
 
-==Investigation (Tire 2)==
-
+Investigation (Tire 2)
 - Handles issues escalated from Tier 1.
 - Conducts deeper investigations on complex attacks.
 - Deals with new / unfamiliar alert types to document processes for **Triage team and automation**.
 
-==Hunt (Tire 3)==
-
+Hunt (Tire 3)
 - Focused on identifying attackers that could have slipped through the process and handle major business-impacting events.
 - Pro-actively hunts for undetected threats and refines alerts/automation.
 
