@@ -12,8 +12,3 @@ tags:
 ```tasks
 not done
 ```
-
-- [ ] Update Dynamics on 3rd (5hrs) 7th (8hrs) and todays.
-- [ ] CrowdStrike - complete and flex. 3 hrs.
-- [ ] Sentinel. 2 hrs.
-- [ ] XDR 2hrs.
