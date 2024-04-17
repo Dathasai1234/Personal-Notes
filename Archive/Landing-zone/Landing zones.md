@@ -30,9 +30,9 @@ tags:
 - If we create an infrastructure from the recommended guidance of Microsoft, we can achieve **high security**, **high scalable** and **cost effective**
 
 ---
-# Landing zone
+# Landing Zone
 
-- As we prepare for cloud migration, we want to move workloads securely. Its also crutial to scale and innovate.
+- As we prepare for cloud migration, we want to move workloads securely. Its also crucial to scale and innovate.
 - Scalable migration starts with a landing zone.
 <br>
 - A landing zone is a place where you host your workloads pre provisioned through code.
@@ -63,7 +63,7 @@ These 5 principles can be used to create a robust landing zone that offers *incr
 - It depends on the customer’s level to recommend same level of architecture.
 
 ---
-# Foundational landing zone
+# Foundational Landing Zone
 - ![[Pasted image 20231129175737.png | 500]]
 - This is the Microsoft recommended architecture for a client with a single subscription and we provide bare minimum resources in this architecture.
 - If you have a single subscription and have a normal workload, which can be deployed in a single subscription.
@@ -86,11 +86,11 @@ These 5 principles can be used to create a robust landing zone that offers *incr
 - Create resource groups for better organization of resources.
 
 ---
-## what are the bare min resources we provide
+## What Are the Bare Min Resources We provide
 
 ### IAM and Policy
 
-#### policy
+#### Policy
 
 - we can manage the security posture using policies.
 - We enable audit level policies for the customers. 
@@ -179,7 +179,7 @@ Monitoring and policies can be created again at this level to the subscription.
 	- `connectivity subscription`
 	- `management subscription`
 
-#### Identity subscription
+#### Identity Subscription
 
 ![[identity sub.png]]
 

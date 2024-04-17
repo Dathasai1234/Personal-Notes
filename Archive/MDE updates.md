@@ -108,7 +108,7 @@ These are the updates for April.
 
 Now expansion is done in Australia. Can host data locally in Australia.
 
-## Partner enablement
+## Partner Enablement
 
 - Defender Multi-tenant portal - manage tenants (50 tenants) at scale.
 - Streaming API - (MDB only)
