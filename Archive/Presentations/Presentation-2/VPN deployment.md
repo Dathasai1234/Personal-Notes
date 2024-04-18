@@ -4,6 +4,7 @@ date: 2024-01-03
 resources: 
 tags:
 ---
+
 **10:47:11**
 
 1. Create a *resource group*.
@@ -16,13 +17,13 @@ tags:
 ![[Pasted image 20240103104713.png]]
 
 ---
-# P2S configuration
+# P2S Configuration
 
 ## Address Pool
 
 An address pool is a range of ip address you want to reserve and allocate to your local machine.
 
-## Tunnel type
+## Tunnel Type
 
 ![[Pasted image 20240103112412.png | 500]]
 

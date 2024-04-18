@@ -4,6 +4,7 @@ excalidraw-plugin: parsed
 tags: [excalidraw]
 
 ---
+
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
@@ -35,7 +36,7 @@ Sarika's Subscription ^Ta7ky5y2
 Datha's Subscription ^Gy73ipPH
 
 
-# Embedded files
+# Embedded Files
 51525122f3b139acb2da2cc9984a9a35a33eef59: [[Pasted Image 20240110131306_477.png]]
 880694df02fd1b000415232add78d783cc1f6df6: [[Pasted Image 20240110131526_491.png]]
 2198af06096f2b0768b97d6ebc5ea1651f7b986c: [[Pasted Image 20240110131614_466.png]]

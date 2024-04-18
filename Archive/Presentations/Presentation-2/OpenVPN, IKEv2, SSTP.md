@@ -5,6 +5,7 @@ resources: https://learn.microsoft.com/en-us/azure/vpn-gateway/ikev2-openvpn-fro
 resource_2: https://rublon.com/blog/sstp-openvpn-difference/#:~:text=The%20main%20difference,SSTP%20vs.%20OpenVPN.
 tags:
 ---
+
 # Index
 
 - [[#LLTP vs PPTP vs SSTP]]
@@ -30,7 +31,7 @@ tags:
 > [!note] 
 > IKEv2 and OpenVPN for P2S are available for the [Resource Manager deployment model](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/deployment-models) only. They are not available for the classic deployment model. The Basic gateway SKU does not support IKEv2 or OpenVPN protocols. If you are using the Basic SKU, you will have to delete and recreate a production SKU virtual network gateway.
 
-# LLTP vs PPTP vs SSTP
+# LLTP Vs PPTP Vs SSTP
 
 #LLTP
 #PPTP
@@ -44,7 +45,7 @@ tags:
 SSTP provides better security comparative to PPTP L2TP.
 
 ---
-# #SSTP vs #OpenVpn
+# #SSTP Vs #OpenVpn
 
 The main difference between SSTP and OpenVPN is that 
 - #SSTP is less secure than #OpenVPN. This is because SSTP uses the deprecated SSL 3.0 protocol which is vulnerable to the POODLE bug. 
@@ -90,7 +91,7 @@ SSTP is a fast and stable VPN protocol that works well on Windows devices, but i
 
 [source]([IKEv2 vs. OpenVPN: What’s the Difference? - Rublon](https://rublon.com/blog/ikev2-openvpn-difference/#:~:text=The%20main%20difference%20between%20IKEv2,more%20flexibility%20and%20security%20options.))
 
-## Conclusion of IKEv2 vs OpenVPN
+## Conclusion of IKEv2 Vs OpenVPN
 
 IKEv2 and OpenVPN are two secure protocols used to establish and authenticate communication between a VPN client and a VPN server. Generally, IKEv2 is faster than OpenVPN. Further, IKEv2 has the ability to re-establish a connection after a loss of signal and handle changes in the network very well thanks to the MOBIKE protocol. On the other hand, OpenVPN can use both UDP and TCP as transport layer protocols. It is open-source, secure, reliable, and cost-efficient. 
 

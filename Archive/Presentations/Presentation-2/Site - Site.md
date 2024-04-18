@@ -13,6 +13,7 @@ tags:
   - Local-Network-Gateway
   - S2S
 ---
+
 # Architecture
 
 ![[arc-Site-to-Site | 700]]

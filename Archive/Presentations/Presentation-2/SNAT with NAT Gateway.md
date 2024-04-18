@@ -4,6 +4,7 @@ date: 2024-01-09
 MS docs: https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat
 tags:
 ---
+
 # Index
 
 - [[#SNAT|SNAT]]
@@ -32,7 +33,7 @@ tags:
 - [source](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat#:~:text=occurs%2C%20connections%20fail.-,Scale%20SNAT%20for%20NAT%20gateway,-Scaling%20NAT%20gateway)
 
 ---
-## NAT gateway dynamically allocates SNAT ports
+## NAT Gateway Dynamically Allocates SNAT Ports
 
 - NAT gateway dynamically allocates SNAT ports across a subnet's private resources, such as virtual machines.
 - Pre-allocation of SNAT ports to each virtual machine is required for other SNAT methods.
@@ -40,7 +41,7 @@ tags:
 - With NAT gateway, pre-allocation of SNAT ports isn't required, which means SNAT ports aren't left unused by virtual machines not actively needing them.
 - After a SNAT port is released, it's available for use by any virtual machine within subnets configured with NAT gateway.
 
-## NAT gateway SNAT port selection and reuse
+## NAT Gateway SNAT Port Selection and Reuse
 
 #SNAT-ports/reuse
 

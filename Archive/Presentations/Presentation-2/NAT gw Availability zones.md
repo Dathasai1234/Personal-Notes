@@ -4,6 +4,7 @@ date: 2024-01-09
 resources: https://learn.microsoft.com/en-us/azure/nat-gateway/nat-availability-zones
 tags:
 ---
+
 # Index
 
 - [[#Design - considerations|Design - considerations]]
@@ -36,9 +37,9 @@ tags:
 - When NAT gateway is placed in **no zone**, Azure places the resource in a zone for you.
 - You won't have visibility into which zone Azure chooses for your NAT gateway.
 
-# Design - considerations
+# Design - Considerations
 
-## Single zonal NAT gateway resource for zone-spanning resources
+## Single Zonal NAT Gateway Resource for Zone-spanning Resources
 
 - A single #zonal-NAT-gateway resource can be configured to either
 	- A subnet that contains virtual machines that span across multiple availability zones.
@@ -50,7 +51,7 @@ tags:
 
 _Figure: Single zonal NAT gateway resource for multi-zone spanning resources doesn't provide an effective method of zone-resiliency against outages._
 
-## Zonal NAT gateway resource for each zone in a region to create zone-resiliency
+## Zonal NAT Gateway Resource for Each Zone in a Region to Create Zone-resiliency
 
  - when a virtual machine instance using a NAT gateway resource is in the same zone as the NAT gateway resource and its public IP addresses.
  - The pattern you want to use for zone isolation is creating a #NAT/zonal-stack per availability zone.

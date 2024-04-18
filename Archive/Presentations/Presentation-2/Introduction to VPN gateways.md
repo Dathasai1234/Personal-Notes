@@ -4,6 +4,7 @@ date: 2023-12-29
 resources: 
 tags:
 ---
+
 # Index
 
 - [[#Connections you can create|Connections you can create]]
@@ -26,7 +27,7 @@ tags:
 - ! Once the gateway is created, the VPN client will have to authenticate to the gateway, otherwise, any random person can connect to the gateway if they know the IP address of the gateway.
 - You cannot create Policy based VPN for P2S connection.
 
-## Connections you can create
+## Connections You Can Create
 
 - VPN tunnel connection between that VPN gateway and another VPN gateway #VNet-to-VNet.
 - Cross-premises *IPsec/IKE* VPN tunnel connection between the VPN gateway and an on-premises VPN device #Site-to-Site.

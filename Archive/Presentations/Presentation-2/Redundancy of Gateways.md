@@ -4,6 +4,7 @@ date: 2024-01-16
 resources: https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable#activestandby
 tags:
 ---
+
 # Index
 
 - [[#Highly Available cross-premises|Highly Available cross-premises]]
@@ -11,7 +12,7 @@ tags:
 	- [[#Highly Available cross-premises#Active-active VPN gateways|Active-active VPN gateways]]
 	- [[#Highly Available cross-premises#Dual-redundancy: active-active VPN gateways for both Azure and on-premises networks|Dual-redundancy: active-active VPN gateways for both Azure and on-premises networks]]
 
-# Highly Available cross-premises
+# Highly Available Cross-premises
 
 - To provide better availability for your #VPN_gateway/cross-premises-connections, there are a few options available:
 	- Multiple on-premises VPN devices
@@ -19,7 +20,7 @@ tags:
 	- Combination of both
 
 ---
-## Multiple on-premises VPN devices
+## Multiple On-premises VPN Devices
 
 ![[Pasted image 20240116155005.png]]
 
@@ -32,7 +33,7 @@ tags:
 	5. You must use Equal-cost multi-path routing (ECMP).
 	6. Each connection is counted against the maximum number of tunnels for your Azure VPN gateway. See the [VPN Gateway settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku) page for the latest information about tunnels, connections, and throughput.
 
-## Active-active VPN gateways
+## Active-active VPN Gateways
 
 ![[Pasted image 20240116155403.png]]
 
@@ -45,7 +46,7 @@ tags:
 - even if your on-premises VPN device may favor one tunnel over the other. For a single TCP or UDP flow, Azure attempts to use the same tunnel when sending packets to your on-premises network. However, your on-premises network could use a different tunnel to send packets to Azure.
 
   
-## Dual-redundancy: active-active VPN gateways for both Azure and on-premises networks
+## Dual-redundancy: Active-active VPN Gateways for both Azure and On-premises Networks
 
 ![[Pasted image 20240116155627.png]]
 

@@ -11,7 +11,8 @@ tags:
   - VPN-client
   - AD-certification
 ---
-# Table of contents
+
+# Table of Contents
 
 - [[#Architecture|Architecture]]
 - [[#using **Open VPN (SSL)** protocol authentication|using **Open VPN (SSL)** protocol authentication]]
@@ -35,7 +36,7 @@ Excalidraw - [[Lab-6]]
 - Azure active directory integrated authentication
 - Adding Azure VPN in **Enterprise Applications**
 
-# AD authentication
+# AD Authentication
 
 ^24e45d
 
@@ -55,12 +56,12 @@ https://sts.windows.net/30bf9f37-d550-4878-9494-1041656caf27/
 ```
 
 ---
-# using **Open VPN (SSL)** protocol authentication
+# Using **Open VPN (SSL)** Protocol Authentication
 
 ![[Pasted image 20231121200935.png | 700]]
 
 ---
-# connect **VM2** and **Local machine**  using VPN Client software
+# Connect **VM2** and **Local machine** Using VPN Client Software
 
 ![[Pasted image 20231212173309.png | 500]]
 

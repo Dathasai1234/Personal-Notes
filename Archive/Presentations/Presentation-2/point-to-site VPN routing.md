@@ -5,6 +5,7 @@ resources: https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about
 tags:
   - "#VPN-routing"
 ---
+
 # Index
 
 - [[#One isolated VNet|One isolated VNet]]
@@ -24,12 +25,12 @@ tags:
 	- [[#Multiple VNets connected using an S2S VPN (BGP)#Routes added|Routes added]]
 	- [[#Multiple VNets connected using an S2S VPN (BGP)#Access|Access]]
 
-# One isolated VNet
+# One Isolated VNet
 ![[Pasted image 20240116170259.jpg]]
-## Address space
+## Address Space
 
 - VNet1: 10.1.0.0/16
-## Routes added
+## Routes Added
 
 - Routes added to Windows clients: 10.1.0.0/16, 192.168.0.0/24
 - Routes added to non-Windows clients: 10.1.0.0/16, 192.168.0.0/24
@@ -39,18 +40,18 @@ tags:
 - Non-Windows clients can access VNet1
 
 ---
-# Multiple peered VNets
+# Multiple Peered VNets
 
 ![[Pasted image 20240116170506.jpg]]
 
-## Address space:
+## Address Space:
 
 - VNet1: 10.1.0.0/16
 - VNet2: 10.2.0.0/16
 - VNet3: 10.3.0.0/16
 - VNet4: 10.4.0.0/16
     
-## Routes added
+## Routes Added
 
 - Routes added to Windows clients: 10.1.0.0/16, 10.2.0.0/16, 10.4.0.0/16, 192.168.0.0/24
 - Routes added to non-Windows clients: 10.1.0.0/16, 10.2.0.0/16, 10.4.0.0/16, 192.168.0.0/24
@@ -60,17 +61,17 @@ tags:
 - Non-Windows clients can access VNet1, VNet2, and VNet4
 
 ---
-# Multiple VNets connected using an S2S VPN
+# Multiple VNets Connected Using an S2S VPN
 
 ![[Pasted image 20240116170601.jpg]]
 
-## Address space
+## Address Space
 
 - VNet1: 10.1.0.0/16
 - VNet2: 10.2.0.0/16
 - VNet3: 10.3.0.0/16
   
-## Routes added
+## Routes Added
 
 - Routes added to Windows clients: 10.1.0.0/16, 192.168.0.0/24
 - Routes added to Non-Windows clients: 10.1.0.0/16, 10.2.0.0/16, 192.168.0.0/24
@@ -80,17 +81,17 @@ tags:
 - Non-Windows clients can access VNet1 only
 
 ---
-# Multiple VNets connected using an S2S VPN (BGP)
+# Multiple VNets Connected Using an S2S VPN (BGP)
 
 ![[Pasted image 20240116170649.jpg]]
 
-## Address space
+## Address Space
 
 - VNet1: 10.1.0.0/16
 - VNet2: 10.2.0.0/16
 - VNet3: 10.3.0.0/16
     
-## Routes added
+## Routes Added
 
 - Routes added to Windows clients: 10.1.0.0/16, 192.168.0.0/24
 - Routes added to Non-Windows clients: 10.1.0.0/16, 10.2.0.0/16, 10.3.0.0/16, 192.168.0.0/24

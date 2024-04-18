@@ -7,6 +7,7 @@ tags:
   - interior_gateway_protocol
   - Border_Gateway_Protocol
 ---
+
 # Index
 
 - [[##IGP|#IGP]]
@@ -21,7 +22,7 @@ tags:
 - #BGP is only an #External_Gateway_Protocol which is used between an AS
 - Exchange of loop-free routing information is guaranteed
 
-# #IGP 
+# #IGP
 
 - These are the protocols operate within the AS
 	- Static Routing
@@ -35,7 +36,7 @@ tags:
 **04-01-2024**
 **11:32:55**
 
-# #BGP 
+# #BGP
 
 - It is an **Exterior Gateway Protocol**
 - Open Standard
@@ -56,7 +57,7 @@ tags:
 	- 200 Internal updates (IBGP)
 
 ---
-# Administrative distance
+# Administrative Distance
 
 ^b0734c
 

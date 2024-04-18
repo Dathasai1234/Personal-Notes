@@ -5,6 +5,7 @@ Youtube: https://www.youtube.com/watch?v=AMr_IPk7wyk
 MS docs: https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource
 tags:
 ---
+
 # Index
 
 - [[#Things to Remember|Things to Remember]]
@@ -92,7 +93,7 @@ We can take an entire company worth of Ip addresses and translate them into one 
 
 ---
 
-# Availability zones
+# Availability Zones
 
 - A NAT gateway can be created in a specific availability zone or placed in **no zone**. When a NAT gateway is placed in no zone, Azure selects a zone for the NAT gateway to reside in.
 %%
@@ -120,9 +121,9 @@ In summary, placing a NAT gateway in no zone allows Azure to automatically selec
 %%
 
 ---
-# Example SNAT flows for NAT gateway
+# Example SNAT Flows for NAT Gateway
 
-## Many to one SNAT with NAT gateway
+## Many to One SNAT with NAT Gateway
 
 virtual machines (10.0.0.1 and 10.2.0.1)
 destination IP 23.53.254.142.
@@ -134,13 +135,13 @@ NAT gateway public IP address 65.52.1.1
 |2|10.0.0.1:4284|65.52.1.1:1235|23.53.254.142:80|
 |3|10.2.0.1:5768|65.52.1.1:1236|23.53.254.142:80|
 
-### NAT gateway reuses a SNAT port to connect to a new destination
+### NAT Gateway Reuses a SNAT Port to Connect to a New Destination
 
 |Flow|Source tuple|Source tuple after SNAT|Destination tuple|
 |---|---|---|---|
 |4|10.0.0.1:4285|65.52.1.1:1234|26.108.254.155:80|
 
-### NAT gateway SNAT port cool down for reuse to the same destination
+### NAT Gateway SNAT Port Cool down for Reuse to the Same Destination
 
 |Flow|Source tuple|Source tuple after SNAT|Destination tuple|Packet type connection is closed with|Destination firewall timer for cool down for source port|
 |---|---|---|---|---|---|
@@ -175,7 +176,7 @@ NAT gateway public IP address 65.52.1.1
 %%
 ![[bard.png | 30]]
 %%
-# TCP reset
+# TCP Reset
 
 In the context of a NAT gateway, a #TCP-reset (RST) packet is a specific response sent by the gateway to abruptly terminate a TCP connection. This can happen for several reasons, and understanding them is crucial for troubleshooting connectivity issues in your network.
 
@@ -207,7 +208,7 @@ By understanding the role and causes of TCP resets in NAT gateways, you can gain
 %%
 
 ---
-# TCP idle timeout
+# TCP Idle Timeout
 
 - for TCP protocols - 4 minutes to 120 minutes
 - for UDP protocols - 4 minutes
@@ -216,12 +217,12 @@ By understanding the role and causes of TCP resets in NAT gateways, you can gain
 - long idle timeouts will increase the likelihood of SNAT port exhaustion
 - Recommended to increase the TCP idle timeout duration to longer than the default time of 4 minutes.
 
-## TCP keepalives
+## TCP Keepalives
 
 - #TCP-keepalives can be used to provide a pattern of refreshing long idle connections and endpoint liveness detection
 - [source](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource#:~:text=TCP%20keepalives%20can%20be%20used%20to%20provide%20a%20pattern%20of%20refreshing%20long%20idle%20connections%20and%20endpoint%20liveness%20detection)
 
-## UDP keepalive
+## UDP Keepalive
 
 - #UDP-keepalives should be used to ensure that the idle timeout value isn't reached, and that the connection is maintained.
 - Unlike TCP connections, a UDP keepalive enabled on one side of the connection only applies to traffic flow in **one direction**.
