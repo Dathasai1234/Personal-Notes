@@ -219,7 +219,7 @@ image: https://learn.microsoft.com/en-us/media/open-graph-image.png
 ---
 # Tasks
 
-- [x] Adoptive application control working. ✅ 2024-02-07
+- [x] Adoptive application control working. ✅ 2024-04-29
 - [ ] Use-case AACW.
 - [x] Use-case for agent and agentless in the VM's. ✅ 2024-02-07
 - [ ] Exporting logs to 3 rd party (Event hub).
