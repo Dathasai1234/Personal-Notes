@@ -12,6 +12,7 @@ tags:
 - [[#Ensure only Approved MAC Algorithms Are Used|Ensure only Approved MAC Algorithms Are Used]]
 - [[#Ensure at/cron is Restricted to Authorized Users|Ensure at/cron is Restricted to Authorized Users]]
 - [[#The Default Setting for Accepting Source Routed Packets Should Be Disabled for Network Interfaces.|The Default Setting for Accepting Source Routed Packets Should Be Disabled for Network Interfaces.]]
+- [[#Windows Firewall: Private: Outbound connections' is set to 'Allow (default)|Windows Firewall: Private: Outbound connections' is set to 'Allow (default)]]
 
 # The Rpcgssd Service Should Be Disabled.
 
@@ -51,9 +52,11 @@ SSH (Secure Shell) idle timeout intervals are a security feature that automatica
 
 **Impact:**
 
-Without a timeout, an unauthorized user could potentially access another user’s SSH session if they leave their computer unattended and unlocked, as the session would remain active indefinitely.
+Without a timeout, an unauthorized user could potentially access another user’s SSH session if they leave their computer unlocked.
 
 **Solution:**
+
+The solution is to configure the SSH daemon to automatically disconnect idle sessions after a certain period.
 
 You can configure the SSH Idle Timeout Interval by setting the `ClientAliveInterval` and `ClientAliveCountMax` parameters in your SSH daemon configuration file (`/etc/ssh/sshd_config`).
 
@@ -62,7 +65,7 @@ sudo nano /etc/ssh/sshd_config
 ```
 
 ```bash
-ClientAliveInterval 900  # No greater than 900 seconds
+ClientAliveInterval 500  # No greater than 900 seconds
 ClientAliveCountMax 0
 ```
 
@@ -98,12 +101,18 @@ Specify approved MAC algorithms (replace with your approved list):
 MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com
 ```
 
+These are the list of algorithms that are allowed by default.
+
+- It includes both secure options (like `hmac-sha2-512-etm@openssh.com`) and less secure ones (like `hmac-sha1`).
+	- You should remove less secure algorithms from the list, such as those using SHA-1.
+
 Save the file and restart the SSH service:
 ```bash
 sudo systemctl restart sshd
 ```
 
 This configuration will enforce the use of strong, approved MAC algorithms, enhancing the security of your SSH communications.
+
 
 ---
 # Ensure at/cron is Restricted to Authorized Users
@@ -118,7 +127,7 @@ The **at** and **cron** are both scheduling utilities in Linux systems:
 **Impact**:
 
  - Unprivileged users may gain unauthorized access to schedule and modify **at** and **cron** jobs.
- - Allowing them to execute arbitrary commands or scripts with elevated privileges.
+ - Allowing them to execute commands or scripts with elevated privileges.
 
 **Solution**:
 
@@ -131,6 +140,17 @@ sudo rm /etc/cron.deny /etc/at.deny
 
 ```bash
 sudo vi /etc/cron.allow
+```
+
+Add authorized users to cron and at allow lists
+```bash
+Echo "user1\nuser2" | sudo tee /etc/cron. Allow /etc/at. Allow
+```
+Replace user1, user2 with user names
+
+Remove any existing deny lists
+```bash
+Sudo rm -f /etc/cron. Deny /etc/at. Deny
 ```
 
 ---
@@ -167,7 +187,7 @@ sudo sysctl -p
 ```
 
 ---
-# Windows Firewall: Private: Outbound connections' is set to 'Allow (default)
+# Windows Firewall: Private: Outbound Connections' is Set to 'Allow (default)
 
 **Description**:
 

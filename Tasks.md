@@ -15,6 +15,6 @@ not done
 
 - [ ] PPT - MHA Conditional Access Policy.⏫📅 2024-05-02
 - [ ] Reckner - Weekly Meeting.⏫
-- [ ] Challenge - SC 200.🔼📅 2024-05-06 
+- [ ] Challenge - SC 200.🔼📅 2024-05-10 
 - [ ] Vantage Bank - Sentinel Deployment.🔼 
 - [ ] Ninja Training - Sentinel L400.🔼
