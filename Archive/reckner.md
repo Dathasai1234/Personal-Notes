@@ -4,7 +4,16 @@ date: 2024-04-30
 resources: 
 tags:
 ---
-# The rpcgssd service should be disabled.
+
+# Index
+
+- [[#The Rpcgssd Service Should Be Disabled.|The Rpcgssd Service Should Be Disabled.]]
+- [[#Ensure SSH Idle Timeout Interval is Configured.|Ensure SSH Idle Timeout Interval is Configured.]]
+- [[#Ensure only Approved MAC Algorithms Are Used|Ensure only Approved MAC Algorithms Are Used]]
+- [[#Ensure at/cron is Restricted to Authorized Users|Ensure at/cron is Restricted to Authorized Users]]
+- [[#The Default Setting for Accepting Source Routed Packets Should Be Disabled for Network Interfaces.|The Default Setting for Accepting Source Routed Packets Should Be Disabled for Network Interfaces.]]
+
+# The Rpcgssd Service Should Be Disabled.
 
 **Description:**
 
@@ -34,7 +43,7 @@ systemctl unmask rpcgssd.service
 ```
 
 ---
-# Ensure SSH Idle Timeout Interval is configured.
+# Ensure SSH Idle Timeout Interval is Configured.
 
 **Description:**
 
@@ -62,11 +71,12 @@ sudo systemctl restart sshd
 ```
 
 ---
-# Ensure only approved MAC algorithms are used
+# Ensure only Approved MAC Algorithms Are Used
 
 **Description:**
 
-
+- When data is transmitted over an SSH connection, the MAC algorithm uses a secret key and the message to generate a MAC, which is then sent along with the message to the receiver.
+- To ensure data integrity and authenticity between the SSH client and server.
 
 **Impact:**
 
@@ -75,3 +85,109 @@ Leads to security vulnerabilities
 Unapproved or weak MAC algorithms can be exploited in SSH attacks, potentially allowing an attacker to capture sensitive data or credentials.
 
 **Solution:**
+
+To ensure only approved MAC algorithms are used, you can configure your SSH server by editing the `sshd_config` file.
+
+Open the SSH configuration file:
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+Specify approved MAC algorithms (replace with your approved list):
+```bash
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com
+```
+
+Save the file and restart the SSH service:
+```bash
+sudo systemctl restart sshd
+```
+
+This configuration will enforce the use of strong, approved MAC algorithms, enhancing the security of your SSH communications.
+
+---
+# Ensure at/cron is Restricted to Authorized Users
+
+**Description**:
+
+The **at** and **cron** are both scheduling utilities in Linux systems:
+
+- *at*: Executes commands at a specified time once. %%It’s useful for scheduling a job, script, or command to run at a single future point in time.%%
+- *cron*: Runs jobs automatically at regular intervals, %%defined in a crontab file. It’s ideal for recurring tasks like backups or updates.%%
+
+**Impact**:
+
+ - Unprivileged users may gain unauthorized access to schedule and modify **at** and **cron** jobs.
+ - Allowing them to execute arbitrary commands or scripts with elevated privileges.
+
+**Solution**:
+
+To restrict **at** and **cron** usage to authorized users, follow these steps:
+
+
+```bash
+sudo rm /etc/cron.deny /etc/at.deny
+```
+
+```bash
+sudo vi /etc/cron.allow
+```
+
+---
+# The Default Setting for Accepting Source Routed Packets Should Be Disabled for Network Interfaces.
+
+**Description**: 
+
+- About disabling the acceptance of source-routed packets.
+- Source routing is a feature that allows the sender to specify the route the packet takes through the network.
+- Useful for troubleshooting like (path analysis, Network mapping, Performance testing), it can also pose security risks.
+
+**Impact**:
+
+- Attackers could exploit this to map your network, or redirect traffic for malicious purposes.
+
+**Solution**:
+
+- Open the sysctl configuration file in a text editor:
+
+```bash
+sudo nano /etc/sysctl.conf
+```
+
+- Add the following line to disable source routing:
+
+```bash
+net.ipv4.conf.default.accept_source_route = 0
+```
+
+- Load the new sysctl settings to apply the changes:
+
+```bash
+sudo sysctl -p
+```
+
+---
+# Windows Firewall: Private: Outbound connections' is set to 'Allow (default)
+
+**Description**:
+
+- Controls the behavior of outbound connections on a private network.
+- By default, Windows Firewall allows all outbound connections unless there is a specific rule to block them.
+
+**Impact**:
+
+- If you change this setting to block outbound connections,
+	- Applications might not be able to connect to the internet, which could affect their functionality.
+	- you might encounter numerous prompts asking for permission to allow applications to connect to the network, which can be cumbersome for users.
+
+**Solution**:
+
+Press Win + R, type gpedit. Msc, and press Enter.
+
+Go to Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security.
+
+In the left pane, click on Windows Firewall with Advanced Security.
+Double-click on Windows Firewall Properties.
+
+Switch to the Private Profile tab.
+Locate Outbound connections and set it to Allow (default)
