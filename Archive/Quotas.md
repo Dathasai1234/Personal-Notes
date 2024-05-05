@@ -41,4 +41,8 @@ tags:
 - Maximum of **250** storage accounts can be created in a single resource group.
 
 ---
+# Conditional Access Policies (Entra ID plan-1)
 
+- Maximum of **195** policies per tenant.
+
+---
