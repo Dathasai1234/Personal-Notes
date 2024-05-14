@@ -4,6 +4,7 @@ excalidraw-plugin: parsed
 tags: [excalidraw]
 
 ---
+
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
@@ -20,7 +21,7 @@ Backend-subnet
 Radius Server ^rZnXSaUv
 
 
-# Embedded files
+# Embedded Files
 51525122f3b139acb2da2cc9984a9a35a33eef59: [[Pasted Image 20240104162750_593.png]]
 2198af06096f2b0768b97d6ebc5ea1651f7b986c: [[Pasted Image 20240104162821_580.png]]
 

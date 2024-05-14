@@ -55,8 +55,6 @@ tags:
 ![[Pasted image 20231120120302.png | 700]]
 
 ---
-
-
 # Example - 1 PowerShell Console Session Still Open
 
 - ! The #Root-Certificate and #Client-Certificate much be executed in the same powershell console session.
