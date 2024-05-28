@@ -226,6 +226,7 @@ It contains details such as the username, password hash, and account expiration 
 	- 5378: The requested credentials delegation was disallowed by policy.  
 	- 5632: A request was made to authenticate to a wireless network.  
 	- 5633: A request was made to authenticate to a wired network.
+- Auditing these events may be useful when investigating a security incident.
 
 **Impact**:  security incidents might not be detected or not enough evidence will be available for network forensic analysis after security incidents occur.
 
@@ -233,7 +234,7 @@ It contains details such as the username, password hash, and account expiration 
 
 configuration via GP, The recommended state for this setting is: Success and Failure.
 
-Computer Configuration\Policies\Windows Settings\Security Settings\Advanced Audit Policy Configuration\Audit Policies\Logon/Logoff\Audit Other Logon/Logoff Events
+`Computer Configuration\Policies\Windows Settings\Security Settings\Advanced Audit Policy Configuration\Audit Policies\Logon/Logoff\Audit Other Logon/Logoff Events`
 
 Default value: No Auditing.
 
@@ -246,7 +247,7 @@ These events include changes to the system’s audit policy settings.
 
 Track modifications to audit settings, which can impact the security posture of your system.
 
-Here’s the list of specific events audited under “Audit Policy Change”:
+The list of specific events audited under “Audit Policy Change”:
 
 - User right assignment changes.
 - Trust relationship creation/removal.
@@ -274,7 +275,7 @@ Without proper auditing, security incidents might go undetected, or there may no
 
 **Description**:
 
-- When enabled, it audits and records specific system events related to the loading of various extension code components by the security subsystem.
+- When enabled, it audits and records specific system events related to the **loading of various extension code components by the security subsystem**.
 - These extension code components include:
         - **Authentication packages**: Used for user authentication during logon.
         - **Notification packages**: Responsible for handling notifications related to security events.
