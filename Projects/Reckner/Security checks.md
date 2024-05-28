@@ -7,16 +7,24 @@ tags:
 
 # Index
 
+- [[#Index|Index]]
 - [[#Zeroconf Networking Should Be Disabled.|Zeroconf Networking Should Be Disabled.]]
 - [[#The Portmap Service Should Be Disabled.|The Portmap Service Should Be Disabled.]]
 - [[#Ensure Rsync Service is not Enabled|Ensure Rsync Service is not Enabled]]
 - [[#/etc/passwd - File Permissions Should Be Set to 0600|/etc/passwd - File Permissions Should Be Set to 0600]]
 - [[#The Portmap Service Should Be Disabled.|The Portmap Service Should Be Disabled.]]
 - [[#The Sendmail Package Should Be Uninstalled.|The Sendmail Package Should Be Uninstalled.]]
-- [[#Enable 'Scan removable drives' by setting DisableRemovableDriveScanning (REG_DWORD) to 0|Enable 'Scan removable drives' by setting DisableRemovableDriveScanning (REG_DWORD) to 0]]
-- [[#Ensure 'Microsoft network server: Digitally sign communications (if client agrees)' is set to 'Enabled'|Ensure 'Microsoft network server: Digitally sign communications (if client agrees)' is set to 'Enabled']]
+- [[#Enable 'Scan Removable Drives' by Setting DisableRemovableDriveScanning (REG_DWORD) to 0|Enable 'Scan Removable Drives' by Setting DisableRemovableDriveScanning (REG_DWORD) to 0]]
+- [[#Ensure 'Microsoft Network Server: Digitally Sign Communications (if Client agrees)' is Set to 'Enabled'|Ensure 'Microsoft Network Server: Digitally Sign Communications (if Client agrees)' is Set to 'Enabled']]
 - [[#Ensure 'Microsoft Network Server: Digitally Sign Communications (if Client agrees)' is Set to 'Enabled'|Ensure 'Microsoft Network Server: Digitally Sign Communications (if Client agrees)' is Set to 'Enabled']]
 - [[#/etc/shadow- File Permissions Should Be Set to 0400|/etc/shadow- File Permissions Should Be Set to 0400]]
+- [[#**Tuesday, 28-05-2024, 4:03 pm**|**Tuesday, 28-05-2024, 4:03 pm**]]
+	- [[#**Tuesday, 28-05-2024, 4:03 pm**#Ensure 'Audit Other Logon/Logoff Events' is Set to 'Success and Failure'|Ensure 'Audit Other Logon/Logoff Events' is Set to 'Success and Failure']]
+	- [[#**Tuesday, 28-05-2024, 4:03 pm**#Ensure 'Audit Policy Change' is Set to 'Success'|Ensure 'Audit Policy Change' is Set to 'Success']]
+	- [[#**Tuesday, 28-05-2024, 4:03 pm**#Ensure 'Audit Security System Extension' is set to 'Success'|Ensure 'Audit Security System Extension' is set to 'Success']]
+	- [[#**Tuesday, 28-05-2024, 4:03 pm**#Ensure 'Audit Security Group Management' is set to 'Success'|Ensure 'Audit Security Group Management' is set to 'Success']]
+	- [[#**Tuesday, 28-05-2024, 4:03 pm**#Ensure 'System: Specify the maximum log file size (KB)' is set to 'Enabled: 32,768 or greater'|Ensure 'System: Specify the maximum log file size (KB)' is set to 'Enabled: 32,768 or greater']]
+
 
 # Zeroconf Networking Should Be Disabled.
 
@@ -194,3 +202,171 @@ Sendmail has had several vulnerabilities over the years.
 
 A critical system file in Linux that stores user account information, including encrypted passwords.
 It contains details such as the username, password hash, and account expiration information.
+
+---
+# **Tuesday, 28-05-2024, 4:03 pm**
+
+## Ensure 'Audit Other Logon/Logoff Events' is Set to 'Success and Failure'
+
+**Description**:
+
+- reports related to logon/logoff-related events
+- It covers events such as:
+    - Remote Desktop Services session disconnects and reconnects.
+    - Using “RunAs” to run processes under a different account.
+    - Locking and unlocking a workstation.
+- Set of Events like:
+	- 4649: A replay attack was detected.   
+	- 4778: A session was reconnected to a Window Station.  
+	- 4779: A session was disconnected from a Window Station.  
+	- 4800: The workstation was locked.
+	- 4801: The workstation was unlocked.
+	- 4802: The screen saver was invoked. 
+	- 4803: The screen saver was dismissed.  
+	- 5378: The requested credentials delegation was disallowed by policy.  
+	- 5632: A request was made to authenticate to a wireless network.  
+	- 5633: A request was made to authenticate to a wired network.
+
+**Impact**:  security incidents might not be detected or not enough evidence will be available for network forensic analysis after security incidents occur.
+
+**Solution**:
+
+configuration via GP, The recommended state for this setting is: Success and Failure.
+
+Computer Configuration\Policies\Windows Settings\Security Settings\Advanced Audit Policy Configuration\Audit Policies\Logon/Logoff\Audit Other Logon/Logoff Events
+
+Default value: No Auditing.
+
+---
+## Ensure 'Audit Policy Change' is Set to 'Success'
+
+**Description**:
+
+These events include changes to the system’s audit policy settings.
+
+Track modifications to audit settings, which can impact the security posture of your system.
+
+Here’s the list of specific events audited under “Audit Policy Change”:
+
+- User right assignment changes.
+- Trust relationship creation/removal.
+- Audit policy modifications.
+- IPSec policy agent events.
+- Kerberos policy changes.
+- Encrypted Data Recovery policy changes.
+- System access grants/removals.
+- Per-user auditing policy settings.
+- Collision detection in namespace elements.
+- Trusted forest information updates.
+
+**Impact**:
+
+Without proper auditing, security incidents might go undetected, or there may not be enough evidence for forensic analysis.
+
+**Solution**:
+- To configure this via Group Policy (GP):
+    - Navigate to: `Computer Configuration → Policies → Windows Settings → Security Settings → Advanced Audit Policy Configuration → Audit Policies → Policy Change → Audit Audit Policy Change`.
+    - Set the value to “Success.”
+    - The default value is “No Auditing.”
+
+---
+## Ensure 'Audit Security System Extension' is Set to 'Success'
+
+**Description**:
+
+- When enabled, it audits and records specific system events related to the loading of various extension code components by the security subsystem.
+- These extension code components include:
+        - **Authentication packages**: Used for user authentication during logon.
+        - **Notification packages**: Responsible for handling notifications related to security events.
+        - **Security packages**: Used for secure communication and authentication (e.g., Kerberos and NTLM).
+- **Events Audited Under “Audit Security System Extension”**:
+    - The following events are audited:
+        - **4610**: An authentication package has been loaded by the Local Security Authority.
+        - **4611**: A trusted logon process has been registered with the Local Security Authority.
+        - **4614**: A notification package has been loaded by the Security Account Manager.
+        - **4622**: A security package has been loaded by the Local Security Authority.
+        - **4697**: A service was installed in the system.
+
+**Impact**:
+
+If you ignore this recommendation:
+- Security incidents may not be adequately detected.
+- Forensic analysis after incidents could be challenging due to insufficient data.
+
+**Solution**:
+
+- To configure this via Group Policy (GP):
+    - Navigate to: `Computer Configuration → Policies → Windows Settings → Security Settings → Advanced Audit Policy Configuration → Audit Policies → System → Audit Security System Extension`.
+    - Set the value to **“Success”**.
+    - The default value is **“No Auditing”**.
+
+---
+## Ensure 'Audit Security Group Management' is Set to 'Success'
+
+**Description**:
+
+- **Security groups** are a fundamental concept in **Active Directory** (AD) and other directory services.
+- They serve as containers for grouping users, computers, and other objects based on common security requirements.
+- Security groups simplify access control by allowing you to assign permissions to a group rather than individual users or devices.
+
+- This audit policy setting tracks events related to security group management.
+- It records actions such as creating, changing, or deleting security groups, as well as adding or removing members from these groups.
+- Enabling this setting allows administrators to monitor events and detect unauthorized or accidental changes to security group accounts.
+
+**Events Audited Under “Audit Security Group Management”**:
+    
+    - The following events are audited:
+        - **4727**: A security-enabled global group was created.
+        - **4728**: A member was added to a security-enabled global group.
+        - **4729**: A member was removed from a security-enabled global group.
+        - **4730**: A security-enabled global group was deleted.
+        - **4731**: A security-enabled local group was created.
+        - **4732**: A member was added to a security-enabled local group.
+        - **4733**: A member was removed from a security-enabled local group.
+        - **4734**: A security-enabled local group was deleted.
+        - **4735**: A security-enabled local group was changed.
+        - **4737**: A security-enabled global group was changed.
+        - **4754**: A security-enabled universal group was created.
+        - **4755**: A security-enabled universal group was changed.
+        - **4756**: A member was added to a security-enabled universal group.
+        - **4757**: A member was removed from a security-enabled universal group.
+        - **4758**: A security-enabled universal group was deleted.
+        - **4764**: A group’s type was changed.
+
+**Impact**:
+
+If you ignore this recommendation:
+
+- Security incidents may not be adequately detected.
+- Forensic analysis after incidents could be challenging due to insufficient data.
+
+**Solution**:
+
+- To configure this via Group Policy (GP):
+    - Navigate to: `Computer Configuration → Policies → Windows Settings → Security Settings → Advanced Audit Policy Configuration → Audit Policies → Account Management → Audit Security Group Management`.
+    - Set the value to **“Success”**.
+    - The default value is **“No Auditing”**.
+
+---
+## Ensure 'System: Specify the Maximum Log File Size (KB)' is Set to 'Enabled: 32,768 or Greater'
+
+**Description**:
+
+- This recommendation pertains to the configuration of the maximum size for log files in kilobytes (KB).
+- Specifically, it focuses on the event logs generated by the Windows operating system.
+
+**Impact**:
+
+- If logs are not recorded or if they fill up too quickly, it becomes difficult to determine the root cause of system problems or unauthorized activities by malicious users.
+- Event logs may not capture critical information due to limited space.
+- Forensic analysis after security incidents could be compromised.
+
+**Solution**:
+
+- To configure this via Group Policy (GP):
+    - Navigate to: `Computer Configuration → Policies → Administrative Templates → Windows Components → Event Log Service → Setup → Specify the maximum log file size (KB)`.
+    - Set the value to **“Enabled: 32,768 or greater”**.
+    - The default value is **“Disabled”** (which corresponds to a default log size of 20,480 KB).
+    - Adjust the log size based on your system’s requirements.
+
+---
