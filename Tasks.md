@@ -18,3 +18,10 @@ not done
 - [x] Challenge - SC 200. 🔼 📅 2024-05-10 ✅ 2024-05-28
 - [x] Vantage Bank - Sentinel Deployment. 🔼 ✅ 2024-05-28
 - [ ] Ninja Training - Sentinel L400.🔼
+
+---
+- [ ] Dynamics Time entries.
+- [ ] Vantage bank call summary.
+- [ ] AVS logs.
+- [ ] CrowdStrike monitoring task.
+
