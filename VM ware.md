@@ -66,3 +66,11 @@ tags:
 
 ![[Pasted image 20240605174254.png]]
 ![[Pasted image 20240605174657.png]]
+
+## VCenter
+
+- Centralized management utility for VMware, and is used to manage virtual machines, multiple ESXi hosts and all dependent components from a single centralized location.
+- It supports HA, DRS, vMotion, vDS, vSAN, SSO, update manager, host profiles, vRealize orchestrator and many more.
+	- **DRS** - Distributed Resource Schedular.
+	- **vMotion** - This is used to migrate VM's from one host to another host even when they are alive.
+	- **vDS** (Distributed Switches) - Set the networking of ESXi servers.
