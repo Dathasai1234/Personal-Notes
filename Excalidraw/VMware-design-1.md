@@ -755,8 +755,8 @@ vSphere Client ^BBLtn2JY
 		},
 		{
 			"type": "arrow",
-			"version": 28,
-			"versionNonce": 898355888,
+			"version": 32,
+			"versionNonce": 347389008,
 			"isDeleted": false,
 			"id": "l3Ls8puTNCZ9FfqIIqWTY",
 			"fillStyle": "solid",
@@ -778,18 +778,18 @@ vSphere Client ^BBLtn2JY
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1717584979365,
+			"updated": 1717603125476,
 			"link": null,
 			"locked": false,
 			"startBinding": {
 				"elementId": "iVttaCNboVLwKPrfnOHPn",
-				"focus": -0.06666608537946428,
-				"gap": 7.66668701171875
+				"gap": 7.66668701171875,
+				"focus": -0.06666608537946428
 			},
 			"endBinding": {
 				"elementId": "BBLtn2JY",
-				"focus": 0.2,
-				"gap": 8.333328247070312
+				"gap": 8.333328247070312,
+				"focus": 0.2
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -846,6 +846,74 @@ vSphere Client ^BBLtn2JY
 			"originalText": "vSphere Client",
 			"lineHeight": 1.25,
 			"baseline": 14
+		},
+		{
+			"id": "OZxAeIwR",
+			"type": "image",
+			"x": -671.1276430575233,
+			"y": -165.67158439526588,
+			"width": 500,
+			"height": 303.96039603960395,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 71186,
+			"version": 104,
+			"versionNonce": 185359952,
+			"updated": 1717603128898,
+			"isDeleted": true,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "8baf3c44e7588504c14ee4fd6d9f71ac3f4510fb",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"id": "q2bL2PWR",
+			"type": "text",
+			"x": 154.99973640977282,
+			"y": -37.19497383818927,
+			"width": 8,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffc9c9",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 361708208,
+			"version": 2,
+			"versionNonce": 943029840,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1717603122350,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 14,
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -863,10 +931,10 @@ vSphere Client ^BBLtn2JY
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 174.46965910259044,
-		"scrollY": 351.47152790270354,
+		"scrollX": 599.8410557509051,
+		"scrollY": 348.99404714937134,
 		"zoom": {
-			"value": 0.9500000000000001
+			"value": 1.0378422805726635
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

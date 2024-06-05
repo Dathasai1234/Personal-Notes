@@ -83,8 +83,79 @@ VMWare Workstation Player ^htO6nSrs
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 38,
-			"versionNonce": 1465341616,
+			"version": 125,
+			"versionNonce": 831037008,
+			"isDeleted": false,
+			"id": "uSRhxtHZuB6zxdz-c_hcg",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -278.3291734465489,
+			"y": -429.5652962107003,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 989.6296734280056,
+			"height": 594.0740627712672,
+			"seed": 979035824,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 3
+			},
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "htO6nSrs"
+				}
+			],
+			"updated": 1717602955502,
+			"link": null,
+			"locked": false
+		},
+		{
+			"type": "text",
+			"version": 94,
+			"versionNonce": 2140352176,
+			"isDeleted": false,
+			"id": "htO6nSrs",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -273.3291734465489,
+			"y": -424.5652962107003,
+			"strokeColor": "#2f9e44",
+			"backgroundColor": "transparent",
+			"width": 486.2518310546875,
+			"height": 45,
+			"seed": 1343314512,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1717602955502,
+			"link": null,
+			"locked": false,
+			"fontSize": 36,
+			"fontFamily": 1,
+			"text": "VMWare Workstation Player",
+			"rawText": "VMWare Workstation Player",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": "uSRhxtHZuB6zxdz-c_hcg",
+			"originalText": "VMWare Workstation Player",
+			"lineHeight": 1.25,
+			"baseline": 31
+		},
+		{
+			"type": "rectangle",
+			"version": 39,
+			"versionNonce": 1501582416,
 			"isDeleted": false,
 			"id": "UaxfJC93EQ2x8PThmunC7",
 			"fillStyle": "solid",
@@ -111,14 +182,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 23,
-			"versionNonce": 1836231760,
+			"version": 24,
+			"versionNonce": 1016715440,
 			"isDeleted": false,
 			"id": "ABYYL3KF",
 			"fillStyle": "solid",
@@ -138,7 +209,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -154,8 +225,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 92,
-			"versionNonce": 1503199408,
+			"version": 93,
+			"versionNonce": 1427196496,
 			"isDeleted": false,
 			"id": "NNkyaVsTfkaYmRYrvaz6V",
 			"fillStyle": "solid",
@@ -182,14 +253,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "JtVBfG6i"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 25,
-			"versionNonce": 1761124944,
+			"version": 26,
+			"versionNonce": 926630576,
 			"isDeleted": false,
 			"id": "JtVBfG6i",
 			"fillStyle": "solid",
@@ -209,7 +280,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -225,8 +296,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 64,
-			"versionNonce": 974482096,
+			"version": 65,
+			"versionNonce": 1595113552,
 			"isDeleted": false,
 			"id": "4qS0_cVTwITyUf9P4bo-O",
 			"fillStyle": "solid",
@@ -253,14 +324,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 9,
-			"versionNonce": 743430224,
+			"version": 10,
+			"versionNonce": 1847553200,
 			"isDeleted": false,
 			"id": "RS0JIfKr",
 			"fillStyle": "solid",
@@ -280,7 +351,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -296,8 +367,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 127,
-			"versionNonce": 1668584624,
+			"version": 128,
+			"versionNonce": 392099408,
 			"isDeleted": false,
 			"id": "axq0_qzvt3Jsf6YcwOIOK",
 			"fillStyle": "solid",
@@ -324,14 +395,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 40,
-			"versionNonce": 726683216,
+			"version": 41,
+			"versionNonce": 1257133744,
 			"isDeleted": false,
 			"id": "pLonqwsd",
 			"fillStyle": "solid",
@@ -351,7 +422,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -367,8 +438,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 88,
-			"versionNonce": 727613104,
+			"version": 89,
+			"versionNonce": 1657515088,
 			"isDeleted": false,
 			"id": "jl59It1fJZNfYSVJC_Fen",
 			"fillStyle": "solid",
@@ -395,14 +466,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 7,
-			"versionNonce": 517080144,
+			"version": 8,
+			"versionNonce": 1112539312,
 			"isDeleted": false,
 			"id": "DgVoUxSu",
 			"fillStyle": "solid",
@@ -422,7 +493,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -438,8 +509,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 151,
-			"versionNonce": 1920673968,
+			"version": 152,
+			"versionNonce": 1261544016,
 			"isDeleted": false,
 			"id": "LOZwdHerG6SIMEWzur6EQ",
 			"fillStyle": "solid",
@@ -466,14 +537,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 40,
-			"versionNonce": 1689057872,
+			"version": 41,
+			"versionNonce": 1944873648,
 			"isDeleted": false,
 			"id": "iMU7jq7R",
 			"fillStyle": "solid",
@@ -493,7 +564,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -509,8 +580,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 125,
-			"versionNonce": 1148359344,
+			"version": 126,
+			"versionNonce": 1600706640,
 			"isDeleted": false,
 			"id": "7GFVJSyz2Qm-D2xU5v_X2",
 			"fillStyle": "solid",
@@ -537,14 +608,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 29,
-			"versionNonce": 1605972048,
+			"version": 30,
+			"versionNonce": 1248564400,
 			"isDeleted": false,
 			"id": "6fCglNQV",
 			"fillStyle": "solid",
@@ -564,7 +635,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -580,8 +651,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 166,
-			"versionNonce": 2012003504,
+			"version": 167,
+			"versionNonce": 323571280,
 			"isDeleted": false,
 			"id": "QAK26VaPVoIY_Yv-n-Ecn",
 			"fillStyle": "solid",
@@ -608,14 +679,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 32,
-			"versionNonce": 1473160784,
+			"version": 33,
+			"versionNonce": 460684976,
 			"isDeleted": false,
 			"id": "bVFdC0Vd",
 			"fillStyle": "solid",
@@ -635,7 +706,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -651,8 +722,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 150,
-			"versionNonce": 1318168240,
+			"version": 151,
+			"versionNonce": 531301456,
 			"isDeleted": false,
 			"id": "hbzOuw1fd5iCSwpuIm7Y8",
 			"fillStyle": "solid",
@@ -679,14 +750,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 29,
-			"versionNonce": 1506106448,
+			"version": 30,
+			"versionNonce": 1202858160,
 			"isDeleted": false,
 			"id": "964Rj7QV",
 			"fillStyle": "solid",
@@ -706,7 +777,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -722,8 +793,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 190,
-			"versionNonce": 352932016,
+			"version": 191,
+			"versionNonce": 1650850384,
 			"isDeleted": false,
 			"id": "MiO6bEBNX3ZjJppkv5ovs",
 			"fillStyle": "solid",
@@ -750,14 +821,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "text"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 32,
-			"versionNonce": 393564752,
+			"version": 33,
+			"versionNonce": 1523159728,
 			"isDeleted": false,
 			"id": "kENEhJjh",
 			"fillStyle": "solid",
@@ -777,7 +848,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -793,8 +864,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 60,
-			"versionNonce": 1123793584,
+			"version": 61,
+			"versionNonce": 1045573712,
 			"isDeleted": false,
 			"id": "arAPbtWVoZku_qDEGi0I6",
 			"fillStyle": "solid",
@@ -821,14 +892,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "LebQbHqA"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 47,
-			"versionNonce": 1203144784,
+			"version": 48,
+			"versionNonce": 727956656,
 			"isDeleted": false,
 			"id": "LebQbHqA",
 			"fillStyle": "solid",
@@ -848,7 +919,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -864,8 +935,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 116,
-			"versionNonce": 454091952,
+			"version": 117,
+			"versionNonce": 2068293200,
 			"isDeleted": false,
 			"id": "BItigI_twYo0aKHTdQ5s5",
 			"fillStyle": "solid",
@@ -892,14 +963,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "zBd71Vgu"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 49,
-			"versionNonce": 107019856,
+			"version": 50,
+			"versionNonce": 2066261680,
 			"isDeleted": false,
 			"id": "zBd71Vgu",
 			"fillStyle": "solid",
@@ -919,7 +990,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -935,8 +1006,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 88,
-			"versionNonce": 1257295536,
+			"version": 89,
+			"versionNonce": 639523920,
 			"isDeleted": false,
 			"id": "10YA7NGOMfoNSZMrZXk6Q",
 			"fillStyle": "solid",
@@ -963,14 +1034,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "Kzxmpm7S"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 33,
-			"versionNonce": 877442128,
+			"version": 34,
+			"versionNonce": 381702320,
 			"isDeleted": false,
 			"id": "Kzxmpm7S",
 			"fillStyle": "solid",
@@ -990,7 +1061,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1006,8 +1077,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 151,
-			"versionNonce": 188971184,
+			"version": 152,
+			"versionNonce": 1890472528,
 			"isDeleted": false,
 			"id": "q0ki2bANYHWMhVFddkTdn",
 			"fillStyle": "solid",
@@ -1034,14 +1105,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "oS10e0yu"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955502,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 64,
-			"versionNonce": 1464969808,
+			"version": 65,
+			"versionNonce": 1976744624,
 			"isDeleted": false,
 			"id": "oS10e0yu",
 			"fillStyle": "solid",
@@ -1061,7 +1132,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969956,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1077,8 +1148,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 112,
-			"versionNonce": 1068556976,
+			"version": 113,
+			"versionNonce": 298813520,
 			"isDeleted": false,
 			"id": "PkSzrrPWNNPHuJSeT0bMP",
 			"fillStyle": "solid",
@@ -1105,14 +1176,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "bCp0GAh8"
 				}
 			],
-			"updated": 1717584969956,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 31,
-			"versionNonce": 2051530832,
+			"version": 32,
+			"versionNonce": 1527243952,
 			"isDeleted": false,
 			"id": "bCp0GAh8",
 			"fillStyle": "solid",
@@ -1132,7 +1203,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1148,8 +1219,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 175,
-			"versionNonce": 383847600,
+			"version": 176,
+			"versionNonce": 626654800,
 			"isDeleted": false,
 			"id": "OcS10W48Q9uSU2PKhfzlR",
 			"fillStyle": "solid",
@@ -1176,14 +1247,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "q6mUiNUB"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 64,
-			"versionNonce": 218584656,
+			"version": 65,
+			"versionNonce": 1946668720,
 			"isDeleted": false,
 			"id": "q6mUiNUB",
 			"fillStyle": "solid",
@@ -1203,7 +1274,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1219,8 +1290,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 149,
-			"versionNonce": 712767152,
+			"version": 150,
+			"versionNonce": 203797584,
 			"isDeleted": false,
 			"id": "w9S1mbqhiX70c_-Yom_gX",
 			"fillStyle": "solid",
@@ -1247,14 +1318,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "h87yjWdx"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 53,
-			"versionNonce": 1147669584,
+			"version": 54,
+			"versionNonce": 2038069424,
 			"isDeleted": false,
 			"id": "h87yjWdx",
 			"fillStyle": "solid",
@@ -1274,7 +1345,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1290,8 +1361,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 190,
-			"versionNonce": 522821808,
+			"version": 191,
+			"versionNonce": 1275767376,
 			"isDeleted": false,
 			"id": "ESXbYb4P2erzf2JozdiC5",
 			"fillStyle": "solid",
@@ -1318,14 +1389,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "jjKK9WMy"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 56,
-			"versionNonce": 2051146320,
+			"version": 57,
+			"versionNonce": 1325916848,
 			"isDeleted": false,
 			"id": "jjKK9WMy",
 			"fillStyle": "solid",
@@ -1345,7 +1416,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1361,8 +1432,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 174,
-			"versionNonce": 1150421680,
+			"version": 175,
+			"versionNonce": 1877008464,
 			"isDeleted": false,
 			"id": "8_gnQ2a4KjlPb-H_t1m-5",
 			"fillStyle": "solid",
@@ -1389,14 +1460,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "EBSfVAiE"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 53,
-			"versionNonce": 225261648,
+			"version": 54,
+			"versionNonce": 592972976,
 			"isDeleted": false,
 			"id": "EBSfVAiE",
 			"fillStyle": "solid",
@@ -1416,7 +1487,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1432,8 +1503,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 214,
-			"versionNonce": 895300784,
+			"version": 215,
+			"versionNonce": 1736463952,
 			"isDeleted": false,
 			"id": "oL7QV8oq_wQl3FV-w4-O8",
 			"fillStyle": "solid",
@@ -1460,14 +1531,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "bcK5AgJX"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 56,
-			"versionNonce": 1103212112,
+			"version": 57,
+			"versionNonce": 269678256,
 			"isDeleted": false,
 			"id": "bcK5AgJX",
 			"fillStyle": "solid",
@@ -1487,7 +1558,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1503,8 +1574,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 50,
-			"versionNonce": 1999838896,
+			"version": 51,
+			"versionNonce": 1740704848,
 			"isDeleted": false,
 			"id": "WERFl6mXmbChkOjiipiNf",
 			"fillStyle": "solid",
@@ -1531,14 +1602,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "Ti5hL1Dx"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 37,
-			"versionNonce": 538403920,
+			"version": 38,
+			"versionNonce": 971022512,
 			"isDeleted": false,
 			"id": "Ti5hL1Dx",
 			"fillStyle": "solid",
@@ -1558,7 +1629,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1574,8 +1645,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 106,
-			"versionNonce": 448514224,
+			"version": 107,
+			"versionNonce": 1249575504,
 			"isDeleted": false,
 			"id": "P5skDm3ZA4saFA1kE2BjR",
 			"fillStyle": "solid",
@@ -1602,14 +1673,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "9ZYruyWP"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 39,
-			"versionNonce": 1447451216,
+			"version": 40,
+			"versionNonce": 1885932208,
 			"isDeleted": false,
 			"id": "9ZYruyWP",
 			"fillStyle": "solid",
@@ -1629,7 +1700,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1645,8 +1716,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 78,
-			"versionNonce": 1537159856,
+			"version": 79,
+			"versionNonce": 1854290000,
 			"isDeleted": false,
 			"id": "FfscTeHi4GYmU6qWs6NSe",
 			"fillStyle": "solid",
@@ -1673,14 +1744,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "NGUEpuzs"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 23,
-			"versionNonce": 388403280,
+			"version": 24,
+			"versionNonce": 1314141360,
 			"isDeleted": false,
 			"id": "NGUEpuzs",
 			"fillStyle": "solid",
@@ -1700,7 +1771,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1716,8 +1787,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 141,
-			"versionNonce": 1082481840,
+			"version": 142,
+			"versionNonce": 398110288,
 			"isDeleted": false,
 			"id": "0zmEj2UA6FYBSpfDT4PVT",
 			"fillStyle": "solid",
@@ -1744,14 +1815,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "zRefoS9K"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 54,
-			"versionNonce": 2056259152,
+			"version": 55,
+			"versionNonce": 1498029744,
 			"isDeleted": false,
 			"id": "zRefoS9K",
 			"fillStyle": "solid",
@@ -1771,7 +1842,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1787,8 +1858,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 102,
-			"versionNonce": 991315632,
+			"version": 103,
+			"versionNonce": 1324377168,
 			"isDeleted": false,
 			"id": "nJpr_KiCvFNU6Mn4IVQfi",
 			"fillStyle": "solid",
@@ -1815,14 +1886,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "Nis1t3oD"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 21,
-			"versionNonce": 1566227536,
+			"version": 22,
+			"versionNonce": 569559216,
 			"isDeleted": false,
 			"id": "Nis1t3oD",
 			"fillStyle": "solid",
@@ -1842,7 +1913,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1858,8 +1929,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 165,
-			"versionNonce": 1207562416,
+			"version": 166,
+			"versionNonce": 1107253840,
 			"isDeleted": false,
 			"id": "L5mdfItJ53WFTg1IjiM0q",
 			"fillStyle": "solid",
@@ -1886,14 +1957,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "uIWF4PMU"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 54,
-			"versionNonce": 1096725072,
+			"version": 55,
+			"versionNonce": 1677079216,
 			"isDeleted": false,
 			"id": "uIWF4PMU",
 			"fillStyle": "solid",
@@ -1913,7 +1984,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1929,8 +2000,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 139,
-			"versionNonce": 249060016,
+			"version": 140,
+			"versionNonce": 599756880,
 			"isDeleted": false,
 			"id": "w63IUs6fmXZZvRGga-Fq6",
 			"fillStyle": "solid",
@@ -1957,14 +2028,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "sbwfgQ26"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 43,
-			"versionNonce": 762570832,
+			"version": 44,
+			"versionNonce": 637295792,
 			"isDeleted": false,
 			"id": "sbwfgQ26",
 			"fillStyle": "solid",
@@ -1984,7 +2055,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -2000,8 +2071,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 180,
-			"versionNonce": 39421104,
+			"version": 181,
+			"versionNonce": 201918032,
 			"isDeleted": false,
 			"id": "izHB9UYrCx_t6utS4jZWJ",
 			"fillStyle": "solid",
@@ -2028,14 +2099,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "sjrbb9QP"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 46,
-			"versionNonce": 225599056,
+			"version": 47,
+			"versionNonce": 1504528048,
 			"isDeleted": false,
 			"id": "sjrbb9QP",
 			"fillStyle": "solid",
@@ -2055,7 +2126,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -2071,8 +2142,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 164,
-			"versionNonce": 2453168,
+			"version": 165,
+			"versionNonce": 1471396944,
 			"isDeleted": false,
 			"id": "X3pkihqlRi5RwfhptLQWw",
 			"fillStyle": "solid",
@@ -2099,14 +2170,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "BAJwEvDb"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 43,
-			"versionNonce": 305271888,
+			"version": 44,
+			"versionNonce": 2075193520,
 			"isDeleted": false,
 			"id": "BAJwEvDb",
 			"fillStyle": "solid",
@@ -2126,7 +2197,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -2142,8 +2213,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 204,
-			"versionNonce": 1893996720,
+			"version": 205,
+			"versionNonce": 144159312,
 			"isDeleted": false,
 			"id": "DQ5rPPMUQPw2ta-1z3tMx",
 			"fillStyle": "solid",
@@ -2170,14 +2241,14 @@ VMWare Workstation Player ^htO6nSrs
 					"id": "qfaaOFxU"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 46,
-			"versionNonce": 294324816,
+			"version": 47,
+			"versionNonce": 867130032,
 			"isDeleted": false,
 			"id": "qfaaOFxU",
 			"fillStyle": "solid",
@@ -2197,7 +2268,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -2213,8 +2284,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "rectangle",
-			"version": 58,
-			"versionNonce": 1748861616,
+			"version": 59,
+			"versionNonce": 629991504,
 			"isDeleted": false,
 			"id": "hF1yCOuuDC4Wm1n4gjf5K",
 			"fillStyle": "solid",
@@ -2245,14 +2316,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "arrow"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 76,
-			"versionNonce": 1716863056,
+			"version": 77,
+			"versionNonce": 1951433904,
 			"isDeleted": false,
 			"id": "uYcrMrp9mbU1UwqnK2lgx",
 			"fillStyle": "solid",
@@ -2279,14 +2350,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "arrow"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 71,
-			"versionNonce": 1155116208,
+			"version": 72,
+			"versionNonce": 443244112,
 			"isDeleted": false,
 			"id": "DZJk539JX3PJy1msQk8BE",
 			"fillStyle": "solid",
@@ -2313,14 +2384,14 @@ VMWare Workstation Player ^htO6nSrs
 					"type": "arrow"
 				}
 			],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "arrow",
-			"version": 90,
-			"versionNonce": 1349039696,
+			"version": 91,
+			"versionNonce": 456945328,
 			"isDeleted": false,
 			"id": "jt8_LRyFHkUto7ccEOJfe",
 			"fillStyle": "solid",
@@ -2342,7 +2413,7 @@ VMWare Workstation Player ^htO6nSrs
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -2375,8 +2446,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "arrow",
-			"version": 55,
-			"versionNonce": 1348507312,
+			"version": 56,
+			"versionNonce": 403379280,
 			"isDeleted": false,
 			"id": "y9KU6iG3T9mSuQRSfJ2kW",
 			"fillStyle": "solid",
@@ -2398,7 +2469,7 @@ VMWare Workstation Player ^htO6nSrs
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -2431,8 +2502,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "line",
-			"version": 47,
-			"versionNonce": 1419603024,
+			"version": 48,
+			"versionNonce": 286988464,
 			"isDeleted": false,
 			"id": "tYppx60O-aLZ3CJDm0gJX",
 			"fillStyle": "solid",
@@ -2454,7 +2525,7 @@ VMWare Workstation Player ^htO6nSrs
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -2475,52 +2546,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "line",
-			"version": 90,
-			"versionNonce": 1601847472,
-			"isDeleted": false,
-			"id": "WmV1hmFG320O1mXBKDKQQ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -246.00286686851135,
-			"y": 70.57739833416053,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 935.7903979801491,
-			"height": 6.931801879894806,
-			"seed": 852832944,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1717584969957,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": null,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					935.7903979801491,
-					-6.931801879894806
-				]
-			]
-		},
-		{
-			"type": "line",
-			"version": 44,
-			"versionNonce": 483091024,
+			"version": 45,
+			"versionNonce": 1950616144,
 			"isDeleted": false,
 			"id": "Wc57DliQwBkmnCE6O1KDO",
 			"fillStyle": "solid",
@@ -2542,7 +2569,7 @@ VMWare Workstation Player ^htO6nSrs
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -2563,8 +2590,52 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "line",
-			"version": 23,
-			"versionNonce": 1909369520,
+			"version": 92,
+			"versionNonce": 1771340464,
+			"isDeleted": false,
+			"id": "WmV1hmFG320O1mXBKDKQQ",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -246.00286686851135,
+			"y": 70.57739833416053,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 935.7903979801491,
+			"height": 6.931801879894806,
+			"seed": 852832944,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"boundElements": [],
+			"updated": 1717602955503,
+			"link": null,
+			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					935.7903979801491,
+					-6.931801879894806
+				]
+			]
+		},
+		{
+			"type": "line",
+			"version": 24,
+			"versionNonce": 166608976,
 			"isDeleted": false,
 			"id": "cfymIsdL-CvqDb1c-a_Lz",
 			"fillStyle": "solid",
@@ -2586,7 +2657,7 @@ VMWare Workstation Player ^htO6nSrs
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -2607,8 +2678,8 @@ VMWare Workstation Player ^htO6nSrs
 		},
 		{
 			"type": "text",
-			"version": 38,
-			"versionNonce": 1472895056,
+			"version": 39,
+			"versionNonce": 55618736,
 			"isDeleted": false,
 			"id": "W3cZQQmu",
 			"fillStyle": "solid",
@@ -2628,7 +2699,7 @@ VMWare Workstation Player ^htO6nSrs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1717584969957,
+			"updated": 1717602955503,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2643,186 +2714,47 @@ VMWare Workstation Player ^htO6nSrs
 			"baseline": 17
 		},
 		{
-			"id": "uSRhxtHZuB6zxdz-c_hcg",
-			"type": "rectangle",
-			"x": -278.3291734465489,
-			"y": -429.5652962107003,
-			"width": 989.6296734280056,
-			"height": 594.0740627712672,
+			"id": "IxZtQCgQ",
+			"type": "embeddable",
+			"x": 779.2219435215238,
+			"y": -359.76263283977494,
+			"width": 500,
+			"height": 500,
 			"angle": 0,
-			"strokeColor": "#1e1e1e",
+			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"roundness": null,
+			"seed": 23299,
+			"version": 200,
+			"versionNonce": 714797648,
+			"updated": 1717603068848,
+			"isDeleted": true,
 			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 3
-			},
-			"seed": 979035824,
-			"version": 98,
-			"versionNonce": 632331344,
-			"isDeleted": false,
-			"boundElements": [
-				{
-					"type": "text",
-					"id": "htO6nSrs"
-				}
+			"boundElements": [],
+			"link": "[[VM ware]]",
+			"locked": false,
+			"scale": [
+				1,
+				1
 			],
-			"updated": 1717585086337,
-			"link": null,
-			"locked": false
-		},
-		{
-			"id": "htO6nSrs",
-			"type": "text",
-			"x": -273.3291734465489,
-			"y": -424.5652962107003,
-			"width": 486.2518310546875,
-			"height": 45,
-			"angle": 0,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1343314512,
-			"version": 67,
-			"versionNonce": 1140363856,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1717585086337,
-			"link": null,
-			"locked": false,
-			"text": "VMWare Workstation Player",
-			"rawText": "VMWare Workstation Player",
-			"fontSize": 36,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 31,
-			"containerId": "uSRhxtHZuB6zxdz-c_hcg",
-			"originalText": "VMWare Workstation Player",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "FQxxLND3",
-			"type": "text",
-			"x": 207.4856632674539,
-			"y": -138.73196287736704,
-			"width": 18,
-			"height": 45,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1360388784,
-			"version": 4,
-			"versionNonce": 1201812656,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1717585056434,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 36,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "middle",
-			"baseline": 31,
-			"containerId": "uSRhxtHZuB6zxdz-c_hcg",
-			"originalText": "",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "8fcYqZJ9",
-			"type": "text",
-			"x": -273.3291734465489,
-			"y": -391.972692315301,
-			"width": 10,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 399660112,
-			"version": 14,
-			"versionNonce": 39183536,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1717585051405,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 17,
-			"containerId": "uSRhxtHZuB6zxdz-c_hcg",
-			"originalText": "",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "u6TCPTYx",
-			"type": "text",
-			"x": 211.4856632674539,
-			"y": -128.73196287736704,
-			"width": 10,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1710674000,
-			"version": 2,
-			"versionNonce": 1875122864,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1717585038994,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "middle",
-			"baseline": 17,
-			"containerId": "uSRhxtHZuB6zxdz-c_hcg",
-			"originalText": "",
-			"lineHeight": 1.25
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			}
 		}
 	],
 	"appState": {
@@ -2840,10 +2772,10 @@ VMWare Workstation Player ^htO6nSrs
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 296.8476933779183,
-		"scrollY": 745.6764073218114,
+		"scrollX": 505.55883150905197,
+		"scrollY": 498.1525265589053,
 		"zoom": {
-			"value": 0.45
+			"value": 0.7899065017700193
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

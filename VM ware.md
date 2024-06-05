@@ -3,6 +3,7 @@ title:
 date: 2024-06-04
 resources: 
 tags:
+  - ESXi
 ---
 
 # Corporate Environment
@@ -31,12 +32,12 @@ tags:
 
 ## Design Considerations
 
-![[VMware-design-1]]
+![[VMware-design-1 | 500]]
 
 - If the physical server fails to run and experiencing a down-time, the OS and apps will not run.
 - There is no redundancy for OS and apps that run on it.
 
-![[VMware-design-2]]
+![[VMware-design-2 | 500]]
 
 - Design with Redundancy.
 
@@ -45,7 +46,7 @@ tags:
 
 ---
 - Download the latest version of **VMware Workstation player**.
-![[Pasted image 20240605164839.png]]
+![[Pasted image 20240605164839.png | 500]]
 
 - Creating First VM on VMWare Player (Demo to crate a VM directly on VMware).
 - Creating **vSphere ESXi hypervisor server** on VMware player. In the corporate environment, all the servers are created on top of ESXi servers.
