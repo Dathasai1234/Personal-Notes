@@ -211,3 +211,18 @@ Double-click on Windows Firewall Properties.
 
 Switch to the Private Profile tab.
 Locate Outbound connections and set it to Allow (default)
+
+---
+# **Tuesday, 11-06-2024, 3:54 pm**
+
+## Ensure 'Enable insecure guest logons' is set to 'Disabled'
+
+**Description**:
+
+**Impact**:
+
+**Solution**:
+
+configuration via GP, set the following UI path to Disabled:  
+  
+Computer Configuration\Policies\Administrative Templates\Network\Lanman Workstation\Enable insecure guest logons
