@@ -215,7 +215,7 @@ Locate Outbound connections and set it to Allow (default)
 ---
 # **Tuesday, 11-06-2024, 3:54 pm**
 
-## Ensure 'Enable insecure guest logons' is set to 'Disabled'
+## Ensure 'Enable Insecure Guest Logons' is Set to 'Disabled'
 
 **Description**:
 
