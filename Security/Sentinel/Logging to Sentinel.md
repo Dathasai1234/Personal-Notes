@@ -22,6 +22,8 @@ tags:
 	- Process ID.
 	- Message text.
 - Can be sent over TCP,UDP or TLS, depending on the configuration and the security requirements.
+- The log data is stored in **Syslog** table
+- The Syslog daemon on your device should forward messages to the **Log Analytics agent** (formerly known as the OMS agent) on UDP port 25224.[^1]
 
 ---
 ## CEF
@@ -47,27 +49,38 @@ tags:
 	- Username.
 	- Filenames.
 	- Action taken.
+- The log data is stored in the **CommonSecurityLog** table
+- ! We can correlate a CEF alert with relevant Syslog event to understand the broader context of an incident.
 
 ---
-## Installing Rsyslog
-
-
-* installing rsyslog daemon.
-```bash
-sudo apt-get install rsyslog
-```
-
-* check the status after installation
-```bash
-sudo systemctl status rsyslog
-```
+- ! Recommendation
+	- If your primary focus is security monitoring and threat detection, consider using CEF. It provides better context and consistency.
+	- If you need to collect logs from a wide variety of sources (including non-security devices), Syslog might be more practical.
 
 ---
-- Pricing in Sentinel.
-- Rsyslog / log forwarding to Sentinel.
-- Tables migration in Log analytic workspace.
-- Log management in Sentinel.
-- Restoring Archival logs in Sentinel.
-- Threat Intelligence in Sentinel.
-- UEBA in Sentinel.
+## Architecture of syslog forwarder VM
 
+![[Pasted image 20240619211701.png]]
+
+![[Pasted image 20240619211704.png]]
+
+---
+## Syslog Collector setup - Youtube
+
+- The default flow of syslog is UDP. To get logs effectively, we can use TCP.
+- Process of setup
+```bash
+apt install rsyslog
+
+netstat -ano # that will show if we are listening to 514 port and if it's not
+
+nano /etc/rsyslog.conf
+```
+
+![[Pasted image 20240619214532.png | 400]] 
+
+Ctrl+x = move out of the console and Y for saving.
+
+
+---
+[^1]: The OMS agent listens for Syslog messages on the local client at **port 25224**. The configuration file for the Syslog daemon forwards Syslog messages sent from application to this port where they are collected by Log Analytics.
