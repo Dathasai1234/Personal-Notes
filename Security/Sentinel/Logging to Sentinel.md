@@ -4,6 +4,7 @@ date: 2024-06-19
 resources: 
 tags:
 ---
+
 ## Rsyslog
 
 - Accept inputs from a wide variety of sources.
@@ -35,7 +36,7 @@ tags:
 	- Detection and response solutions.
 	- Intrusion detection systems.
 	- Web servers.
-- CEF is an extention of Syslog.
+- CEF is an extension of Syslog.
 - It was developed for SIEM solutions.
 - CEF messages have a standard header that contains information such as.
 	- Device vendor.
@@ -58,14 +59,14 @@ tags:
 	- If you need to collect logs from a wide variety of sources (including non-security devices), Syslog might be more practical.
 
 ---
-## Architecture of syslog forwarder VM
+## Architecture of Syslog Forwarder VM
 
 ![[Pasted image 20240619211701.png]]
 
 ![[Pasted image 20240619211704.png]]
 
 ---
-## Syslog Collector setup - Youtube
+## Syslog Collector Setup - Youtube
 
 - The default flow of syslog is UDP. To get logs effectively, we can use TCP.
 - Process of setup
