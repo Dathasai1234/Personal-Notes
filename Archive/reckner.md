@@ -226,3 +226,14 @@ Locate Outbound connections and set it to Allow (default)
 configuration via GP, set the following UI path to Disabled:  
   
 Computer Configuration\Policies\Administrative Templates\Network\Lanman Workstation\Enable insecure guest logons
+
+---
+# **Tuesday, 09-07-2024, 4:54 pm**
+
+## Root login via SSH should be disabled. - '/etc/ssh/sshd_config PermitRootLogin = no'
+
+**Description**:
+
+**Impact**:
+
+**Solution**:
