@@ -230,10 +230,16 @@ Computer Configuration\Policies\Administrative Templates\Network\Lanman Workstat
 ---
 # **Tuesday, 09-07-2024, 4:54 pm**
 
-## Root login via SSH should be disabled. - '/etc/ssh/sshd_config PermitRootLogin = no'
+## Root Login via SSH Should Be Disabled. - '/etc/ssh/sshd_config PermitRootLogin = No'
 
 **Description**:
 
 **Impact**:
 
 **Solution**:
+
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+       
+|2a074d39-eee4-4bfe-b1e7-4132c033a762|Ensure 'Network security: Minimum session security for NTLM SSP based (including secure RPC) clients' is set to 'Require NTLMv2 session security, Require 128-bit encryption'|Security Options - Network Security|High|Unhealthy||||
+|5bfb71c2-897f-4ccb-b7d5-7181b1f2527a|Ensure 'Setup: Specify the maximum log file size (KB)' is set to 'Enabled: 32,768 or greater'|Windows Components|High|Unhealthy||||
