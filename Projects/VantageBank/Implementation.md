@@ -4,6 +4,7 @@ date: 2024-07-18
 resources: 
 tags:
 ---
+
 # Recommended Analytics Rules
 
 SNP recommended enabling the below-mentioned rules based on the data connectors connected in the Vantage environment.
