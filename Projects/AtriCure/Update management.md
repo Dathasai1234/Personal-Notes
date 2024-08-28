@@ -4,6 +4,7 @@ date: 2024-08-15
 resources: 
 tags:
 ---
+
 # Azure Automation Update Manager
 
 - Log Analytics agent

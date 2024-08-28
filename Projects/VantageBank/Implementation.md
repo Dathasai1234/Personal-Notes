@@ -37,7 +37,7 @@ Action Steps –
 
 6. Suspicious granting of permissions to an account - Identifies IPs from which users grant access to other users on Azure resources and alerts when a previously unseen source IP address is used.
 
-**Microsoft Defender for Cloud Apps  
+**Microsoft Defender for Cloud Apps**
   
 7. Linked Malicious Storage Artifacts - This query identifies the additional files uploaded by the same IP address which triggered a malware alert for malicious content upload on Azure Blob or File Storage Container.
 
