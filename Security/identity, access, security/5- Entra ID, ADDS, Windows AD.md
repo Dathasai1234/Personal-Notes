@@ -7,6 +7,7 @@ tags:
   - ADDS
   - Windows_AD
 ---
+
 # Questions
 
 ![[Pasted image 20231211202624.png | 500]]
@@ -57,7 +58,7 @@ used to manage identity and access management in azure.
 
 ---
 
-# Azure AD connect Sync
+# Azure AD Connect Sync
 
 to not manage identities in two locations, we use #AD_Connect_Sync to sync identities of Windows AD to Azure AD
 
@@ -99,7 +100,7 @@ to not manage identities in two locations, we use #AD_Connect_Sync to sync ident
 ![[Pasted image 20231212120309.png | 500]]
 
 ---
-# Creating a windows AD
+# Creating a Windows AD
 
 Domain con name : DC1
 Network : 10.10.0.0/16
