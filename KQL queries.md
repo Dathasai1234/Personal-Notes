@@ -4,7 +4,8 @@ date: 2024-09-28
 resources: 
 tags:
 ---
-# Volume per day basis
+
+# Volume per Day Basis
 
 ```kql
 Usage
@@ -13,7 +14,7 @@ Usage
 | summarize TotalVolumeGB = sum(Quantity) / 1024 by bin(TimeGenerated, 1d)
 ```
 
-# Overall Volume in workspace
+# Overall Volume in Workspace
 
 ```kql
 Usage
