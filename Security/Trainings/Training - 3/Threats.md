@@ -4,6 +4,7 @@ date: 2024-01-24
 resources: 
 tags:
 ---
+
 # Types of Threats
 
 ```ad-note
@@ -12,11 +13,11 @@ tags:
 | ![[Pasted image 20240124122810.png]] | ![[Pasted image 20240124122819.png]] |
 ```
 
-# What is a network security threat?
+# What is a Network Security Threat?
 
 protects the boundary between internal and external networks, keeping sensitive information vital and safe from unauthorized users.
 
-## Types of network threats
+## Types of Network Threats
 
 - #malware
 	- The malware or malicious software are software designed to damage the target device.

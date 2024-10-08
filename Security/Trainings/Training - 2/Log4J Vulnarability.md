@@ -5,6 +5,7 @@ resource_2: https://builtin.com/cybersecurity/log4j-vulerability-explained
 minecraft alert: https://www.minecraft.net/en-us/article/important-message--security-vulnerability-java-edition
 tags:
 ---
+
 - #Log4J is a logging library for java.
 	- an open-source logging framework maintained by Apache.
 
